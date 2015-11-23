@@ -1,0 +1,38 @@
+Changelog
+
+20 September 2015 - 1.07
+--------------------------------------
+- added search form in header + on/off option;
+- minor CSS additions;
+- removed custom favicon option;
+- added backward compatibility for the favicon.
+
+16 August 2015 - 1.06
+--------------------------------------
+- small CSS changes;
+- added menu toggle text option;
+- enqueued Bootstrap separately for easier child theming;
+- script concatenate;
+- changed image size;
+- added social menu info.
+
+1 July 2015 - 1.05
+--------------------------------------
+- CSS improvements;
+- added new color options for the social icons;
+
+10 June 2015 - 1.04
+--------------------------------------
+Just two additions to the previous update:
+- minor CSS changes;
+- fixed top level menu items issue;
+
+6 June 2015 - 1.03
+--------------------------------------
+- moved footer credits inside a function;
+- added options to display/hide featured images;
+- added link in the Customizer for the theme extensions;
+- removed background image option;
+- changed default header padding for small screens;
+- minor CSS changes;
+- added changelog file.
