@@ -171,11 +171,11 @@ add_filter('excerpt_more', 'oblique_excerpt_more');
  * Footer credits
  */
 function oblique_footer_credits() {
-	echo '<a href="' . esc_url( __( 'http://wordpress.org/', 'oblique' ) ) . '">';
+	echo '<a href="' . esc_url( __( 'http://wordpress.org/', 'oblique' ) ) . '" rel="nofollow">';
 		printf( __( 'Proudly powered by %s', 'oblique' ), 'WordPress' );
 	echo '</a>';
 	echo '<span class="sep"> | </span>';
-	printf( __( 'Theme: %2$s by %1$s.', 'oblique' ), 'FlyFreeMedia', '<a href="http://flyfreemedia.com/themes/oblique" rel="designer">Oblique</a>' );
+	printf( __( 'Theme: %2$s by %1$s.', 'oblique' ), 'Themeisle', '<a href="http://themeisle.com/theme/oblique/" rel="nofollow" rel="designer">Oblique</a>' );
 }
 add_action( 'oblique_footer', 'oblique_footer_credits' );
 
