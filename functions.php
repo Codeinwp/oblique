@@ -175,7 +175,7 @@ function oblique_footer_credits() {
 		printf( __( 'Proudly powered by %s', 'oblique' ), 'WordPress' );
 	echo '</a>';
 	echo '<span class="sep"> | </span>';
-	printf( __( 'Theme: %2$s by %1$s.', 'oblique' ), 'Themeisle', '<a href="http://themeisle.com/theme/oblique/" rel="nofollow" rel="designer">Oblique</a>' );
+	printf( __( 'Theme: %2$s by %1$s.', 'oblique' ), 'Themeisle', '<a href="http://themeisle.com/themes/oblique/" rel="nofollow">Oblique</a>' );
 }
 add_action( 'oblique_footer', 'oblique_footer_credits' );
 
