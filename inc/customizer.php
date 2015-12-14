@@ -44,8 +44,8 @@ function oblique_customize_register( $wp_customize ) {
           'search_toggle',
           array(
             'sanitize_callback' => 'oblique_sanitize_checkbox',
-            'default' => 0,     
-          )   
+            'default' => 0,
+          )
     );
     $wp_customize->add_control(
           'search_toggle',
@@ -68,12 +68,12 @@ function oblique_customize_register( $wp_customize ) {
         'menu_text',
         array(
             'label'         => __( 'Menu toggle text', 'oblique' ),
-            'description'   => __( 'You can use this to replace the menu toggle button with some text', 'oblique' ),            
+            'description'   => __( 'You can use this to replace the menu toggle button with some text', 'oblique' ),
             'section'       => 'oblique_general',
             'type'          => 'text',
             'priority'      => 11
         )
-    );    
+    );
     //___Header___//
     $wp_customize->add_section(
         'oblique_header',
@@ -111,7 +111,7 @@ function oblique_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '200',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'logo_size', array(
         'type'        => 'number',
@@ -154,7 +154,7 @@ function oblique_customize_register( $wp_customize ) {
         array(
             'sanitize_callback' => 'absint',
             'default'           => '150',
-        )       
+        )
     );
     $wp_customize->add_control( 'branding_padding', array(
         'type'        => 'number',
@@ -175,7 +175,7 @@ function oblique_customize_register( $wp_customize ) {
         array(
             'sanitize_callback' => 'absint',
             'default'           => '100',
-        )       
+        )
     );
     $wp_customize->add_control( 'branding_padding_1024', array(
         'type'        => 'number',
@@ -207,7 +207,7 @@ function oblique_customize_register( $wp_customize ) {
         array(
             'sanitize_callback' => 'absint',
             'default'           => '35',
-        )       
+        )
     );
     $wp_customize->add_control( 'exc_lenght', array(
         'type'        => 'number',
@@ -221,14 +221,14 @@ function oblique_customize_register( $wp_customize ) {
             'step'  => 5,
             'style' => 'padding: 15px;',
         ),
-    ) );   
+    ) );
     //Hide meta
     $wp_customize->add_setting(
       'meta_index',
       array(
         'sanitize_callback' => 'oblique_sanitize_checkbox',
-        'default' => 0,     
-      )   
+        'default' => 0,
+      )
     );
     $wp_customize->add_control(
       'meta_index',
@@ -243,8 +243,8 @@ function oblique_customize_register( $wp_customize ) {
       'meta_singles',
       array(
         'sanitize_callback' => 'oblique_sanitize_checkbox',
-        'default' => 0,     
-      )   
+        'default' => 0,
+      )
     );
     $wp_customize->add_control(
       'meta_singles',
@@ -259,8 +259,8 @@ function oblique_customize_register( $wp_customize ) {
       'read_more',
       array(
         'sanitize_callback' => 'oblique_sanitize_checkbox',
-        'default' => 0,     
-      )   
+        'default' => 0,
+      )
     );
     $wp_customize->add_control(
       'read_more',
@@ -276,7 +276,7 @@ function oblique_customize_register( $wp_customize ) {
         'index_feat_image',
         array(
             'sanitize_callback' => 'oblique_sanitize_checkbox',
-        )       
+        )
     );
     $wp_customize->add_control(
         'index_feat_image',
@@ -292,7 +292,7 @@ function oblique_customize_register( $wp_customize ) {
         'post_feat_image',
         array(
             'sanitize_callback' => 'oblique_sanitize_checkbox',
-        )       
+        )
     );
     $wp_customize->add_control(
         'post_feat_image',
@@ -327,7 +327,7 @@ function oblique_customize_register( $wp_customize ) {
         'settings' => 'oblique_options[titles]',
         'priority' => 10
         ) )
-    );     
+    );
     //Body fonts
     $wp_customize->add_setting(
         'body_font_name',
@@ -375,7 +375,7 @@ function oblique_customize_register( $wp_customize ) {
         'settings' => 'oblique_options[titles]',
         'priority' => 13
         ) )
-    );    
+    );
     //Headings fonts
     $wp_customize->add_setting(
         'headings_font_name',
@@ -431,7 +431,7 @@ function oblique_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '82',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'site_title_size', array(
         'type'        => 'number',
@@ -444,7 +444,7 @@ function oblique_customize_register( $wp_customize ) {
             'step'  => 1,
             'style' => 'margin-bottom: 15px; padding: 10px;',
         ),
-    ) ); 
+    ) );
     // Site description
     $wp_customize->add_setting(
         'site_desc_size',
@@ -452,7 +452,7 @@ function oblique_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '18',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'site_desc_size', array(
         'type'        => 'number',
@@ -465,7 +465,7 @@ function oblique_customize_register( $wp_customize ) {
             'step'  => 1,
             'style' => 'margin-bottom: 15px; padding: 10px;',
         ),
-    ) );         
+    ) );
     //H1 size
     $wp_customize->add_setting(
         'h1_size',
@@ -473,7 +473,7 @@ function oblique_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '36',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'h1_size', array(
         'type'        => 'number',
@@ -494,7 +494,7 @@ function oblique_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '30',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'h2_size', array(
         'type'        => 'number',
@@ -515,7 +515,7 @@ function oblique_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '24',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'h3_size', array(
         'type'        => 'number',
@@ -536,7 +536,7 @@ function oblique_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '18',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'h4_size', array(
         'type'        => 'number',
@@ -557,7 +557,7 @@ function oblique_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '14',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'h5_size', array(
         'type'        => 'number',
@@ -578,7 +578,7 @@ function oblique_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '12',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'h6_size', array(
         'type'        => 'number',
@@ -599,7 +599,7 @@ function oblique_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '16',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'body_size', array(
         'type'        => 'number',
@@ -716,7 +716,7 @@ function oblique_customize_register( $wp_customize ) {
                 'priority' => 16
             )
         )
-    );  
+    );
     //Entry meta
     $wp_customize->add_setting(
         'entry_meta',
@@ -795,7 +795,7 @@ function oblique_customize_register( $wp_customize ) {
                 'priority' => 20
             )
         )
-    ); 
+    );
     //Social icons
     $wp_customize->add_setting(
         'social_color',
@@ -817,29 +817,6 @@ function oblique_customize_register( $wp_customize ) {
         )
     );
 
-
-    //___Theme info___//
-    $wp_customize->add_section(
-        'oblique_extensions',
-        array(
-            'title' => __('Theme extensions', 'oblique'),
-            'priority' => 99,
-            'description' => __('Extensions for Oblique can be found ', 'oblique') . '<a target="_blank" href="http://flyfreemedia.com/oblique/extensions">' . __('here', 'oblique') . '</a>',
-        )
-    );
-    $wp_customize->add_setting('oblique_theme_ext', array(
-            'type'              => 'info_control',
-            'capability'        => 'edit_theme_options',
-            'sanitize_callback' => 'esc_attr',            
-        )
-    );
-    $wp_customize->add_control( new Oblique_Theme_Info( $wp_customize, 'extensions', array(
-        'section' => 'oblique_extensions',
-        'settings' => 'oblique_theme_ext',
-        'priority' => 10
-        ) )
-    ); 
-
     //___Social___//
     $wp_customize->add_section(
         'oblique_social',
@@ -852,7 +829,7 @@ function oblique_customize_register( $wp_customize ) {
     $wp_customize->add_setting('oblique_theme_social', array(
             'type'              => 'info_control',
             'capability'        => 'edit_theme_options',
-            'sanitize_callback' => 'esc_attr',            
+            'sanitize_callback' => 'esc_attr',
         )
     );
     $wp_customize->add_control( new Oblique_Theme_Info( $wp_customize, 'social', array(
@@ -860,7 +837,7 @@ function oblique_customize_register( $wp_customize ) {
         'settings' => 'oblique_theme_social',
         'priority' => 10
         ) )
-    );                 
+    );
 
 }
 add_action( 'customize_register', 'oblique_customize_register' );
@@ -899,3 +876,14 @@ function oblique_customize_preview_js() {
 	wp_enqueue_script( 'oblique_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
 }
 add_action( 'customize_preview_init', 'oblique_customize_preview_js' );
+
+function oblique_registers() {
+	wp_enqueue_script( 'oblique_customizer_script', get_template_directory_uri() . '/js/oblique_customizer.js', array("jquery"), '20120206', true  );
+
+	wp_localize_script( 'oblique_customizer_script', 'obliqueCustomizerObject', array(
+		'github'				=> __('GitHub','oblique'),
+		'review'				=> __('Leave a Review', 'oblique'),
+		'documentation'	=> __('Documentation', 'oblique')
+		) );
+}
+add_action( 'customize_controls_enqueue_scripts', 'oblique_registers' );
