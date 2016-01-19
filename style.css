@@ -1,10 +1,10 @@
 /*
 Theme Name: Oblique
-Theme URI: http://flyfreemedia.com/themes/oblique
-Author: FlyFreeMedia
-Author URI: http://flyfreemedia.com/
+Theme URI: http://themeisle.com/themes/oblique
+Author: Themeisle
+Author URI: http://themeisle.com/
 Description: Oblique is a creative masonry theme that works great for fashion or general bloggers. Amongst the features you will find a a parallax header image, full color control with unlimited color variations, easy access to all Google Fonts, responsive design etc.
-Version: 1.08
+Version: 1.09
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: oblique
@@ -360,7 +360,7 @@ Posts nav
 }
 .widget_pages li::before {
 	content: '\f016';
-	margin-right: 5px;	
+	margin-right: 5px;
 }
 .widget_recent_comments li::before {
 	content: '\f0e5';
@@ -594,7 +594,7 @@ Comments
 	background-color: #fff;
 	font-size: 12px;
 	-webkit-transition: all 0.4s;
-	transition: all 0.4s;	
+	transition: all 0.4s;
 }
 a.comment-reply-link {
 	text-decoration: none;
@@ -766,7 +766,7 @@ Social Menu
 	padding: 10px;
 	color: #fff;
 	-webkit-transition: all 0.3s;
-	transition: all 0.3s;	
+	transition: all 0.3s;
 }
 .social-navigation li a::before {
 	font-family: FontAwesome;
@@ -891,7 +891,7 @@ svg {
 }
 
 /*--------------------------------------------------------------
-Structure 
+Structure
 --------------------------------------------------------------*/
 .site-content {
 	margin-bottom: 30px;
@@ -1031,7 +1031,7 @@ Menu
     margin:0;
 }
 .slicknav_nav .slicknav_txtnode {
-    margin-left:15px;   
+    margin-left:15px;
 }
 .slicknav_brand {
 	color:#fff;
@@ -1097,7 +1097,7 @@ Responsive
 	}
 	.grid-layout .hentry:nth-of-type(3) .post-svg {
 		margin-top: 0;
-	}	
+	}
 	.hentry .post-svg {
 		margin-left: -3px;
 	}
@@ -1113,7 +1113,7 @@ Responsive
 	}
 	.grid-layout .hentry:nth-of-type(2) .post-svg {
 		margin-top: 0;
-	}	
+	}
 	.grid-layout {
 		width: 100%;
 		max-width: 370px;
