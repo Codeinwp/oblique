@@ -287,3 +287,11 @@ require get_template_directory() . '/inc/svg.php';
  * Styles
  */
 require get_template_directory() . '/inc/styles.php';
+
+/**
+ * Customizer styles
+ */
+function oblique_customizer_styles() {
+	wp_enqueue_style( 'oblique-customizer-styles', get_template_directory_uri() . '/css/customizer.css' );
+}
+add_action( 'customize_controls_print_styles', 'oblique_customizer_styles' );
