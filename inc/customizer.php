@@ -881,9 +881,37 @@ function oblique_registers() {
 	wp_enqueue_script( 'oblique_customizer_script', get_template_directory_uri() . '/js/oblique_customizer.js', array("jquery"), '20120206', true  );
 
 	wp_localize_script( 'oblique_customizer_script', 'obliqueCustomizerObject', array(
-		'github'				=> __('GitHub','oblique'),
-		'review'				=> __('Leave a Review', 'oblique'),
-		'documentation'	=> __('Documentation', 'oblique')
+		'documentation'	=> __('Documentation', 'oblique'),
+		'pro'	=> __('View PRO version', 'oblique')
 		) );
 }
 add_action( 'customize_controls_enqueue_scripts', 'oblique_registers' );
+
+/* ajax callback for dismissable Asking for reviews */
+add_action( 'wp_ajax_oblique_dismiss_asking_for_reviews','oblique_dismiss_asking_for_reviews_callback' );
+add_action( 'wp_ajax_nopriv_oblique_dismiss_asking_for_reviews','oblique_dismiss_asking_for_reviews_callback' );
+/**
+ * Dismiss asking for reviews
+ */
+function oblique_dismiss_asking_for_reviews_callback() {
+	
+	if( !empty($_POST['ask']) ) {
+		set_theme_mod('oblique_ask_for_review',esc_attr($_POST['ask']));
+	}
+	die();
+}
+add_action( 'customize_controls_enqueue_scripts', 'oblique_asking_for_reviews_script' );
+function oblique_asking_for_reviews_script() {
+	
+	$oblique_review = 'yes';
+	
+	$oblique_ask_for_review = get_theme_mod('oblique_ask_for_review');
+	if( !empty($oblique_ask_for_review) ) {
+		$oblique_review = $oblique_ask_for_review;
+	}
+	wp_enqueue_script( 'oblique-asking-for-reviews-js', get_template_directory_uri() . '/js/oblique_reviews.js', array('jquery') );
+	wp_localize_script( 'oblique-asking-for-reviews-js', 'obliqueAskingForReviewsObject', array(
+		'ask' => $oblique_review,
+		'ajaxurl' => admin_url( 'admin-ajax.php' ),
+	) );
+}
