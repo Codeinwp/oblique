@@ -148,18 +148,6 @@ function oblique_register_required_plugins() {
 		$plugins = array(
 
 			array(
-				'name'      => 'WP Product Review',
-				'slug'      => 'wp-product-review',
-				'required'  => false,
-			),
-
-			array(
-				'name'      => 'Intergeo Maps - Google Maps Plugin',
-				'slug'      => 'intergeo-maps',
-				'required'  => false
-			),
-
-			array(
 				'name'     => 'Pirate Forms',
 				'slug' 	   => 'pirate-forms',
 				'required' => false
