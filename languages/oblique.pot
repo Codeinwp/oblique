@@ -201,7 +201,7 @@ msgstr ""
 msgid ""
 "You can use any Google Fonts you want for the heading and/or body. See the "
 "fonts here: google.com/fonts. See the documentation if you need help with "
-"this: flyfreemedia.com/documentation/oblique"
+"this: docs.themeisle.com/article/294-oblique-documentation"
 msgstr ""
 
 #: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\oblique/inc/customizer.php:274

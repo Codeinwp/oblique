@@ -311,7 +311,7 @@ function oblique_customize_register( $wp_customize ) {
         array(
             'title' => __('Fonts', 'oblique'),
             'priority' => 15,
-            'description' => __('You can use any Google Fonts you want for the heading and/or body. See the fonts here: google.com/fonts. See the documentation if you need help with this: flyfreemedia.com/documentation/oblique', 'oblique'),
+            'description' => __('You can use any Google Fonts you want for the heading and/or body. See the fonts here: google.com/fonts. See the documentation if you need help with this: docs.themeisle.com/article/294-oblique-documentation', 'oblique'),
         )
     );
     //Body fonts title
@@ -894,7 +894,7 @@ add_action( 'wp_ajax_nopriv_oblique_dismiss_asking_for_reviews','oblique_dismiss
  * Dismiss asking for reviews
  */
 function oblique_dismiss_asking_for_reviews_callback() {
-	
+
 	if( !empty($_POST['ask']) ) {
 		set_theme_mod('oblique_ask_for_review',esc_attr($_POST['ask']));
 	}
@@ -902,9 +902,9 @@ function oblique_dismiss_asking_for_reviews_callback() {
 }
 add_action( 'customize_controls_enqueue_scripts', 'oblique_asking_for_reviews_script' );
 function oblique_asking_for_reviews_script() {
-	
+
 	$oblique_review = 'yes';
-	
+
 	$oblique_ask_for_review = get_theme_mod('oblique_ask_for_review');
 	if( !empty($oblique_ask_for_review) ) {
 		$oblique_review = $oblique_ask_for_review;
