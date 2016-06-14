@@ -1167,4 +1167,12 @@ Responsive
 	.top-bar {
 		text-align: center;
 	}
+	.site-main .post-navigation {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.comments-area {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
