@@ -1,4 +1,9 @@
 
+### 1.11 - 14/06/2016
+**Changes:** 
+- Update documentation links
+- Fixed layout issues on mobile in single posts
+
 
 ### 1.09 - 19/01/2016
 
