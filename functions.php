@@ -124,7 +124,7 @@ function oblique_scripts() {
 
 	wp_enqueue_script( 'oblique-scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), true );
 
-	wp_enqueue_script( 'oblique-masonry-init', get_template_directory_uri() . '/js/masonry-init.js', array('jquery-masonry'), true );
+	wp_enqueue_script( 'oblique-masonry-init', get_template_directory_uri() . '/js/masonry-init.js', array('jquery', 'masonry'), true );
 
 	wp_enqueue_script( 'oblique-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
