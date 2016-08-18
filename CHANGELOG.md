@@ -1,4 +1,8 @@
 
+### 1.12 - 18/08/2016
+**Changes:** 
+- Fixed masonry issue with WordPress 4.6
+
 ### 1.11 - 14/06/2016
 **Changes:** 
 - Update documentation links
