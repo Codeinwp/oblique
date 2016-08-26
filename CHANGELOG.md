@@ -1,4 +1,8 @@
 
+### 1.13 - 26/08/2016
+**Changes:** 
+- Fixed Issue with Jetpack Infinite scroll
+
 ### 1.12 - 18/08/2016
 **Changes:** 
 - Fixed masonry issue with WordPress 4.6
