@@ -7,6 +7,11 @@
 
 
 function oblique_customize_register( $wp_customize ) {
+	class Oblique_Theme_Support extends WP_Customize_Control {
+		public function render_content() {
+		}
+	}
+
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->remove_control( 'header_textcolor' );
@@ -796,6 +801,36 @@ function oblique_customize_register( $wp_customize ) {
             )
         )
     );
+
+
+
+
+
+
+
+
+    //Extra options
+    $wp_customize->add_section( 'oblique_extra_options', array(
+        'title'	=> 'Extra options',
+        'priority' => 29
+    ));
+
+    $wp_customize->add_setting( 'oblique_extra_options', array(
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+
+    $wp_customize->add_control( new Oblique_Theme_Support( $wp_customize, 'oblique_extra_options', array(
+        'section' => 'oblique_extra_options',
+    )));
+
+
+
+
+
+
+
+
+
     //Social icons
     $wp_customize->add_setting(
         'social_color',
