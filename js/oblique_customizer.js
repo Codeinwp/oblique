@@ -22,4 +22,12 @@ jQuery(document).ready(function() {
 	}
 
 	jQuery('.preview-notice').append('<a class="oblique-upgrade-to-pro-button" href="http://themeisle.com/themes/oblique-pro/" class="button" target="_blank">{pro}</a>'.replace('{pro}',obliqueCustomizerObject.pro));
+
+	//Locked sections
+	jQuery('#accordion-section-oblique_extra_options').click(function() {
+		jQuery('.wp-full-overlay').removeClass('section-open');
+		jQuery('#accordion-section-oblique_extra_options, #accordion-section-zerif_videobackground_in_pro_section').removeClass('open');
+		window.location.href = "http://themeisle.com/themes/oblique-pro/";
+	});
+
 });
