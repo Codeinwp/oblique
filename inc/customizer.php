@@ -50,6 +50,7 @@ function oblique_customize_register( $wp_customize ) {
           array(
             'sanitize_callback' => 'oblique_sanitize_checkbox',
             'default' => 0,
+            'transport' => 'postMessage',
           )
     );
     $wp_customize->add_control(
@@ -67,6 +68,7 @@ function oblique_customize_register( $wp_customize ) {
         'menu_text',
         array(
             'sanitize_callback' => 'oblique_sanitize_text',
+            'transport'         => 'postMessage',
         )
     );
     $wp_customize->add_control(
@@ -93,6 +95,7 @@ function oblique_customize_register( $wp_customize ) {
         array(
             'default-image' => '',
             'sanitize_callback' => 'esc_url_raw',
+            'transport'  => 'postMessage'
 
         )
     );
@@ -137,6 +140,7 @@ function oblique_customize_register( $wp_customize ) {
         array(
             'default'           => 'hide-title',
             'sanitize_callback' => 'oblique_sanitize_logo_style',
+            'transport'         => 'postMessage',
         )
     );
     $wp_customize->add_control(
@@ -159,6 +163,7 @@ function oblique_customize_register( $wp_customize ) {
         array(
             'sanitize_callback' => 'absint',
             'default'           => '150',
+            'transport'         => 'postMessage',
         )
     );
     $wp_customize->add_control( 'branding_padding', array(
@@ -180,6 +185,7 @@ function oblique_customize_register( $wp_customize ) {
         array(
             'sanitize_callback' => 'absint',
             'default'           => '100',
+            'transport'         => 'postMessage',
         )
     );
     $wp_customize->add_control( 'branding_padding_1024', array(
@@ -626,6 +632,7 @@ function oblique_customize_register( $wp_customize ) {
         array(
             'default'           => '#23B6B6',
             'sanitize_callback' => 'sanitize_hex_color',
+            'transport'         => 'postMessage',
         )
     );
     $wp_customize->add_control(
@@ -788,6 +795,7 @@ function oblique_customize_register( $wp_customize ) {
         array(
             'default'           => '#17191B',
             'sanitize_callback' => 'sanitize_hex_color',
+            'transport'         => 'postMessage',
         )
     );
     $wp_customize->add_control(
@@ -824,19 +832,13 @@ function oblique_customize_register( $wp_customize ) {
     )));
 
 
-
-
-
-
-
-
-
     //Social icons
     $wp_customize->add_setting(
         'social_color',
         array(
             'default'           => '#ffffff',
             'sanitize_callback' => 'sanitize_hex_color',
+            'transport'         => 'postMessage',
         )
     );
     $wp_customize->add_control(
