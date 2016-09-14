@@ -1074,6 +1074,9 @@ Top bar
 .header-search .search-field:focus {
 	color: #fff;
 }
+.grid-layout {
+	display: none;	
+}
 /*--------------------------------------------------------------
 Responsive
 --------------------------------------------------------------*/
