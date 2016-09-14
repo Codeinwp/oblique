@@ -1074,8 +1074,11 @@ Top bar
 .header-search .search-field:focus {
 	color: #fff;
 }
+.oblique-only-customizer {
+	display: none !important;
+}
 .grid-layout {
-	display: none;	
+	display: none;
 }
 /*--------------------------------------------------------------
 Responsive
