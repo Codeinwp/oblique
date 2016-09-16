@@ -56,7 +56,7 @@
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="site-branding">
-				<?php if ( get_theme_mod('site_logo') || is_customize_preview() ) : //Show only logo ?>
+				<?php if ( ( get_theme_mod('site_logo') && get_theme_mod('logo_style', 'hide-title') == 'hide-title' ) || is_customize_preview() ) : //Show only logo ?>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="<?php echo !get_theme_mod('site_logo') && is_customize_preview() ? " oblique-only-customizer" : ""; ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>"><img class="site-logo" src="<?php echo esc_url(get_theme_mod('site_logo')); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" /></a>
 				<?php endif; ?>
 
