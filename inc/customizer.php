@@ -94,9 +94,7 @@ function oblique_customize_register( $wp_customize ) {
         'site_logo',
         array(
             'default-image' => '',
-            'sanitize_callback' => 'esc_url_raw',
-            'transport'  => 'postMessage'
-
+            'sanitize_callback' => 'esc_url_raw'
         )
     );
     $wp_customize->add_control(
@@ -139,7 +137,6 @@ function oblique_customize_register( $wp_customize ) {
         array(
             'default'           => 'hide-title',
             'sanitize_callback' => 'oblique_sanitize_logo_style',
-            'transport'         => 'postMessage',
         )
     );
     $wp_customize->add_control(

@@ -56,13 +56,18 @@
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="site-branding">
-				<?php if ( ( get_theme_mod('site_logo') && get_theme_mod('logo_style', 'hide-title') == 'hide-title' ) || is_customize_preview() ) : //Show only logo ?>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="<?php echo !get_theme_mod('site_logo') && is_customize_preview() ? " oblique-only-customizer" : ""; ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>"><img class="site-logo" src="<?php echo esc_url(get_theme_mod('site_logo')); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" /></a>
-				<?php endif; ?>
-
-				<?php if ( !get_theme_mod('site_logo') || get_theme_mod('logo_style', 'show-title') == 'show-title' || is_customize_preview() ) : ?>
-					<h1 class="site-title<?php echo get_theme_mod('logo_style', 'show-title') == 'hide-title' && is_customize_preview() && get_theme_mod('site_logo') ? " oblique-only-customizer" : ""; ?>"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<h2 class="site-description<?php echo get_theme_mod('logo_style', 'show-title') == 'hide-title' && is_customize_preview() && get_theme_mod('site_logo') ? " oblique-only-customizer" : ""; ?>"><?php bloginfo( 'description' ); ?></h2>
+				<?php $oblique_site_logo = get_theme_mod('site_logo'); ?>
+				<?php if ( !empty($oblique_site_logo) && get_theme_mod('logo_style', 'hide-title') == 'hide-title' ) : //Show only logo ?>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>"><img class="site-logo" src="<?php echo esc_url($oblique_site_logo); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" /></a>
+				<?php elseif ( get_theme_mod('logo_style', 'hide-title') == 'show-title' ) : ?>
+					<?php if( !empty($oblique_site_logo) ) { ?>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>"><img class="site-logo show-title" src="<?php echo esc_url($oblique_site_logo); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" /></a>
+					<?php }?>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+				<?php else: //Show only site title and description ?>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 				<?php endif; ?>
 			</div><!-- .site-branding -->
 		</div>

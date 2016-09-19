@@ -170,35 +170,6 @@
 		} );
 	});
 
-	// Logo - Header
-	wp.customize( 'site_logo', function( value ) {
-		value.bind( function( val ) {
-			var logo        = $( '.site-logo' ),
-				logo_wrap   = $( '.site-branding > a' ),
-				title       = $( '.site-branding .site-title, .site-branding .site-description' );
-
-			logo.attr( 'src', val );
-			if( '' !== val ) {
-				logo_wrap.removeClass( 'oblique-only-customizer' );
-			} else {
-				logo_wrap.addClass( 'oblique-only-customizer' );
-			}
-		} );
-	});
-
-	// Logo style - Header
-	wp.customize( 'logo_style', function( value ) {
-		value.bind( function( val ) {
-			var title       = $( '.site-branding .site-title, .site-branding .site-description' ),
-				logo_wrap   = $( '.site-branding > a' );
-			if( 'hide-title' === val && !logo_wrap.hasClass( 'oblique-only-customizer' ) ) {
-				title.addClass( 'oblique-only-customizer' );
-			} else {
-				title.removeClass( 'oblique-only-customizer' );
-			}
-		} );
-	});
-
 	// Padding - Header
 	wp.customize( 'branding_padding', function( value ) {
 		value.bind( function( val ) {
