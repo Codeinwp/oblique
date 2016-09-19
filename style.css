@@ -4,11 +4,11 @@ Theme URI: http://themeisle.com/themes/oblique
 Author: Themeisle
 Author URI: http://themeisle.com/
 Description: Oblique is a creative masonry theme that works great for fashion or general bloggers. Amongst the features you will find a a parallax header image, full color control with unlimited color variations, easy access to all Google Fonts, responsive design etc.
-Version: 1.13
+Version: 1.14
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: oblique
-Tags: dark, fluid-layout, responsive-layout, custom-colors, custom-background, custom-menu, custom-header, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
+Tags: custom-colors, custom-background, custom-menu, custom-header, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -1073,6 +1073,12 @@ Top bar
 .header-search .search-field,
 .header-search .search-field:focus {
 	color: #fff;
+}
+.oblique-only-customizer {
+	display: none !important;
+}
+.grid-layout {
+	display: none;
 }
 /*--------------------------------------------------------------
 Responsive
