@@ -1,4 +1,13 @@
 
+### 1.14 - 19/09/2016
+**Changes:** 
+- Fixed issue with slow loading of posts with masonry
+- Fixed issue with fonts options in Customize not working in Firefox
+- Fixed posts order
+- Update tags
+- Small improvements in Customize, to better interaction with the user
+- Added an upsell in Customize
+
 ### 1.13 - 26/08/2016
 **Changes:** 
 - Fixed Issue with Jetpack Infinite scroll
