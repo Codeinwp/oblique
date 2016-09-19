@@ -28,11 +28,12 @@
 
 	<?php $menu_text = get_theme_mod('menu_text'); ?>
 	<div class="sidebar-toggle">
-	<?php if (!$menu_text) : ?>
-		<i class="fa fa-bars"></i>
-	<?php else : ?>
-		<?php echo esc_html($menu_text); ?>
+	<?php if( !$menu_text || is_customize_preview() ) : ?>
+		<i class="fa fa-bars<?php echo $menu_text && is_customize_preview() ? " oblique-only-customizer" : ""; ?>"></i>
 	<?php endif; ?>
+	<?php if( $menu_text || is_customize_preview() ) : ?>
+		<?php echo '<span class="' . (!$menu_text && is_customize_preview() ? " oblique-only-customizer" : "" ) . '">' . esc_html($menu_text) . '<span>'; ?>
+		<?php endif; ?>
 	</div>
 
 	<div class="top-bar container">
@@ -41,10 +42,10 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'social', 'link_before' => '<span class="screen-reader-text">', 'link_after' => '</span>', 'menu_class' => 'menu clearfix', 'fallback_cb' => false ) ); ?>
 			</nav>
 		<?php endif; ?>
-		<?php if ( get_theme_mod('search_toggle') ) : ?>
-		<div class="header-search">
-			<?php get_search_form(); ?>
-		</div>
+		<?php if ( !get_theme_mod('search_toggle') || is_customize_preview() ) : ?>
+			<div class="header-search<?php echo get_theme_mod('search_toggle') && is_customize_preview() ? " oblique-only-customizer" : ""; ?>">
+				<?php get_search_form(); ?>
+			</div>
 		<?php endif; ?>
 	</div>
 
@@ -55,16 +56,14 @@
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="site-branding">
-	        <?php if ( get_theme_mod('site_logo') && get_theme_mod('logo_style', 'hide-title') == 'hide-title' ) : //Show only logo ?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>"><img class="site-logo" src="<?php echo esc_url(get_theme_mod('site_logo')); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" /></a>
-	        <?php elseif ( get_theme_mod('logo_style', 'hide-title') == 'show-title' ) : //Show logo, site-title, site-description ?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>"><img class="site-logo show-title" src="<?php echo esc_url(get_theme_mod('site_logo')); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" /></a>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>	        
-	        <?php else : //Show only site title and description ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-	        <?php endif; ?>
+				<?php if ( ( get_theme_mod('site_logo') && get_theme_mod('logo_style', 'hide-title') == 'hide-title' ) || is_customize_preview() ) : //Show only logo ?>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="<?php echo !get_theme_mod('site_logo') && is_customize_preview() ? " oblique-only-customizer" : ""; ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>"><img class="site-logo" src="<?php echo esc_url(get_theme_mod('site_logo')); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" /></a>
+				<?php endif; ?>
+
+				<?php if ( !get_theme_mod('site_logo') || get_theme_mod('logo_style', 'show-title') == 'show-title' || is_customize_preview() ) : ?>
+					<h1 class="site-title<?php echo get_theme_mod('logo_style', 'show-title') == 'hide-title' && is_customize_preview() && get_theme_mod('site_logo') ? " oblique-only-customizer" : ""; ?>"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h2 class="site-description<?php echo get_theme_mod('logo_style', 'show-title') == 'hide-title' && is_customize_preview() && get_theme_mod('site_logo') ? " oblique-only-customizer" : ""; ?>"><?php bloginfo( 'description' ); ?></h2>
+				<?php endif; ?>
 			</div><!-- .site-branding -->
 		</div>
 		<div class="svg-container header-svg svg-block">

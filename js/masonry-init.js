@@ -9,6 +9,9 @@ jQuery(function($) {
         if ( !$container ) {
             return;
         }
+
+        $container.show();
+
         // init Masonry
         $container.imagesLoaded( function() {
             $container.masonry({

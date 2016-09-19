@@ -106,7 +106,7 @@ function oblique_custom_styles($custom) {
 	$custom .= ".svg-block { fill:#" . esc_attr($background_color) . ";}"."\n";
 	//Footer background
 	$footer_background = get_theme_mod( 'footer_background', '#17191B' );
-	$custom .= ".footer-svg.svg-block { fill:" . esc_attr($footer_background) . "!important;}"."\n";
+	$custom .= ".footer-svg.svg-block { fill:" . esc_attr($footer_background) . ";}"."\n";
 	$custom .= ".site-footer { background-color:" . esc_attr($footer_background) . ";}"."\n";
 	//Body
 	$body_text = get_theme_mod( 'body_text_color', '#50545C' );
