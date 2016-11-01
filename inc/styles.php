@@ -131,6 +131,9 @@ function oblique_custom_styles($custom) {
 	//Social
 	$social_color = get_theme_mod( 'social_color', '#ffffff' );
 	$custom .= ".social-navigation li a { color:" . esc_attr($social_color) . "}"."\n";
+	//Mennu icon
+	$menu_icon_color = get_theme_mod( 'menu_icon_color', '#ffffff' );
+	$custom .= ".sidebar-toggle, .comment-form, .comment-respond .comment-reply-title { color:" . esc_attr($menu_icon_color) . "}"."\n";
 
 	//Output all the styles
 	wp_add_inline_style( 'oblique-style', $custom );	

@@ -142,6 +142,13 @@
         } );
     });
 
+	// Social color
+	wp.customize( 'menu_icon_color', function( value ) {
+		value.bind( function( newval ) {
+			$( '.sidebar-toggle, .comment-form, .comment-respond .comment-reply-title' ).css( 'color', newval );
+		} );
+	});
+
 	// Search form - General
 	wp.customize('search_toggle',function( value ) {
 		value.bind( function() {
