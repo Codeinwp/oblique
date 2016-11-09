@@ -838,6 +838,28 @@ function oblique_customize_register( $wp_customize ) {
         )
     );
 
+    //Menu icon
+    $wp_customize->add_setting(
+        'menu_icon_color',
+        array(
+            'default'           => '#ffffff',
+            'sanitize_callback' => 'sanitize_hex_color',
+            'transport'         => 'postMessage',
+        )
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+            $wp_customize,
+            'menu_icon_color',
+            array(
+                'label'         => __('Menu icon color', 'oblique'),
+                'section'       => 'colors',
+                'settings'      => 'menu_icon_color',
+                'priority'      => 21
+            )
+        )
+    );
+
     //___Social___//
     $wp_customize->add_section(
         'oblique_social',
