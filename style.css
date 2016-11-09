@@ -680,16 +680,11 @@ img[class*="wp-image-"] {
 }
 
 .wp-caption-text {
-	text-align: center;
-	position: absolute;
-	bottom: 0;
-	padding: 10px;
-	background-color: rgba(51, 51, 51, 0.6);
-	font-size: 13px;
-	color: #fff;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
+    padding: 10px;
+    font-size: 13px;
+    line-height: 15px;
 }
+
 .wp-caption:hover .wp-caption-text {
 	bottom: -200px;
 }
@@ -706,6 +701,7 @@ img[class*="wp-image-"] {
 	text-align: center;
 	vertical-align: top;
 	width: 100%;
+	position: relative;
 }
 
 .gallery-columns-2 .gallery-item {
