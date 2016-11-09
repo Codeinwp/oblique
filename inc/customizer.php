@@ -852,7 +852,7 @@ function oblique_customize_register( $wp_customize ) {
             $wp_customize,
             'menu_icon_color',
             array(
-                'label'         => __('Menu icon color', 'oblique'),
+                'label'         => 'Menu icon/Leave a review color',
                 'section'       => 'colors',
                 'settings'      => 'menu_icon_color',
                 'priority'      => 21
