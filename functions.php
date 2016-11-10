@@ -76,6 +76,8 @@ function oblique_setup() {
 	add_theme_support( 'custom-background', apply_filters( 'oblique_custom_background_args', array(
 		'default-color' => '1c1c1c',
 	) ) );
+
+	require_once(get_template_directory() . '/inc/customizer-info/class/class-singleton-customizer-info-section.php' );
 }
 endif; // oblique_setup
 add_action( 'after_setup_theme', 'oblique_setup' );
@@ -275,11 +277,3 @@ require get_template_directory() . '/inc/svg.php';
  * Styles
  */
 require get_template_directory() . '/inc/styles.php';
-
-/**
- * Customizer styles
- */
-function oblique_customizer_styles() {
-	wp_enqueue_style( 'oblique-customizer-styles', get_template_directory_uri() . '/css/customizer.css' );
-}
-add_action( 'customize_controls_print_styles', 'oblique_customizer_styles' );
