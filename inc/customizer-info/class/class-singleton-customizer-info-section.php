@@ -76,9 +76,11 @@ final class Customizer_Info_Singleton {
 		$manager->register_section_type( 'Customizer_Info' );
 
 		// Register sections.
-		$url = "https://themeisle.com/themes/oblique-pro/";
 		$manager->add_section( new Customizer_Info( $manager, 'oblique_pro_featured', array(
-			'section_text' => sprintf( wp_kses( __( 'View <a href="%s">PRO version</a>. It adds an extra widget area and the ability to easily add a slider on frontpage.', 'oblique' ), array(  'a' => array( 'href' => array() ) ) ), esc_url( $url ) ),
+			'section_text' => sprintf(
+				__( 'View %1$s. It adds an extra widget area and the ability to easily add a slider on frontpage.', 'oblique' ),
+				sprintf( '<a href="https://themeisle.com/themes/oblique-pro/" rel="nofollow">%s</a>', esc_html__( 'PRO version', 'oblique' ) )
+			),
 			'panel' => 'widgets',
 			'priority' => 500,
 		) ) );
