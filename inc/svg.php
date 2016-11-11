@@ -23,7 +23,7 @@ function oblique_svg_2() {
 		  </g>
 		</svg>
 	';
-}	
+}
 function oblique_svg_3() {
 	echo '
 		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
@@ -33,7 +33,7 @@ function oblique_svg_3() {
 		  <path d="M 0,150 0,0 1925,0"/>
 		</svg>
 	';
-}	
+}
 function oblique_svg_4() {
 	echo '
 		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1920 150">
@@ -43,4 +43,4 @@ function oblique_svg_4() {
 		  <path d="M 0,150 0,0 1925,0"/>
 		</svg>
 	';
-}	
+}

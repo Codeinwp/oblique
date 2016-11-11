@@ -16,7 +16,7 @@
 	</div>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info container">
-			<?php do_action('oblique_footer'); ?>
+			<?php do_action( 'oblique_footer' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
