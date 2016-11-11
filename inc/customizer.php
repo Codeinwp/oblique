@@ -35,6 +35,41 @@ function oblique_customize_register( $wp_customize ) {
         }
     }
 
+	/*********************************/
+	/*********  Theme Info  **********/
+	/*********************************/
+	require_once ( 'class/class-oblique-info.php');
+	$wp_customize->add_section('oblique_theme_info', array(
+			'title' => __('Theme info', 'oblique'),
+			'priority' => 0,
+		)
+	);
+	$wp_customize->add_setting('oblique_theme_info', array(
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'oblique_sanitize_text'
+		)
+	);
+	$wp_customize->add_control( new Oblique_Info( $wp_customize, 'oblique_theme_info', array(
+			'section' => 'oblique_theme_info',
+			'priority' => 10
+		) )
+	);
+
+	/*********************************/
+	/*******  Colors Notice  *********/
+	/*********************************/
+	require_once ( 'class/class-oblique-notice.php');
+	$wp_customize->add_setting('oblique_color_notice', array(
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'oblique_sanitize_text'
+		)
+	);
+	$wp_customize->add_control( new Oblique_Colors_Notice( $wp_customize, 'oblique_color_notice', array(
+			'section' => 'colors',
+			'priority' => 100
+		) )
+	);
+
     //___General___//
     $wp_customize->add_section(
         'oblique_general',
@@ -794,28 +829,6 @@ function oblique_customize_register( $wp_customize ) {
         )
     );
 
-
-
-
-
-
-
-
-    //Extra options
-    $wp_customize->add_section( 'oblique_extra_options', array(
-        'title'	=> 'Extra options',
-        'priority' => 29
-    ));
-
-    $wp_customize->add_setting( 'oblique_extra_options', array(
-        'sanitize_callback' => 'sanitize_text_field'
-    ));
-
-    $wp_customize->add_control( new Oblique_Theme_Support( $wp_customize, 'oblique_extra_options', array(
-        'section' => 'oblique_extra_options',
-    )));
-
-
     //Social icons
     $wp_customize->add_setting(
         'social_color',
@@ -919,42 +932,3 @@ function oblique_customize_preview_js() {
 	wp_enqueue_script( 'oblique_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
 }
 add_action( 'customize_preview_init', 'oblique_customize_preview_js' );
-
-function oblique_registers() {
-	wp_enqueue_script( 'oblique_customizer_script', get_template_directory_uri() . '/js/oblique_customizer.js', array("jquery"), '20120206', true  );
-
-	wp_localize_script( 'oblique_customizer_script', 'obliqueCustomizerObject', array(
-		'documentation'	=> __('Documentation', 'oblique'),
-		'pro'	=> __('View PRO version', 'oblique')
-		) );
-}
-add_action( 'customize_controls_enqueue_scripts', 'oblique_registers' );
-
-/* ajax callback for dismissable Asking for reviews */
-add_action( 'wp_ajax_oblique_dismiss_asking_for_reviews','oblique_dismiss_asking_for_reviews_callback' );
-add_action( 'wp_ajax_nopriv_oblique_dismiss_asking_for_reviews','oblique_dismiss_asking_for_reviews_callback' );
-/**
- * Dismiss asking for reviews
- */
-function oblique_dismiss_asking_for_reviews_callback() {
-
-	if( !empty($_POST['ask']) ) {
-		set_theme_mod('oblique_ask_for_review',esc_attr($_POST['ask']));
-	}
-	die();
-}
-add_action( 'customize_controls_enqueue_scripts', 'oblique_asking_for_reviews_script' );
-function oblique_asking_for_reviews_script() {
-
-	$oblique_review = 'yes';
-
-	$oblique_ask_for_review = get_theme_mod('oblique_ask_for_review');
-	if( !empty($oblique_ask_for_review) ) {
-		$oblique_review = $oblique_ask_for_review;
-	}
-	wp_enqueue_script( 'oblique-asking-for-reviews-js', get_template_directory_uri() . '/js/oblique_reviews.js', array('jquery') );
-	wp_localize_script( 'oblique-asking-for-reviews-js', 'obliqueAskingForReviewsObject', array(
-		'ask' => $oblique_review,
-		'ajaxurl' => admin_url( 'admin-ajax.php' ),
-	) );
-}
