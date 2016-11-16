@@ -1,9 +1,18 @@
 <?php
 /**
+ * Oblique style functions.
+ *
  * @package Oblique
  */
 
-// Converts hex colors to rgba for the menu background color
+/**
+ * Converts hex colors to rgba for the menu background color
+ *
+ * @param string $color Color input in hex or rgba format.
+ * @param bool   $opacity Check if input have opacity.
+ *
+ * @return string
+ */
 function oblique_hex2rgba( $color, $opacity = false ) {
 
 	if ( $color[0] == '#' ) {
@@ -17,7 +26,11 @@ function oblique_hex2rgba( $color, $opacity = false ) {
 		return $output;
 }
 
-// Dynamic styles
+/**
+ * Dynamic styles
+ *
+ * @param string $custom Custom style.
+ */
 function oblique_custom_styles( $custom ) {
 
 	$custom = '';

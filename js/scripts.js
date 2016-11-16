@@ -1,12 +1,12 @@
 
 //Parallax
 jQuery(function($) {
-	$(".site-header").parallax("50%", 0.3);
+	$('.site-header').parallax('50%', 0.3);
 });
 
 //Fit Vids
 jQuery(function($) {
-    $("body").fitVids();  
+    $('body').fitVids();
 });
 
 //Open social links in a new tab
