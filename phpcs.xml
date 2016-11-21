@@ -12,6 +12,7 @@
         <exclude name="Squiz.Commenting.InlineComment.NotCapital" />
 
         <exclude name="WordPress.PHP.YodaConditions.NotYoda" />
+        <exclude name="WordPress.WP.I18n.NoEmptyStrings" />
     </rule>
     <rule ref="WordPress-Docs">
 

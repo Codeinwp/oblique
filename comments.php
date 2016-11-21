@@ -28,7 +28,7 @@ if ( post_password_required() ) {
 				$comments_number = get_comments_number();
 			if ( 1 === $comments_number ) {
 				/* translators: %s: post title */
-				printf( _x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'twentysixteen' ), '<span>' . get_the_title() . '</span>' );
+				printf( _x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'oblique' ), '<span>' . get_the_title() . '</span>' );
 			} else {
 				printf(
 					/* translators: 1: number of comments, 2: post title */
@@ -37,7 +37,7 @@ if ( post_password_required() ) {
 						'%1$s thoughts on &ldquo;%2$s&rdquo;',
 						$comments_number,
 						'comments title',
-						'twentysixteen'
+						'oblique'
 					),
 					number_format_i18n( $comments_number ),
 					'<span>' . get_the_title() . '</span>'
