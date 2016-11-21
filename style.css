@@ -1180,6 +1180,20 @@ Top bar
 	display: none;
 }
 
+/*--------------------------------------------------------------
+ +Woocommerce
+ +--------------------------------------------------------------*/
+
+article.product {
+    margin: 0;
+    padding: 60px;
+    background-color: #fff;
+}
+
+article.product .entry-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
 
 /*--------------------------------------------------------------
 Responsive
