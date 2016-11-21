@@ -1,4 +1,13 @@
 
+### 2.0.0 - 21/11/2016
+**Changes:** 
+- Fixed issue with sidebar not appearing on 404 not found page
+- New Github icon
+- New option to change the color for the icon menu
+- Styled captions on gallery
+- Reorganize Customize panels
+- Added grunt + fix all the errors generated
+
 ### 1.14 - 19/09/2016
 **Changes:** 
 - Fixed issue with slow loading of posts with masonry
