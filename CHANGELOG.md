@@ -1,4 +1,8 @@
 
+### 2.0.1 - 21/11/2016
+**Changes:** 
+- Update links in customize
+
 ### 2.0.0 - 21/11/2016
 **Changes:** 
 - Fixed issue with sidebar not appearing on 404 not found page
