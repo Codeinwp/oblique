@@ -5,14 +5,10 @@
  * @package Oblique
  */
 
-/*
+/**
  * Register main controls in customize
-*/
+ */
 function oblique_customize_register( $wp_customize ) {
-	class Oblique_Theme_Support extends WP_Customize_Control {
-		public function render_content() {
-		}
-	}
 
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
@@ -20,10 +16,32 @@ function oblique_customize_register( $wp_customize ) {
 	$wp_customize->remove_control( 'display_header_text' );
 	$wp_customize->remove_section( 'background_image' );
 
-	// Extra titles
+	/**
+	 * Class Oblique_Titles
+	 */
 	class Oblique_Titles extends WP_Customize_Control {
+
+		/**
+		 * The type of customize section being rendered.
+		 *
+		 * @since  1.0.0
+		 * @access public
+		 * @var    string
+		 */
 		public $type = 'titles';
+
+		/**
+		 * Control label
+		 *
+		 * @since  1.0.0
+		 * @access public
+		 * @var    string
+		 */
 		public $label = '';
+
+		/**
+		 * The render function for the controler
+		 */
 		public function render_content() {
 		?>
 			<h3 style="padding: 10px; border: 1px solid #DF7B7B; color: #DF7B7B;"><?php echo esc_html( $this->label ); ?></h3>
@@ -31,33 +49,47 @@ function oblique_customize_register( $wp_customize ) {
 		}
 	}
 
+	/**
+	 * Class Oblique_Theme_Info
+	 */
 	class Oblique_Theme_Info extends WP_Customize_Control {
+
+		/**
+		 * The type of customize section being rendered.
+		 *
+		 * @since  1.0.0
+		 * @access public
+		 * @var    string
+		 */
 		public $type = 'info';
+
+		/**
+		 * The render function for the controler
+		 */
 		public function render_content() {
 		}
 	}
 
 	/**
-	*/
-	/**
-	*******  Theme Info  */
+	 * Theme Info
+	 */
 
 	require_once( 'class/class-oblique-info.php' );
 	$wp_customize->add_section('oblique_theme_info', array(
 		'title' => __( 'Theme info', 'oblique' ),
-		'priority' => 0
+		'priority' => 0,
 	) );
 	$wp_customize->add_setting('oblique_theme_info', array(
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'oblique_sanitize_text'
+		'sanitize_callback' => 'oblique_sanitize_text',
 	) );
 	$wp_customize->add_control( new Oblique_Info( $wp_customize, 'oblique_theme_info', array(
 		'section' => 'oblique_theme_info',
 		'priority' => 10,
 	) ) );
 
-	/*
-	 *  Colors Notice
+	/**
+	 * Colors Notice
 	 */
 
 		require_once( 'class/class-oblique-notice.php' );
@@ -69,8 +101,7 @@ function oblique_customize_register( $wp_customize ) {
 		$wp_customize->add_control( new Oblique_Colors_Notice( $wp_customize, 'oblique_color_notice', array(
 			'section' => 'colors',
 			'priority' => 100,
-			) )
-		);
+		) ) );
 
 		// ___General___//
 		$wp_customize->add_section(
@@ -364,8 +395,7 @@ function oblique_customize_register( $wp_customize ) {
 			'section' => 'oblique_fonts',
 			'settings' => 'oblique_options[titles]',
 			'priority' => 10,
-			) )
-		);
+		) ) );
 		// Body fonts
 		$wp_customize->add_setting(
 			'body_font_name',
@@ -412,8 +442,7 @@ function oblique_customize_register( $wp_customize ) {
 			'section' => 'oblique_fonts',
 			'settings' => 'oblique_options[titles]',
 			'priority' => 13,
-			) )
-		);
+		) ) );
 		// Headings fonts
 		$wp_customize->add_setting(
 			'headings_font_name',
@@ -460,8 +489,7 @@ function oblique_customize_register( $wp_customize ) {
 			'section' => 'oblique_fonts',
 			'settings' => 'oblique_options[titles]',
 			'priority' => 16,
-			) )
-		);
+		) ) );
 		// Site title
 		$wp_customize->add_setting(
 			'site_title_size',
@@ -891,20 +919,21 @@ function oblique_customize_register( $wp_customize ) {
 			'section' => 'oblique_social',
 			'settings' => 'oblique_theme_social',
 			'priority' => 10,
-			) )
-		);
+		) ) );
 
 }
 add_action( 'customize_register', 'oblique_customize_register' );
 
 /**
- * Sanitize
+ * Sanitize Text
  */
-// Text
 function oblique_sanitize_text( $input ) {
 	return wp_kses_post( force_balance_tags( $input ) );
 }
-// Logo style
+
+/**
+ * Logo style
+ */
 function oblique_sanitize_logo_style( $input ) {
 	$valid = array(
 				'hide-title'  => __( 'Only logo', 'oblique' ),
@@ -916,7 +945,9 @@ function oblique_sanitize_logo_style( $input ) {
 		return '';
 	}
 }
-// Checkboxes
+/**
+ * Checkboxes
+ */
 function oblique_sanitize_checkbox( $input ) {
 	if ( $input == 1 ) {
 		return 1;
