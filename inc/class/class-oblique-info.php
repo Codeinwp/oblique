@@ -53,11 +53,7 @@ class Oblique_Info extends WP_Customize_Control {
 				'link' => esc_url( 'http://themeisle.com/demo/?theme=Oblique' ),
 			),
 			array(
-				'name' => __( 'Free VS Pro','oblique' ),
-				'link' => esc_url( 'http://docs.themeisle.com/article/478-what-is-the-difference-between-oblique-and-oblique-pro/' ),
-			),
-			array(
-				'name' => __( 'View Pro','oblique' ),
+				'name' => __( 'View PRO version','oblique' ),
 				'link' => esc_url( 'http://themeisle.com/themes/oblique-pro/' ),
 			),
 			array(
