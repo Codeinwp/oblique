@@ -1,5 +1,7 @@
 <?php
 /**
+ * The template used for displaying page content in single.php
+ *
  * @package Oblique
  */
 ?>
@@ -19,7 +21,7 @@
 
 	<?php if ( has_post_thumbnail() && ( get_theme_mod( 'post_feat_image' ) != 1 ) ) : ?>
 		<div class="single-thumb">
-			<?php the_post_thumbnail('oblique-single-thumb'); ?>
+			<?php the_post_thumbnail( 'oblique-single-thumb' ); ?>
 		</div>	
 	<?php endif; ?>		
 

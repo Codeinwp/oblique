@@ -1,5 +1,7 @@
 <?php
 /**
+ * The template used for displaying page content
+ *
  * @package Oblique
  */
 ?>
@@ -11,7 +13,7 @@
 
 	<?php if ( has_post_thumbnail() && ( get_theme_mod( 'index_feat_image' ) != 1 ) ) : ?>
 		<div class="entry-thumb">
-			<?php the_post_thumbnail('oblique-entry-thumb'); ?>
+			<?php the_post_thumbnail( 'oblique-entry-thumb' ); ?>
 			<a class="thumb-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" ><i class="fa fa-link"></i></a>		
 		</div>	
 	<?php endif; ?>	
@@ -24,7 +26,7 @@
 		<header class="entry-header">
 			<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 
-			<?php if ( 'post' == get_post_type() && !get_theme_mod('meta_index') ) : ?>
+			<?php if ( 'post' == get_post_type() && ! get_theme_mod( 'meta_index' ) ) : ?>
 			<div class="entry-meta">
 				<?php oblique_posted_on(); ?>
 			</div><!-- .entry-meta -->
@@ -42,9 +44,9 @@
 			?>
 		</div><!-- .entry-content -->
 	</div>
-	<?php if (!get_theme_mod('read_more')) : ?>
+	<?php if ( ! get_theme_mod( 'read_more' ) ) : ?>
 	<div class="read-more">
-		<a href="<?php the_permalink(); ?>"><?php echo __('Continue reading &hellip;','oblique'); ?></a>
+		<a href="<?php the_permalink(); ?>"><?php echo __( 'Continue reading &hellip;','oblique' ); ?></a>
 	</div>		
 	<?php endif; ?>
 	<div class="svg-container post-bottom-svg svg-block">

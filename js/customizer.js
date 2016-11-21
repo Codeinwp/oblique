@@ -27,7 +27,6 @@
     // Primary color
     wp.customize('primary_color',function( value ) {
         value.bind( function( newval ) {
-            console.log(newval);
             $('.read-more, button, .button, input[type="button"], input[type="reset"], input[type="submit"], .entry-thumb:after').css('background-color', newval);
         });
     });
@@ -142,6 +141,13 @@
         } );
     });
 
+	// Social color
+	wp.customize( 'menu_icon_color', function( value ) {
+		value.bind( function( newval ) {
+			$( '.sidebar-toggle, .comment-form, .comment-respond .comment-reply-title' ).css( 'color', newval );
+		} );
+	});
+
 	// Search form - General
 	wp.customize('search_toggle',function( value ) {
 		value.bind( function() {
@@ -173,9 +179,7 @@
 	// Padding - Header
 	wp.customize( 'branding_padding', function( value ) {
 		value.bind( function( val ) {
-			console.log( val );
 			if( window.innerWidth > 1024 ) {
-				console.log( val );
 				$( '.site-branding' ).css( {
 					'padding-top': val + 'px',
 					'padding-bottom': val + 'px'
@@ -187,9 +191,7 @@
 	// Padding < 1024 - Header
 	wp.customize( 'branding_padding_1024', function( value ) {
 		value.bind( function( val ) {
-			console.log( val );
 			if( window.innerWidth <= 1024 ) {
-				console.log( val );
 				$( '.site-branding' ).css({
 					'padding-top': val + 'px',
 					'padding-bottom': val + 'px'

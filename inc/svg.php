@@ -5,6 +5,9 @@
  * @package Oblique
  */
 
+/**
+ * Svg1 function.
+ */
 function oblique_svg_1() {
 	echo '
 		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
@@ -15,6 +18,10 @@ function oblique_svg_1() {
 		</svg>
 	';
 }
+
+/**
+ * Svg2 function.
+ */
 function oblique_svg_2() {
 	echo '
 		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 351 250">
@@ -23,7 +30,11 @@ function oblique_svg_2() {
 		  </g>
 		</svg>
 	';
-}	
+}
+
+/**
+ * Svg3 function.
+ */
 function oblique_svg_3() {
 	echo '
 		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
@@ -33,7 +44,11 @@ function oblique_svg_3() {
 		  <path d="M 0,150 0,0 1925,0"/>
 		</svg>
 	';
-}	
+}
+
+/**
+ * Svg4 function.
+ */
 function oblique_svg_4() {
 	echo '
 		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1920 150">
@@ -43,4 +58,4 @@ function oblique_svg_4() {
 		  <path d="M 0,150 0,0 1925,0"/>
 		</svg>
 	';
-}	
+}
