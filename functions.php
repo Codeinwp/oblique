@@ -161,6 +161,11 @@ function oblique_register_required_plugins() {
 				'slug' 	   => 'pirate-forms',
 				'required' => false,
 			),
+			array(
+				'name'     => 'Nivo Slider Lite',
+				'slug' 	   => 'nivo-slider-lite',
+				'required' => false,
+			),
 	);
 
 	$config = array(
