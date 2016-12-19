@@ -1,4 +1,11 @@
 
+### 2.0.2 - 19/12/2016
+**Changes:** 
+- Make post images clickable
+- Added a new documentation for free vs pro features
+- Added Nivo Slider Lite as recommended with tgmp
+- Replaced h1 tags with h2 on internal pages for SEO purpose
+
 ### 2.0.1 - 21/11/2016
 **Changes:** 
 - Update links in customize
