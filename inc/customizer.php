@@ -44,7 +44,7 @@ function oblique_customize_register( $wp_customize ) {
 		 */
 		public function render_content() {
 			?>
-            <h3 style="padding: 10px; border: 1px solid #DF7B7B; color: #DF7B7B;"><?php echo esc_html( $this->label ); ?></h3>
+			<h3 style="padding: 10px; border: 1px solid #DF7B7B; color: #DF7B7B;"><?php echo esc_html( $this->label ); ?></h3>
 			<?php
 		}
 	}
@@ -122,8 +122,8 @@ function oblique_customize_register( $wp_customize ) {
 	) ) );
 
 	/**
-     * Blog Section Upsell
-     */
+	 * Blog Section Upsell
+	 */
 	$wp_customize->add_setting( 'oblique_theme_info_blog_section_control', array(
 		'sanitize_callback' => 'esc_html',
 	) );
@@ -142,8 +142,8 @@ function oblique_customize_register( $wp_customize ) {
 	) ) );
 
 	/**
-     * Header Section Upsell
-     */
+	 * Header Section Upsell
+	 */
 	$wp_customize->add_setting( 'oblique_theme_info_header_section_control', array(
 		'sanitize_callback' => 'esc_html',
 	) );
@@ -160,7 +160,6 @@ function oblique_customize_register( $wp_customize ) {
 		'button_url'  => esc_url( 'https://themeisle.com/themes/oblique-pro/' ),
 		'button_text' => esc_html__( 'View PRO version', 'oblique' ),
 	) ) );
-
 
 	// ___General___//
 	$wp_customize->add_section(
