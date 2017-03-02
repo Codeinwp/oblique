@@ -102,46 +102,6 @@ function oblique_customize_register( $wp_customize ) {
 	) ) );
 
 	/**
-	 * Colors Notice
-	 */
-	$wp_customize->add_setting( 'oblique_theme_info_colors_section_control', array(
-		'sanitize_callback' => 'esc_html',
-	) );
-
-	$wp_customize->add_control( new Oblique_Control_Upsell_Theme_Info( $wp_customize, 'oblique_theme_info_colors_section_control', array(
-		'section'            => 'colors',
-		'priority'           => 500,
-		'options'            => array(
-			esc_html__( 'Extra Colors', 'oblique' ),
-		),
-		'explained_features' => array(
-			esc_html__( 'Get full color schemes support for your site.', 'oblique' ),
-		),
-		'button_url'         => esc_url( 'https://themeisle.com/themes/oblique-pro/' ),
-		'button_text'        => esc_html__( 'View PRO version', 'oblique' ),
-	) ) );
-
-	/**
-	 * Blog Section Upsell
-	 */
-	$wp_customize->add_setting( 'oblique_theme_info_blog_section_control', array(
-		'sanitize_callback' => 'esc_html',
-	) );
-
-	$wp_customize->add_control( new Oblique_Control_Upsell_Theme_Info( $wp_customize, 'oblique_theme_info_blog_section_control', array(
-		'section'     => 'blog_options',
-		'priority'    => 500,
-		'options'     => array(
-			esc_html__( 'Alternative Layout', 'oblique' ),
-		),
-		'explained_features' => array(
-			esc_html__( 'Choose between 2 styles to display your posts on the front page.', 'oblique' ),
-		),
-		'button_url'  => esc_url( 'https://themeisle.com/themes/oblique-pro/' ),
-		'button_text' => esc_html__( 'View PRO version', 'oblique' ),
-	) ) );
-
-	/**
 	 * Header Section Upsell
 	 */
 	$wp_customize->add_setting( 'oblique_theme_info_header_section_control', array(
