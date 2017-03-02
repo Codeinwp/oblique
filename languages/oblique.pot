@@ -1,14 +1,14 @@
-# Copyright (C) 2016 Themeisle
+# Copyright (C) 2017 Themeisle
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
 "Project-Id-Version: Oblique 2.0.2\n"
 "Report-Msgid-Bugs-To: https://github.com/Codeinwp/oblique/issues\n"
-"POT-Creation-Date: 2016-12-19 09:45:34+00:00\n"
+"POT-Creation-Date: 2017-02-15 13:09:30+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Themeisle Translate Team <friends@themeisle.com>\n"
 "Language-Team: Themeisle Translate <friends@themeisle.com>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
@@ -84,7 +84,7 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:55 inc/customizer.php:907
+#: functions.php:55 inc/customizer.php:965
 msgid "Social"
 msgstr ""
 
@@ -219,242 +219,255 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: inc/class/class-oblique-info.php:48
-msgid "View Documentation"
+#. Theme Name of the plugin/theme
+msgid "Oblique"
 msgstr ""
 
-#: inc/class/class-oblique-info.php:52
-msgid "Demo"
+#: inc/class/class-customizer-theme-info-control/class-customizer-theme-info-root.php:80
+msgid "Documentation"
 msgstr ""
 
-#: inc/class/class-oblique-info.php:56
-msgid "Free VS Pro"
-msgstr ""
-
-#: inc/class/class-oblique-info.php:60 inc/class/class-oblique-notice.php:30
-#: inc/customizer-info/class/class-singleton-customizer-info-section.php:80
-#: inc/customizer-info/class/class-singleton-customizer-info-section.php:86
+#: inc/customizer.php:79 inc/customizer.php:101 inc/customizer.php:121
+#: inc/customizer.php:141 inc/customizer.php:161
 msgid "View PRO version"
 msgstr ""
 
-#: inc/class/class-oblique-info.php:64
-msgid "Leave a review"
+#: inc/customizer.php:92
+msgid "Jetpack Related Posts"
 msgstr ""
 
-#: inc/class/class-oblique-notice.php:29
+#: inc/customizer.php:93 inc/customizer.php:155
+msgid "Slider"
+msgstr ""
+
+#: inc/customizer.php:94
+msgid "Extra Widget Area"
+msgstr ""
+
+#: inc/customizer.php:95 inc/customizer.php:135
+msgid "Alternative Layout"
+msgstr ""
+
+#: inc/customizer.php:96 inc/customizer.php:115
+msgid "Extra Colors"
+msgstr ""
+
+#: inc/customizer.php:97
+msgid "Footer Credits"
+msgstr ""
+
+#: inc/customizer.php:98
+msgid "Support"
+msgstr ""
+
+#: inc/customizer.php:118
 msgid "Get full color schemes support for your site."
 msgstr ""
 
-#: inc/customizer-info/class/class-singleton-customizer-info-section.php:80
-msgid ""
-"It adds an extra widget area and the ability to easily add a slider on "
-"frontpage."
+#: inc/customizer.php:138
+msgid "Choose between 2 styles to display your posts on the front page."
 msgstr ""
 
-#: inc/customizer-info/class/class-singleton-customizer-info-section.php:88
-msgid "Get it"
+#: inc/customizer.php:158
+msgid "Add a shortcode for a slider to replace the header image."
 msgstr ""
 
-#: inc/customizer.php:79
-msgid "Theme info"
-msgstr ""
-
-#: inc/customizer.php:110
+#: inc/customizer.php:168
 msgid "General"
 msgstr ""
 
-#: inc/customizer.php:128
+#: inc/customizer.php:186
 msgid "Toggle a search form in the header?"
 msgstr ""
 
-#: inc/customizer.php:145
+#: inc/customizer.php:203
 msgid "Menu toggle text"
 msgstr ""
 
-#: inc/customizer.php:146
+#: inc/customizer.php:204
 msgid "You can use this to replace the menu toggle button with some text"
 msgstr ""
 
-#: inc/customizer.php:156
+#: inc/customizer.php:214
 msgid "Header"
 msgstr ""
 
-#: inc/customizer.php:173
+#: inc/customizer.php:231
 msgid "Upload your logo"
 msgstr ""
 
-#: inc/customizer.php:194
+#: inc/customizer.php:252
 msgid "Logo size"
 msgstr ""
 
-#: inc/customizer.php:195
+#: inc/customizer.php:253
 msgid "Max-width for the logo. Default 200px"
 msgstr ""
 
-#: inc/customizer.php:214
+#: inc/customizer.php:272
 msgid "Logo style"
 msgstr ""
 
-#: inc/customizer.php:215
+#: inc/customizer.php:273
 msgid "This option applies only if you are using a logo"
 msgstr ""
 
-#: inc/customizer.php:219 inc/customizer.php:939
+#: inc/customizer.php:277 inc/customizer.php:998
 msgid "Only logo"
 msgstr ""
 
-#: inc/customizer.php:220 inc/customizer.php:940
+#: inc/customizer.php:278 inc/customizer.php:999
 msgid "Logo plus site title&amp;description"
 msgstr ""
 
-#: inc/customizer.php:237
+#: inc/customizer.php:295
 msgid "Padding"
 msgstr ""
 
-#: inc/customizer.php:238
+#: inc/customizer.php:296
 msgid "Top&amp;bottom padding for the branding. Default: 150px"
 msgstr ""
 
-#: inc/customizer.php:258
+#: inc/customizer.php:316
 msgid "Padding on screen sizes < 1024px"
 msgstr ""
 
-#: inc/customizer.php:259
+#: inc/customizer.php:317
 msgid "Top&amp;bottom padding for the branding. Default: 100px"
 msgstr ""
 
-#: inc/customizer.php:271
+#: inc/customizer.php:329
 msgid "Blog options"
 msgstr ""
 
-#: inc/customizer.php:287
+#: inc/customizer.php:345
 msgid "Excerpt lenght"
 msgstr ""
 
-#: inc/customizer.php:288
+#: inc/customizer.php:346
 msgid "Choose your excerpt length. Default: 35 words"
 msgstr ""
 
-#: inc/customizer.php:307
+#: inc/customizer.php:365
 msgid "Hide date/author/archives on index?"
 msgstr ""
 
-#: inc/customizer.php:323
+#: inc/customizer.php:381
 msgid "Hide date/author/archives on single posts?"
 msgstr ""
 
-#: inc/customizer.php:339
+#: inc/customizer.php:397
 msgid "Hide the read more button?"
 msgstr ""
 
-#: inc/customizer.php:355
+#: inc/customizer.php:413
 msgid "Hide featured images on index, archives?"
 msgstr ""
 
-#: inc/customizer.php:371
+#: inc/customizer.php:429
 msgid "Hide featured images on single posts?"
 msgstr ""
 
-#: inc/customizer.php:381
+#: inc/customizer.php:439
 msgid "Fonts"
 msgstr ""
 
-#: inc/customizer.php:383
+#: inc/customizer.php:441
 msgid ""
 "You can use any Google Fonts you want for the heading and/or body. See the "
 "fonts here: google.com/fonts. See the documentation if you need help with "
 "this: docs.themeisle.com/article/294-oblique-documentation"
 msgstr ""
 
-#: inc/customizer.php:394
+#: inc/customizer.php:452
 msgid "Body fonts"
 msgstr ""
 
-#: inc/customizer.php:410 inc/customizer.php:457
+#: inc/customizer.php:468 inc/customizer.php:515
 msgid "Font name/style/sets"
 msgstr ""
 
-#: inc/customizer.php:427 inc/customizer.php:474
+#: inc/customizer.php:485 inc/customizer.php:532
 msgid "Font family"
 msgstr ""
 
-#: inc/customizer.php:441
+#: inc/customizer.php:499
 msgid "Headings fonts"
 msgstr ""
 
-#: inc/customizer.php:488
+#: inc/customizer.php:546
 msgid "Font sizes"
 msgstr ""
 
-#: inc/customizer.php:506 inc/customizer.php:710
+#: inc/customizer.php:564 inc/customizer.php:768
 msgid "Site title"
 msgstr ""
 
-#: inc/customizer.php:526 inc/customizer.php:731
+#: inc/customizer.php:584 inc/customizer.php:789
 msgid "Site description"
 msgstr ""
 
-#: inc/customizer.php:546
+#: inc/customizer.php:604
 msgid "H1 font size"
 msgstr ""
 
-#: inc/customizer.php:566
+#: inc/customizer.php:624
 msgid "H2 font size"
 msgstr ""
 
-#: inc/customizer.php:586
+#: inc/customizer.php:644
 msgid "H3 font size"
 msgstr ""
 
-#: inc/customizer.php:606
+#: inc/customizer.php:664
 msgid "H4 font size"
 msgstr ""
 
-#: inc/customizer.php:626
+#: inc/customizer.php:684
 msgid "H5 font size"
 msgstr ""
 
-#: inc/customizer.php:646
+#: inc/customizer.php:704
 msgid "H6 font size"
 msgstr ""
 
-#: inc/customizer.php:666
+#: inc/customizer.php:724
 msgid "Body font size"
 msgstr ""
 
-#: inc/customizer.php:689
+#: inc/customizer.php:747
 msgid "Primary color"
 msgstr ""
 
-#: inc/customizer.php:751
+#: inc/customizer.php:809
 msgid "Body text"
 msgstr ""
 
-#: inc/customizer.php:772
+#: inc/customizer.php:830
 msgid "Entry titles"
 msgstr ""
 
-#: inc/customizer.php:792
+#: inc/customizer.php:850
 msgid "Entry meta"
 msgstr ""
 
-#: inc/customizer.php:812
+#: inc/customizer.php:870
 msgid "Sidebar background"
 msgstr ""
 
-#: inc/customizer.php:832
+#: inc/customizer.php:890
 msgid "Sidebar color"
 msgstr ""
 
-#: inc/customizer.php:852
+#: inc/customizer.php:910
 msgid "Footer"
 msgstr ""
 
-#: inc/customizer.php:873
+#: inc/customizer.php:931
 msgid "Social color"
 msgstr ""
 
-#: inc/customizer.php:909
+#: inc/customizer.php:967
 msgid ""
 "To create a social profile like in the theme demo, do this:<br><ol><li>Go "
 "to Appearance > Menus;</li><li>Create a new menu and add links to your "
@@ -845,10 +858,6 @@ msgstr ""
 
 #: vendor/class-tgm-plugin-activation.php:3378
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#. Theme Name of the plugin/theme
-msgid "Oblique"
 msgstr ""
 
 #. Theme URI of the plugin/theme
