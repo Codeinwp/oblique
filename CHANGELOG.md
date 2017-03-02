@@ -1,4 +1,8 @@
 
+### 2.0.3 - 02/03/2017
+**Changes:** 
+- Reorganize customize layout
+
 ### 2.0.2 - 19/12/2016
 **Changes:** 
 - Make post images clickable
