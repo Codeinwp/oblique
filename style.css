@@ -481,6 +481,7 @@ Posts nav
 	background-color: #23b6b6;
 	-webkit-transition: background-color 0.3s;
 	transition: background-color 0.3s;
+	color: #fff;
 }
 .read-more:hover {
 	background-color: #17191b;

@@ -47,9 +47,11 @@
 		</div><!-- .entry-content -->
 	</div>
 	<?php if ( ! get_theme_mod( 'read_more' ) ) : ?>
-	<div class="read-more">
-		<a href="<?php the_permalink(); ?>"><?php echo __( 'Continue reading &hellip;','oblique' ); ?></a>
-	</div>		
+		<a href="<?php the_permalink(); ?>">
+			<div class="read-more">
+			<?php echo __( 'Continue reading &hellip;','oblique' ); ?>
+			</div>
+		</a>
 	<?php endif; ?>
 	<div class="svg-container post-bottom-svg svg-block">
 		<?php echo oblique_svg_1(); ?>
