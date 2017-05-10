@@ -128,7 +128,7 @@ function oblique_custom_styles( $custom ) {
 	}
 
 	// Footer background
-	$footer_background = get_theme_mod( 'footer_background', '#17191B' );
+	$footer_background = get_theme_mod( 'footer_background', apply_filters( 'oblique_footer_background_color', '#17191B' ) );
 	if ( ! empty( $footer_background ) ) {
 		$custom .= '.footer-svg.svg-block { fill:' . esc_attr( $footer_background ) . ';}' . "\n";
 		$custom .= '.site-footer { background-color:' . esc_attr( $footer_background ) . ';}' . "\n";

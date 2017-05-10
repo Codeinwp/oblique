@@ -857,7 +857,7 @@ function oblique_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'footer_background',
 		array(
-			'default'           => '#17191B',
+			'default'           => apply_filters( 'oblique_footer_background_color', '#17191B' ),
 			'sanitize_callback' => 'sanitize_hex_color',
 			'transport'         => 'postMessage',
 		)

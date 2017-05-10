@@ -147,3 +147,8 @@ oblique_menu_icon_color
 -replace menu icon color
 -/inc/customizer.php
 -/inc/styles.php
+
+oblique_footer_background_color
+-replace footer background color
+-/inc/customizer.php
+-/inc/styles.php
