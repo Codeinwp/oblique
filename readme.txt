@@ -78,3 +78,72 @@ Copyright: jill111
 Resource URI: http://pixabay.com/en/vintage-woman-on-bed-retro-bedroom-635262/
 License: CC0 1.0
 License URI: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+
+III. Hooks and Filters
+
+HOOKS
+
+oblique_nav_container
+-replacing the svg container located under the top-bar container
+-header.php
+
+oblique_footer_svg
+-replacing the svg container located within the footer
+-footer.php
+
+oblique_posts_navigation
+-displaying custom posts navigation
+-index.php
+
+oblique_post_entry_content_bottom
+-placing new function for customizing read more link
+-content.php
+
+oblique_link_to_single
+removing the old code for read more link and leave empty instead
+-content.php
+
+oblique_post_bottom_svg
+-changing the post bottom svg
+-content.php
+
+FILTERS
+
+oblique_post_read_more
+-changin the post read more text
+-functions.php
+
+oblique_body_text_color
+-replace body text color
+-/inc/customizer.php
+-/inc/styles.php
+
+oblique_primary_color
+-replace default primary color
+-/inc/customizer.php
+-/inc/styles.php
+
+oblique_site_title_color
+-replace site title color
+-/inc/customizer.php
+-/inc/styles.php
+
+oblique_site_desc_color
+-replace site desc color
+-/inc/customizer.php
+-/inc/styles.php
+
+oblique_entry_titles_color
+-replace entry titles color
+-/inc/customizer.php
+-/inc/styles.php
+
+oblique_entry_meta_color
+-replace entry meta color
+-/inc/customizer.php
+-/inc/styles.php
+
+oblique_menu_icon_color
+-replace menu icon color
+-/inc/customizer.php
+-/inc/styles.php

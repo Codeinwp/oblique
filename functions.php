@@ -290,3 +290,49 @@ require get_template_directory() . '/inc/svg.php';
  * Styles
  */
 require get_template_directory() . '/inc/styles.php';
+
+
+/**
+ * Header
+ */
+function oblique_nav_svg_container() {
+	echo '<div class="svg-container nav-svg svg-block">';
+		oblique_svg_3();
+    echo '</div>';
+}
+add_action( 'oblique_nav_container', 'oblique_nav_svg_container' );
+
+/**
+ * Footer
+ * footer svg
+ */
+function oblique_footer_svg_container() {
+	echo '<div class="svg-container footer-svg svg-block">';
+		oblique_svg_1();
+    echo '</div>';
+}
+add_action( 'oblique_footer_svg', 'oblique_footer_svg_container' );
+
+/**
+ * Index
+ * posts navigation
+ */
+function oblique_posts_navigation() {
+	the_posts_navigation();
+}
+add_action( 'oblique_posts_navigation', 'oblique_posts_navigation' );
+
+/**
+ * Post
+ * read more link
+ */
+function oblique_post_link_to_single(){
+	if ( ! get_theme_mod( 'read_more' ) ) :?>
+		<a href="<?php the_permalink(); ?>">
+			<div class="read-more">
+				<?php echo apply_filters( 'oblique_post_read_more' , esc_html__( 'Continue reading &hellip;','oblique' ) ); ?>
+			</div>
+		</a>
+	<?php endif;
+}
+add_action('oblique_link_to_single','oblique_post_link_to_single');

@@ -114,7 +114,7 @@ function oblique_custom_styles( $custom ) {
 	}
 
 	// Primary color
-	$primary_color = get_theme_mod( 'primary_color', '#23B6B6' );
+	$primary_color = get_theme_mod( 'primary_color', apply_filters( 'oblique_primary_color', '#23B6B6' ) );
 	if ( ! empty( $primary_color ) && ( $primary_color != '#23B6B6' ) ) {
 		$custom .= '.entry-meta a:hover, .entry-title a:hover, .widget-area a:hover, .social-navigation li a:hover, a { color:' . esc_attr( $primary_color ) . '}' . "\n";
 		$custom .= '.read-more, .nav-previous:hover, .nav-next:hover, button, .button, input[type="button"], input[type="reset"], input[type="submit"] { background-color:' . esc_attr( $primary_color ) . '}' . "\n";
@@ -135,31 +135,31 @@ function oblique_custom_styles( $custom ) {
 	}
 
 	// Body
-	$body_text = get_theme_mod( 'body_text_color', '#50545C' );
+	$body_text = get_theme_mod( 'body_text_color', apply_filters( 'oblique_body_text_color' ,'#50545C') );
 	if ( ! empty( $body_text ) ) {
 		$custom .= 'body { color:' . esc_attr( $body_text ) . '}' . "\n";
 	}
 
 	// Site title
-	$site_title = get_theme_mod( 'site_title_color', '#f9f9f9' );
+	$site_title = get_theme_mod( 'site_title_color', apply_filters( 'oblique_site_title_color', '#f9f9f9') );
 	if ( ! empty( $site_title ) ) {
 		$custom .= '.site-title a, .site-title a:hover { color:' . esc_attr( $site_title ) . '}' . "\n";
 	}
 
 	// Site desc
-	$site_desc = get_theme_mod( 'site_desc_color', '#dddddd' );
+	$site_desc = get_theme_mod( 'site_desc_color', apply_filters( 'oblique_site_desc_color', '#dddddd' ) );
 	if ( ! empty( $site_desc ) ) {
 		$custom .= '.site-description { color:' . esc_attr( $site_desc ) . '}' . "\n";
 	}
 
 	// Entry titles
-	$entry_titles = get_theme_mod( 'entry_titles', '#000' );
+	$entry_titles = get_theme_mod( 'entry_titles', apply_filters( 'oblique_entry_titles_color', '#000' ) );
 	if ( ! empty( $entry_titles ) ) {
 		$custom .= '.entry-title, .entry-title a { color:' . esc_attr( $entry_titles ) . '}' . "\n";
 	}
 
 	// Entry meta
-	$entry_meta = get_theme_mod( 'entry_meta', '#9d9d9d' );
+	$entry_meta = get_theme_mod( 'entry_meta', apply_filters( 'oblique_entry_meta_color', '#9d9d9d') );
 	if ( ! empty( $entry_meta ) ) {
 		$custom .= '.entry-meta, .entry-meta a, .entry-footer, .entry-footer a { color:' . esc_attr( $entry_meta ) . '}' . "\n";
 	}
@@ -182,7 +182,7 @@ function oblique_custom_styles( $custom ) {
 	}
 
 	// Menu icon/Leave a review
-	$menu_icon_color = get_theme_mod( 'menu_icon_color', '#ffffff' );
+	$menu_icon_color = get_theme_mod( 'menu_icon_color', apply_filters( 'oblique_menu_icon_color', '#ffffff' ) );
 	if ( ! empty( $menu_icon_color ) ) {
 		$custom .= '.sidebar-toggle, .comment-form, .comment-respond .comment-reply-title { color:' . esc_attr( $menu_icon_color ) . '}' . "\n";
 	}

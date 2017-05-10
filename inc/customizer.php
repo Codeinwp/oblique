@@ -694,7 +694,7 @@ function oblique_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'primary_color',
 		array(
-			'default'           => '#23B6B6',
+			'default'           => apply_filters( 'oblique_primary_color', '#23B6B6' ),
 			'sanitize_callback' => 'sanitize_hex_color',
 			'transport'         => 'postMessage',
 		)
@@ -715,7 +715,7 @@ function oblique_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'site_title_color',
 		array(
-			'default'           => '#f9f9f9',
+			'default'           => apply_filters( 'oblique_site_title_color', '#f9f9f9' ),
 			'sanitize_callback' => 'sanitize_hex_color',
 			'transport'         => 'postMessage',
 		)
@@ -736,7 +736,7 @@ function oblique_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'site_desc_color',
 		array(
-			'default'           => '#dddddd',
+			'default'           => apply_filters( 'oblique_site_desc_color', '#dddddd' ),
 			'sanitize_callback' => 'sanitize_hex_color',
 			'transport'         => 'postMessage',
 		)
@@ -756,7 +756,7 @@ function oblique_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'body_text_color',
 		array(
-			'default'           => '#50545C',
+			'default'           => apply_filters( 'oblique_body_text_color' ,'#50545C'),
 			'sanitize_callback' => 'sanitize_hex_color',
 			'transport'         => 'postMessage',
 		)
@@ -777,7 +777,7 @@ function oblique_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'entry_titles',
 		array(
-			'default'           => '#000',
+			'default'           => apply_filters( 'oblique_entry_titles_color', '#000' ),
 			'sanitize_callback' => 'sanitize_hex_color',
 			'transport'         => 'postMessage',
 		)
@@ -797,7 +797,7 @@ function oblique_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'entry_meta',
 		array(
-			'default'           => '#9d9d9d',
+			'default'           => apply_filters( 'oblique_entry_meta_color', '#9d9d9d' ),
 			'sanitize_callback' => 'sanitize_hex_color',
 			'transport'         => 'postMessage',
 		)
@@ -900,7 +900,7 @@ function oblique_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'menu_icon_color',
 		array(
-			'default'           => '#ffffff',
+			'default'           => apply_filters( 'oblique_menu_icon_color', '#ffffff' ),
 			'sanitize_callback' => 'sanitize_hex_color',
 			'transport'         => 'postMessage',
 		)

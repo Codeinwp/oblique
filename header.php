@@ -49,9 +49,7 @@
 		<?php endif; ?>
 	</div>
 
-	<div class="svg-container nav-svg svg-block">
-		<?php oblique_svg_3(); ?>
-	</div>
+    <?php do_action( 'oblique_nav_container' ); ?>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="overlay"></div>
 		<div class="container">
