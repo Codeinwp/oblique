@@ -336,3 +336,23 @@ function oblique_post_link_to_single(){
 	<?php endif;
 }
 add_action('oblique_link_to_single','oblique_post_link_to_single');
+
+/**
+ * Archive
+ * archive page title top svg
+ */
+function oblique_archive_title_top_svg() {
+    echo '<div class="svg-container svg-block page-header-svg">';
+                    echo oblique_svg_1();
+    echo '</div>';
+}
+add_action( 'oblique_archive_title_top_svg', 'oblique_archive_title_top_svg' );
+
+/**
+ * Archive
+ * archive page title bottom svg
+ */
+function oblique_archive_title_bottom_svg() {
+    echo oblique_svg_3();
+}
+add_action( 'oblique_archive_title_bottom_svg', 'oblique_archive_title_bottom_svg' );

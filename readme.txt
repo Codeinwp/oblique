@@ -94,6 +94,7 @@ oblique_footer_svg
 oblique_posts_navigation
 -displaying custom posts navigation
 -index.php
+-archive.php
 
 oblique_post_entry_content_bottom
 -placing new function for customizing read more link
@@ -106,6 +107,14 @@ removing the old code for read more link and leave empty instead
 oblique_post_bottom_svg
 -changing the post bottom svg
 -content.php
+
+oblique_arhive_title_top_svg
+-changing archive title top svg
+-archive.php
+
+oblique_archive_title_bottom_svg
+-changing archive title bottom svg
+-acrhive.php
 
 FILTERS
 
@@ -150,5 +159,10 @@ oblique_menu_icon_color
 
 oblique_footer_background_color
 -replace footer background color
+-/inc/customizer.php
+-/inc/styles.php
+
+oblique_social_color
+-replace social color
 -/inc/customizer.php
 -/inc/styles.php

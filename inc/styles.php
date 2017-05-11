@@ -176,7 +176,7 @@ function oblique_custom_styles( $custom ) {
 	}
 
 	// Social
-	$social_color = get_theme_mod( 'social_color', '#ffffff' );
+	$social_color = get_theme_mod( 'social_color', apply_filters( 'oblique_social_color', '#ffffff' ) );
 	if ( ! empty( $social_color ) ) {
 		$custom .= '.social-navigation li a { color:' . esc_attr( $social_color ) . '}' . "\n";
 	}

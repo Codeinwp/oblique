@@ -878,7 +878,7 @@ function oblique_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'social_color',
 		array(
-			'default'           => '#ffffff',
+			'default'           => apply_filters( 'oblique_social_color', '#ffffff' ),
 			'sanitize_callback' => 'sanitize_hex_color',
 			'transport'         => 'postMessage',
 		)
