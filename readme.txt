@@ -120,6 +120,10 @@ oblique_single_post_bottom_svg
 -changing single post bottom svg
 -content-page.php
 
+oblique_custom_comments_form
+-changing the default comment_form function
+-comments.php
+
 FILTERS
 
 oblique_post_read_more
