@@ -116,6 +116,10 @@ oblique_archive_title_bottom_svg
 -changing archive title bottom svg
 -acrhive.php
 
+oblique_single_post_bottom_svg
+-changing single post bottom svg
+-content-page.php
+
 FILTERS
 
 oblique_post_read_more

@@ -356,3 +356,12 @@ function oblique_archive_title_bottom_svg() {
     echo oblique_svg_3();
 }
 add_action( 'oblique_archive_title_bottom_svg', 'oblique_archive_title_bottom_svg' );
+
+/**
+ * Content page
+ * single post bottom svg
+ */
+function oblique_single_post_bottom_svg() {
+	oblique_svg_3();
+}
+add_action( 'oblique_single_post_bottom_svg', 'oblique_single_post_bottom_svg' );
