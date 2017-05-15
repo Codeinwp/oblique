@@ -174,3 +174,7 @@ oblique_social_color
 -replace social color
 -/inc/customizer.php
 -/inc/styles.php
+
+oblique_comments_args
+-replace comment_form parameters
+-comments.php

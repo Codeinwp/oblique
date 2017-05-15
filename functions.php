@@ -365,12 +365,3 @@ function oblique_single_post_bottom_svg() {
 	oblique_svg_3();
 }
 add_action( 'oblique_single_post_bottom_svg', 'oblique_single_post_bottom_svg' );
-
-/**
- * Comments
- * replacing the comment form
- */
-function oblique_custom_comments_form() {
-	comment_form( $args );
-}
-add_action( 'oblique_custom_comments_form', 'oblique_custom_comments_form' );

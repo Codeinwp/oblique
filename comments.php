@@ -93,7 +93,8 @@ if ( post_password_required() ) {
 		$args = array(
 			'comment_notes_after'  => '',
 		);
-		do_action( 'oblique_custom_comments_form' );
+		comment_form( apply_filters( 'oblique_comments_args', $args ) );
+
 	?>
 	
 </div><!-- #comments -->
