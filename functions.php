@@ -365,3 +365,20 @@ function oblique_single_post_bottom_svg() {
 	oblique_svg_3();
 }
 add_action( 'oblique_single_post_bottom_svg', 'oblique_single_post_bottom_svg' );
+
+/**
+ * Single post
+ * change post navigation on single
+ */
+function oblique_single_post_navigation() {
+    the_post_navigation();
+}
+add_action( 'oblique_single_post_navigation', 'oblique_single_post_navigation' );
+
+/**
+ * Single page post bottom svg
+ */
+function oblique_single_page_post_svg() {
+    oblique_svg_4();
+}
+add_action( 'oblique_single_page_post_svg', 'oblique_single_page_post_svg' );

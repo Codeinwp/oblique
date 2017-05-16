@@ -120,9 +120,13 @@ oblique_single_post_bottom_svg
 -changing single post bottom svg
 -content-page.php
 
-oblique_custom_comments_form
--changing the default comment_form function
--comments.php
+oblique_single_post_navigation
+-changing the post navigation on single
+-single.php
+
+oblique_single_page_post_svg
+-changing post bototm svg on single page
+-content-single.php
 
 FILTERS
 
@@ -178,3 +182,7 @@ oblique_social_color
 oblique_comments_args
 -replace comment_form parameters
 -comments.php
+
+oblique_post_tags_message
+-replace post tags message
+-template-tags.php

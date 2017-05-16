@@ -123,7 +123,7 @@ if ( ! function_exists( 'oblique_entry_footer' ) ) :
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', __( ', ', 'oblique' ) );
 			if ( $tags_list ) {
-				printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'oblique' ) . '</span>', $tags_list );
+				printf( '<span class="tags-links">' . __( apply_filters( 'oblique_post_tags_message', 'Tagged %1$s' ), 'oblique' ) . '</span>', $tags_list );
 			}
 		}
 
