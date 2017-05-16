@@ -128,6 +128,14 @@ oblique_single_page_post_svg
 -changing post bototm svg on single page
 -content-single.php
 
+oblique_comments_title
+-changing comments title
+-comments.php
+
+oblique_comments_list
+-changing comments list
+-comments.php
+
 FILTERS
 
 oblique_post_read_more

@@ -382,3 +382,45 @@ function oblique_single_page_post_svg() {
     oblique_svg_4();
 }
 add_action( 'oblique_single_page_post_svg', 'oblique_single_page_post_svg' );
+
+/**
+ * Comments title
+ */
+function oblique_comments_title_text() {
+
+    echo '<h2 class="comments-title">';
+
+    $comments_number = get_comments_number();
+			if ( 1 === $comments_number ) {
+				/* translators: %s: post title */
+				printf( _x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'oblique' ), '<span>' . get_the_title() . '</span>' );
+			} else {
+				printf(
+				/* translators: 1: number of comments, 2: post title */
+					_nx(
+						'%1$s thought on &ldquo;%2$s&rdquo;',
+						'%1$s thoughts on &ldquo;%2$s&rdquo;',
+						$comments_number,
+						'comments title',
+						'oblique'
+					),
+					number_format_i18n( $comments_number ),
+					'<span>' . get_the_title() . '</span>'
+				);
+			}
+
+    echo '</h2>';
+}
+add_action( 'oblique_comments_title', 'oblique_comments_title_text' );
+
+/*
+ * Comments list
+ */
+function oblique_comments_list() {
+	wp_list_comments( array(
+		'style'      => 'ol',
+		'short_ping' => true,
+		'avatar_size' => 60,
+	) );
+}
+add_action( 'oblique_comments_list', 'oblique_comments_list' );
