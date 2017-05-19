@@ -136,6 +136,10 @@ oblique_comments_list
 -changing comments list
 -comments.php
 
+oblique_single_sidebar
+-showing right sidebar
+-single.php
+
 FILTERS
 
 oblique_post_read_more
@@ -194,3 +198,7 @@ oblique_comments_args
 oblique_post_tags_message
 -replace post tags message
 -template-tags.php
+
+oblique_main_classes
+-adding other classes to main
+-single.php
