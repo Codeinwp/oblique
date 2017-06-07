@@ -95,6 +95,7 @@ oblique_posts_navigation
 -displaying custom posts navigation
 -index.php
 -archive.php
+-search.php
 
 oblique_post_entry_content_bottom
 -placing new function for customizing read more link
@@ -139,6 +140,14 @@ oblique_comments_list
 oblique_single_sidebar
 -showing right sidebar
 -single.php
+
+oblique_search_before_title
+-adding title top svg
+-search.php
+
+oblique_search_after_title
+-adding title bototm svg
+-search.php
 
 FILTERS
 
