@@ -42,6 +42,7 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'social', 'link_before' => '<span class="screen-reader-text">', 'link_after' => '</span>', 'menu_class' => 'menu clearfix', 'fallback_cb' => false ) ); ?>
 			</nav>
 		<?php endif; ?>
+        <?php do_action( 'oblique_nav_search' ); ?>
 		<?php if ( ! get_theme_mod( 'search_toggle' ) || is_customize_preview() ) : ?>
 			<div class="header-search<?php echo get_theme_mod( 'search_toggle' ) && is_customize_preview() ? ' oblique-only-customizer' : ''; ?>">
 				<?php get_search_form(); ?>

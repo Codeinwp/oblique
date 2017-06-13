@@ -353,7 +353,7 @@ add_action( 'oblique_archive_title_top_svg', 'oblique_archive_title_top_svg' );
  * archive page title bottom svg
  */
 function oblique_archive_title_bottom_svg() {
-    echo oblique_svg_3();
+    oblique_svg_3();
 }
 add_action( 'oblique_archive_title_bottom_svg', 'oblique_archive_title_bottom_svg' );
 

@@ -149,6 +149,10 @@ oblique_search_after_title
 -adding title bototm svg
 -search.php
 
+oblique_nav_search
+-adding search icon on main nav
+-header.php
+
 FILTERS
 
 oblique_post_read_more

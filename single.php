@@ -27,8 +27,7 @@ get_header(); ?>
 		<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
-        <?php
-        do_action( 'oblique_single_sidebar' );?>
+        <?php do_action( 'oblique_single_sidebar' ); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
