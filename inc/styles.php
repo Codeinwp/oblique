@@ -120,6 +120,27 @@ function oblique_custom_styles( $custom ) {
 		$custom .= '.read-more, .nav-previous:hover, .nav-next:hover, button, .button, input[type="button"], input[type="reset"], input[type="submit"] { background-color:' . esc_attr( $primary_color ) . '}' . "\n";
 		$rgba 	= oblique_hex2rgba( $primary_color, 0.3 );
 		$custom .= '.entry-thumb:after { background-color:' . esc_attr( $rgba ) . ';}' . "\n";
+		$custom .= '.woocommerce ul.products li.product .button { background-color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce ul.products li.product h2.woocommerce-loop-product__title:hover { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce div.product form.cart button.button { background-color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce #reviews #comments ol.commentlist li div.star-rating { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce #review_form #respond .form-submit input[type="submit"] { background-color: ' . esc_attr( esc_attr( $primary_color ) ) . ';}' . "\n";
+		$custom .= '.woocommerce div.product .woocommerce-tabs ul.tabs li.active { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.single-product h2.related_products_title { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce-cart header.entry-header h1.entry-title { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce-cart input.button { background-color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce-cart div.wc-proceed-to-checkout a.button { background-color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce-message { border-top-color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce-message::before { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce-cart .return-to-shop a.button { background-color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce-message .button { background-color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.single-product .woocommerce-message .button { background-color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce-info { border-top-color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce-info:before { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce-checkout div.place-order input.button { background-color: ' . esc_attr( $primary_color ). ';}' . "\n";
+		$custom .= '.woocommerce-checkout header.entry-header h1.entry-title { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce-account header.entry-header h1.entry-title { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce-page form.woocommerce-form-login input[type="submit"] { background-color: ' . esc_attr( $primary_color ) . ';}' . "\n";
 	}
 	// SVGs
 	$background_color = get_background_color();
