@@ -1239,24 +1239,41 @@ article.product .entry-header {
 	background-color: #fff;
 }
 
+.woocommerce ul.products li.product:nth-of-type(4n+1),
+.woocommerce ul.products li.product:nth-of-type(4n+2),
+.woocommerce ul.products li.product:nth-of-type(4n+3),
+.woocommerce ul.products li.product:nth-of-type(4n+4),
+.woocommerce-page ul.prodycts li.product:nth-of-type(4n+1),
+.woocommerce-page ul.prodycts li.product:nth-of-type(4n+2),
+.woocommerce-page ul.prodycts li.product:nth-of-type(4n+3),
+.woocommerce-page ul.prodycts li.product:nth-of-type(4n+4) {
+	margin-bottom: 1.3em;
+}
+
+.woocommerce ul.products li.product:nth-of-type(4n+1),
+.woocommerce-page ul.prodycts li.product:nth-of-type(4n+1) {
+	margin-top: 73px;
+}
+
 .woocommerce ul.products li.product:nth-of-type(4n+2),
 .woocommerce-page ul.products li.product:nth-of-type(4n+2) {
-	margin-top: -24px;
+	margin-top: 48px;
 }
 
 .woocommerce ul.products li.product:nth-of-type(4n+3),
 .woocommerce-page ul.products li.product:nth-of-type(4n+3) {
-	margin-top: -48px;
+	margin-top: 24px;
 }
 
 .woocommerce ul.products li.product:nth-of-type(4n+4),
 .woocommerce-page ul.products li.product:nth-of-type(4n+4) {
-	margin-top: -73px;
+	margin-top: 0;
 }
 
 .woocommerce ul.products li.product h2.woocommerce-loop-product__title,
 .woocommerce-page ul.products li.product h2.woocommerce-loop-product__title {
 	font-size: 1.5em;
+	padding: 0.5em 1em;
 }
 
 .woocommerce ul.products li.product h2.woocommerce-loop-product__title:hover,
@@ -1785,17 +1802,21 @@ Responsive
 	.single-post-svg {
 		margin-bottom: -1px;
 	}
+	.woocommerce ul.products li.product:nth-of-type(4n+1),
+	.woocommerce-page ul.products li.product:nth-of-type(4n+1) {
+		margin-top: 60px;
+	}
 	.woocommerce ul.products li.product:nth-of-type(4n+2),
 	.woocommerce-page ul.products li.product:nth-of-type(4n+2) {
-		margin-top: -20px;
+		margin-top: 40px;
 	}
 	.woocommerce ul.products li.product:nth-of-type(4n+3),
 	.woocommerce-page ul.products li.product:nth-of-type(4n+3) {
-		margin-top: -40px;
+		margin-top: 20px;
 	}
 	.woocommerce ul.products li.product:nth-of-type(4n+4),
 	.woocommerce-page ul.products li.product:nth-of-type(4n+4) {
-		margin-top: -60px;
+		margin-top: 0;
 	}
 	.woocommerce ul.products li.product div.post-bottom-svg,
 	.woocommerce-page ul.products li.product div.post-bottom-svg {
@@ -1827,17 +1848,21 @@ Responsive
 	.site-title {
 		font-size: 60px !important;
 	}
+	.woocommerce ul.products li.product:nth-of-type(4n+1),
+	.woocommerce-page ul.products li.product:nth-of-type(4n+1) {
+		margin-top: 51px;
+	}
 	.woocommerce ul.products li.product:nth-of-type(4n+2),
 	.woocommerce-page ul.products li.product:nth-of-type(4n+2) {
-		margin-top: -17px;
+		margin-top: 34px;
 	}
 	.woocommerce ul.products li.product:nth-of-type(4n+3),
 	.woocommerce-page ul.products li.product:nth-of-type(4n+3) {
-		margin-top: -34px;
+		margin-top: 17px;
 	}
 	.woocommerce ul.products li.product:nth-of-type(4n+4),
 	.woocommerce-page ul.products li.product:nth-of-type(4n+4) {
-		margin-top: -51px;
+		margin-top: 0;
 	}
 	.woocommerce ul.products li.product div.post-bottom-svg,
 	.woocommerce-page ul.products li.product div.post-bottom-svg {
@@ -1866,11 +1891,11 @@ Responsive
 	}
 	.woocommerce ul.products li.product:nth-of-type(2n+1),
 	.woocommerce-page ul.products li.product:nth-of-type(2n+1) {
-		margin-top: 0;
+		margin-top: 33px;
 	}
 	.woocommerce ul.products li.product:nth-of-type(2n+2),
 	.woocommerce-page ul.products li.product:nth-of-type(2n+2) {
-		margin-top: -33px;
+		margin-top: 0;
 	}
 }
 @media only screen and (max-width: 767px) {
@@ -1898,9 +1923,13 @@ Responsive
 		position: relative;
 		left: 25px;
 	}
+	.woocommerce ul.products li.product:nth-of-type(2n+1),
+	.woocommerce-page ul.products li.product:nth-of-type(2n+1) {
+		margin-top: 27px;
+	}
 	.woocommerce ul.products li.product:nth-of-type(2n+2),
 	.woocommerce-page ul.products li.product:nth-of-type(2n+2) {
-		margin-top: -27px;
+		margin-top: 0;
 	}
 	.woocommerce ul.products li.product div.post-bottom-svg,
 	.woocommerce-page ul.products li.product div.post-bottom-svg {
@@ -1914,9 +1943,13 @@ Responsive
 	}
 }
 @media only screen and (max-width: 600px) {
+	.woocommerce ul.products li.product:nth-of-type(2n+1),
+	.woocommerce-page ul.products li.product:nth-of-type(2n+1) {
+		margin-top: 21px;
+	}
 	.woocommerce ul.products li.product:nth-of-type(2n+2),
 	.woocommerce-page ul.products li.product:nth-of-type(2n+2) {
-		margin-top: -21px;
+		margin-top: 0;
 	}
 	.woocommerce div.product .woocommerce-tabs ul.tabs li {
 		display: block;
