@@ -1248,6 +1248,7 @@ article.product .entry-header {
 .woocommerce-page ul.prodycts li.product:nth-of-type(4n+3),
 .woocommerce-page ul.prodycts li.product:nth-of-type(4n+4) {
 	margin-bottom: 1.3em;
+	padding-bottom: 35px;
 }
 
 .woocommerce ul.products li.product:nth-of-type(4n+1),
@@ -1301,7 +1302,6 @@ article.product .entry-header {
 .woocommerce ul.products li.product .button,
 .woocommerce-page ul.products li.product .button {
 	margin-top: 0.5em;
-	margin-bottom: 1.5em;
 	border: none;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
@@ -1323,6 +1323,11 @@ article.product .entry-header {
 	margin-right: 3px;
 	font-family: FontAwesome, "sans-serif";
 	content: "\f07a";
+}
+
+.woocommerce-page ul.products li.product a.added_to_cart {
+	display: block;
+	margin: 0.5em auto 0;
 }
 
 /* Single Product */
