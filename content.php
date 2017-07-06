@@ -45,13 +45,12 @@
 				) );
 			?>
 		</div><!-- .entry-content -->
+		<?php do_action( 'oblique_post_entry_content_bottom' ); ?>
 	</div>
-	<?php if ( ! get_theme_mod( 'read_more' ) ) : ?>
-	<div class="read-more">
-		<a href="<?php the_permalink(); ?>"><?php echo __( 'Continue reading &hellip;','oblique' ); ?></a>
-	</div>		
-	<?php endif; ?>
+		<?php do_action( 'oblique_link_to_single' ); ?>
+
 	<div class="svg-container post-bottom-svg svg-block">
-		<?php echo oblique_svg_1(); ?>
+		<?php
+		do_action( 'oblique_post_bottom_svg' ); ?>
 	</div>	
 </article><!-- #post-## -->

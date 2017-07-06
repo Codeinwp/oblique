@@ -29,5 +29,5 @@
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 <div class="svg-container single-post-svg single-svg-bottom svg-block">
-	<?php oblique_svg_3(); ?>
+	<?php do_action( 'oblique_single_post_bottom_svg' ); ?>
 </div>

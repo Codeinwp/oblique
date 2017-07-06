@@ -13,6 +13,8 @@
 
         <exclude name="WordPress.PHP.YodaConditions.NotYoda" />
         <exclude name="WordPress.WP.I18n.NoEmptyStrings" />
+
+        <exclude name="WordPress.Files.FileName.InvalidClassFileName" />
     </rule>
     <rule ref="WordPress-Docs">
 

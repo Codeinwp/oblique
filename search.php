@@ -12,9 +12,11 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
+			<?php  do_action( 'oblique_search_before_title' ); ?>
 			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'oblique' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<h1 class="page-title"><?php /* translators: Search query */ printf( __( 'Search Results for: %s', 'oblique' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
+			<?php  do_action( 'oblique_search_after_title' ); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -30,7 +32,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+			<?php do_action( 'oblique_posts_navigation' ); ?>
 
 		<?php else : ?>
 

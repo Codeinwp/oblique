@@ -83,19 +83,21 @@ if ( ! function_exists( 'oblique_posted_on' ) ) :
 		);
 
 			$posted_on = sprintf(
+				/* translators: Post date */
 				_x( '%s', 'post date', 'oblique' ),
 				'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 			);
 
-			$category = get_the_category();
+		$category = get_the_category();
 		if ( $category ) {
 			$cat = '<a href="' . esc_url( get_category_link( $category[0]->term_id ) ) . '">' . esc_attr( $category[0]->cat_name ) . '</a>';
 		}
 
-			$byline = sprintf(
-				_x( '%s', 'post author', 'oblique' ),
-				'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
-			);
+		$byline = sprintf(
+			/* translators: Post author */
+			_x( '%s', 'post author', 'oblique' ),
+			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+		);
 
 		if ( ! is_singular() ) {
 			echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span><span class="cat-link">' . $cat . '</span>';
@@ -105,6 +107,7 @@ if ( ! function_exists( 'oblique_posted_on' ) ) :
 				/* translators: used between list items, there is a space after the comma */
 				$categories_list = get_the_category_list( __( ', ', 'oblique' ) );
 				if ( $categories_list ) {
+					/* translators: Categories list */
 					printf( '<span class="cat-links">' . __( '%1$s', 'oblique' ) . '</span>', $categories_list );
 				}
 			}
@@ -123,7 +126,8 @@ if ( ! function_exists( 'oblique_entry_footer' ) ) :
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', __( ', ', 'oblique' ) );
 			if ( $tags_list ) {
-				printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'oblique' ) . '</span>', $tags_list );
+				/* translators: Tags list */
+				printf( '<span class="tags-links">' . apply_filters( 'oblique_post_tags_message', __( 'Tagged %1$s', 'oblique' ) ) . '</span>', $tags_list );
 			}
 		}
 
@@ -143,16 +147,22 @@ if ( ! function_exists( 'the_archive_title' ) ) :
 	 */
 	function the_archive_title( $before = '', $after = '' ) {
 		if ( is_category() ) {
+			/* translators: Categories list */
 			$title = sprintf( __( 'Category: %s', 'oblique' ), single_cat_title( '', false ) );
 		} elseif ( is_tag() ) {
+			/* translators: Tags list */
 			$title = sprintf( __( 'Tag: %s', 'oblique' ), single_tag_title( '', false ) );
 		} elseif ( is_author() ) {
+			/* translators: Author */
 			$title = sprintf( __( 'Author: %s', 'oblique' ), '<span class="vcard">' . get_the_author() . '</span>' );
 		} elseif ( is_year() ) {
+			/* translators: Year */
 			$title = sprintf( __( 'Year: %s', 'oblique' ), get_the_date( _x( 'Y', 'yearly archives date format', 'oblique' ) ) );
 		} elseif ( is_month() ) {
+			/* translators: Month */
 			$title = sprintf( __( 'Month: %s', 'oblique' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'oblique' ) ) );
 		} elseif ( is_day() ) {
+			/* translators: Day */
 			$title = sprintf( __( 'Day: %s', 'oblique' ), get_the_date( _x( 'F j, Y', 'daily archives date format', 'oblique' ) ) );
 		} elseif ( is_tax( 'post_format' ) ) {
 			if ( is_tax( 'post_format', 'post-format-aside' ) ) {
@@ -175,6 +185,7 @@ if ( ! function_exists( 'the_archive_title' ) ) :
 				$title = _x( 'Chats', 'post format archive title', 'oblique' );
 			}
 		} elseif ( is_post_type_archive() ) {
+			/* translators: archives title */
 			$title = sprintf( __( 'Archives: %s', 'oblique' ), post_type_archive_title( '', false ) );
 		} elseif ( is_tax() ) {
 			$tax = get_taxonomy( get_queried_object()->taxonomy );
@@ -182,7 +193,7 @@ if ( ! function_exists( 'the_archive_title' ) ) :
 			$title = sprintf( __( '%1$s: %2$s', 'oblique' ), $tax->labels->singular_name, single_term_title( '', false ) );
 		} else {
 			$title = __( 'Archives', 'oblique' );
-		}
+		}// End if().
 
 			/**
 	 * Filter the archive title.
@@ -230,7 +241,9 @@ endif;
  * @return bool
  */
 function oblique_categorized_blog() {
-	if ( false === ( $all_the_cool_cats = get_transient( 'oblique_categories' ) ) ) {
+
+	$all_the_cool_cats = get_transient( 'oblique_categories' );
+	if ( false === $all_the_cool_cats ) {
 		// Create an array of all the categories that are attached to posts.
 		$all_the_cool_cats = get_categories( array(
 			'fields'     => 'ids',
