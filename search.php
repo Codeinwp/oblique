@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<?php  do_action( 'oblique_search_before_title' ); ?>
 			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'oblique' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<h1 class="page-title"><?php /* translators: Search query */ printf( __( 'Search Results for: %s', 'oblique' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
 			<?php  do_action( 'oblique_search_after_title' ); ?>
 

@@ -2,7 +2,7 @@
 /**
  * WooCommerce Compatibility
  *
- * @package Oblique
+ * @package oblique
  */
 
 /**
