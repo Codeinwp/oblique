@@ -5,6 +5,7 @@
  * @package Oblique
  */
 
+define( 'OBLIQUE_VERSION', '2.0.5' );
 
 if ( ! function_exists( 'oblique_setup' ) ) :
 	/**
@@ -123,7 +124,7 @@ function oblique_scripts() {
 	    wp_enqueue_style( 'oblique-headings-fonts', '//fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic' );
 	}
 
-	wp_enqueue_style( 'oblique-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'oblique-style', get_stylesheet_uri(), array(), OBLIQUE_VERSION );
 
 	wp_enqueue_style( 'oblique-font-awesome', get_template_directory_uri() . '/fonts/font-awesome.min.css' );
 
