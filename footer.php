@@ -11,7 +11,7 @@
 		</div>
 	</div><!-- #content -->
 
-    <?php do_action( 'oblique_footer_svg' ); ?>
+	<?php do_action( 'oblique_footer_svg' ); ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info container">
 			<?php do_action( 'oblique_footer' ); ?>

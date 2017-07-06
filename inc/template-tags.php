@@ -182,7 +182,7 @@ if ( ! function_exists( 'the_archive_title' ) ) :
 			$title = sprintf( __( '%1$s: %2$s', 'oblique' ), $tax->labels->singular_name, single_term_title( '', false ) );
 		} else {
 			$title = __( 'Archives', 'oblique' );
-		}
+		}// End if().
 
 			/**
 	 * Filter the archive title.

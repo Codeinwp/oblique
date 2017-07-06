@@ -1,6 +1,8 @@
 <?php
 /**
  * WooCommerce Compatibility
+ *
+ * @package Oblique
  */
 
 /**

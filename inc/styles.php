@@ -137,7 +137,7 @@ function oblique_custom_styles( $custom ) {
 		$custom .= '.single-product .woocommerce-message .button { background-color: ' . esc_attr( $primary_color ) . ';}' . "\n";
 		$custom .= '.woocommerce-info { border-top-color: ' . esc_attr( $primary_color ) . ';}' . "\n";
 		$custom .= '.woocommerce-info:before { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
-		$custom .= '.woocommerce-checkout div.place-order input.button { background-color: ' . esc_attr( $primary_color ). ';}' . "\n";
+		$custom .= '.woocommerce-checkout div.place-order input.button { background-color: ' . esc_attr( $primary_color ) . ';}' . "\n";
 		$custom .= '.woocommerce-checkout header.entry-header h1.entry-title { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
 		$custom .= '.woocommerce-account header.entry-header h1.entry-title { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
 		$custom .= '.woocommerce-page form.woocommerce-form-login input[type="submit"] { background-color: ' . esc_attr( $primary_color ) . ';}' . "\n";
@@ -156,13 +156,13 @@ function oblique_custom_styles( $custom ) {
 	}
 
 	// Body
-	$body_text = get_theme_mod( 'body_text_color', apply_filters( 'oblique_body_text_color' ,'#50545C') );
+	$body_text = get_theme_mod( 'body_text_color', apply_filters( 'oblique_body_text_color' ,'#50545C' ) );
 	if ( ! empty( $body_text ) ) {
 		$custom .= 'body { color:' . esc_attr( $body_text ) . '}' . "\n";
 	}
 
 	// Site title
-	$site_title = get_theme_mod( 'site_title_color', apply_filters( 'oblique_site_title_color', '#f9f9f9') );
+	$site_title = get_theme_mod( 'site_title_color', apply_filters( 'oblique_site_title_color', '#f9f9f9' ) );
 	if ( ! empty( $site_title ) ) {
 		$custom .= '.site-title a, .site-title a:hover { color:' . esc_attr( $site_title ) . '}' . "\n";
 	}
@@ -180,7 +180,7 @@ function oblique_custom_styles( $custom ) {
 	}
 
 	// Entry meta
-	$entry_meta = get_theme_mod( 'entry_meta', apply_filters( 'oblique_entry_meta_color', '#9d9d9d') );
+	$entry_meta = get_theme_mod( 'entry_meta', apply_filters( 'oblique_entry_meta_color', '#9d9d9d' ) );
 	if ( ! empty( $entry_meta ) ) {
 		$custom .= '.entry-meta, .entry-meta a, .entry-footer, .entry-footer a { color:' . esc_attr( $entry_meta ) . '}' . "\n";
 	}

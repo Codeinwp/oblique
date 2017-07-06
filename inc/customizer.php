@@ -756,7 +756,7 @@ function oblique_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'body_text_color',
 		array(
-			'default'           => apply_filters( 'oblique_body_text_color' ,'#50545C'),
+			'default'           => apply_filters( 'oblique_body_text_color' ,'#50545C' ),
 			'sanitize_callback' => 'sanitize_hex_color',
 			'transport'         => 'postMessage',
 		)

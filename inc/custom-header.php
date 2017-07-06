@@ -46,10 +46,10 @@ if ( ! function_exists( 'oblique_header_style' ) ) :
 			?>
 			<style type="text/css">
 					.site-header {
-					    background: url(<?php echo get_header_image(); ?>) no-repeat;
-					    background-position: center top;
-					    background-attachment: fixed;
-					    background-size: cover;
+						background: url(<?php echo get_header_image(); ?>) no-repeat;
+						background-position: center top;
+						background-attachment: fixed;
+						background-size: cover;
 					}
 		</style>
 		<?php

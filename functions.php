@@ -112,15 +112,15 @@ add_action( 'widgets_init', 'oblique_widgets_init' );
 function oblique_scripts() {
 
 	if ( get_theme_mod( 'body_font_name' ) != '' ) {
-	    wp_enqueue_style( 'oblique-body-fonts', '//fonts.googleapis.com/css?family=' . esc_attr( get_theme_mod( 'body_font_name' ) ) );
+		wp_enqueue_style( 'oblique-body-fonts', '//fonts.googleapis.com/css?family=' . esc_attr( get_theme_mod( 'body_font_name' ) ) );
 	} else {
-	    wp_enqueue_style( 'oblique-body-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' );
+		wp_enqueue_style( 'oblique-body-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' );
 	}
 
 	if ( get_theme_mod( 'headings_font_name' ) != '' ) {
-	    wp_enqueue_style( 'oblique-headings-fonts', '//fonts.googleapis.com/css?family=' . esc_attr( get_theme_mod( 'headings_font_name' ) ) );
+		wp_enqueue_style( 'oblique-headings-fonts', '//fonts.googleapis.com/css?family=' . esc_attr( get_theme_mod( 'headings_font_name' ) ) );
 	} else {
-	    wp_enqueue_style( 'oblique-headings-fonts', '//fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic' );
+		wp_enqueue_style( 'oblique-headings-fonts', '//fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic' );
 	}
 
 	wp_enqueue_style( 'oblique-style', get_stylesheet_uri() );
@@ -294,7 +294,7 @@ require get_template_directory() . '/inc/styles.php';
 /**
  * WooCommerce functions
  */
-if( class_exists('WooCommerce') ) {
+if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce/woocommerce.php';
 }
 
@@ -304,7 +304,7 @@ if( class_exists('WooCommerce') ) {
 function oblique_nav_svg_container() {
 	echo '<div class="svg-container nav-svg svg-block">';
 		oblique_svg_3();
-    echo '</div>';
+	echo '</div>';
 }
 add_action( 'oblique_nav_container', 'oblique_nav_svg_container' );
 
@@ -315,7 +315,7 @@ add_action( 'oblique_nav_container', 'oblique_nav_svg_container' );
 function oblique_footer_svg_container() {
 	echo '<div class="svg-container footer-svg svg-block">';
 		oblique_svg_1();
-    echo '</div>';
+	echo '</div>';
 }
 add_action( 'oblique_footer_svg', 'oblique_footer_svg_container' );
 
@@ -332,7 +332,7 @@ add_action( 'oblique_posts_navigation', 'oblique_posts_navigation' );
  * Post
  * read more link
  */
-function oblique_post_link_to_single(){
+function oblique_post_link_to_single() {
 	if ( ! get_theme_mod( 'read_more' ) ) :?>
 		<a href="<?php the_permalink(); ?>">
 			<div class="read-more">
@@ -341,16 +341,16 @@ function oblique_post_link_to_single(){
 		</a>
 	<?php endif;
 }
-add_action('oblique_link_to_single','oblique_post_link_to_single');
+add_action( 'oblique_link_to_single','oblique_post_link_to_single' );
 
 /**
  * Archive
  * archive page title top svg
  */
 function oblique_archive_title_top_svg() {
-    echo '<div class="svg-container svg-block page-header-svg">';
-                    echo oblique_svg_1();
-    echo '</div>';
+	echo '<div class="svg-container svg-block page-header-svg">';
+					echo oblique_svg_1();
+	echo '</div>';
 }
 add_action( 'oblique_archive_title_top_svg', 'oblique_archive_title_top_svg' );
 
@@ -359,7 +359,7 @@ add_action( 'oblique_archive_title_top_svg', 'oblique_archive_title_top_svg' );
  * archive page title bottom svg
  */
 function oblique_archive_title_bottom_svg() {
-    oblique_svg_3();
+	oblique_svg_3();
 }
 add_action( 'oblique_archive_title_bottom_svg', 'oblique_archive_title_bottom_svg' );
 
@@ -377,7 +377,7 @@ add_action( 'oblique_single_post_bottom_svg', 'oblique_single_post_bottom_svg' )
  * change post navigation on single
  */
 function oblique_single_post_navigation() {
-    the_post_navigation();
+	the_post_navigation();
 }
 add_action( 'oblique_single_post_navigation', 'oblique_single_post_navigation' );
 
@@ -385,7 +385,7 @@ add_action( 'oblique_single_post_navigation', 'oblique_single_post_navigation' )
  * Single page post bottom svg
  */
 function oblique_single_page_post_svg() {
-    oblique_svg_4();
+	oblique_svg_4();
 }
 add_action( 'oblique_single_page_post_svg', 'oblique_single_page_post_svg' );
 
@@ -394,28 +394,28 @@ add_action( 'oblique_single_page_post_svg', 'oblique_single_page_post_svg' );
  */
 function oblique_comments_title_text() {
 
-    echo '<h2 class="comments-title">';
+	echo '<h2 class="comments-title">';
 
-    $comments_number = get_comments_number();
-			if ( 1 === $comments_number ) {
-				/* translators: %s: post title */
-				printf( _x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'oblique' ), '<span>' . get_the_title() . '</span>' );
-			} else {
-				printf(
-				/* translators: 1: number of comments, 2: post title */
-					_nx(
-						'%1$s thought on &ldquo;%2$s&rdquo;',
-						'%1$s thoughts on &ldquo;%2$s&rdquo;',
-						$comments_number,
-						'comments title',
-						'oblique'
-					),
-					number_format_i18n( $comments_number ),
-					'<span>' . get_the_title() . '</span>'
-				);
-			}
+	$comments_number = get_comments_number();
+	if ( 1 === $comments_number ) {
+		/* translators: %s: post title */
+		printf( _x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'oblique' ), '<span>' . get_the_title() . '</span>' );
+	} else {
+		printf(
+			/* translators: 1: number of comments, 2: post title */
+			_nx(
+				'%1$s thought on &ldquo;%2$s&rdquo;',
+				'%1$s thoughts on &ldquo;%2$s&rdquo;',
+				$comments_number,
+				'comments title',
+				'oblique'
+			),
+			number_format_i18n( $comments_number ),
+			'<span>' . get_the_title() . '</span>'
+		);
+	}
 
-    echo '</h2>';
+	echo '</h2>';
 }
 add_action( 'oblique_comments_title', 'oblique_comments_title_text' );
 
