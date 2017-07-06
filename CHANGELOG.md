@@ -1,4 +1,10 @@
 
+### 2.0.4 - 06/07/2017
+**Changes:** 
+- Added WooCommerce support
+- New hooks and filters added for better child themes usage
+- Made continue reading box clickables
+
 ### 2.0.3 - 02/03/2017
 **Changes:** 
 - Reorganize customize layout
