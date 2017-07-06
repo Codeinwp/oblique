@@ -40,5 +40,5 @@
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 <div class="svg-container single-post-svg single-svg-bottom svg-block">
-	<?php oblique_svg_4(); ?>
+	<?php do_action( 'oblique_single_page_post_svg' ); ?>
 </div>

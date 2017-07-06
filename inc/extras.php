@@ -49,6 +49,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 
 		// Add a page number if necessary:
 		if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
+			/* translators: Page number */
 			$title .= " $sep " . sprintf( __( 'Page %s', 'oblique' ), max( $paged, $page ) );
 		}
 
