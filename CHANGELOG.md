@@ -1,4 +1,8 @@
 
+### 2.0.5 - 06/07/2017
+**Changes:** 
+- Added version for enqueued style to fix Caching issues
+
 ### 2.0.4 - 06/07/2017
 **Changes:** 
 - Added WooCommerce support
