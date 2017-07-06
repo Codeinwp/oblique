@@ -18,7 +18,7 @@ function oblique_svg_1() {
 		</svg>
 	';
 }
-add_action('oblique_post_bottom_svg','oblique_svg_1');
+add_action( 'oblique_post_bottom_svg','oblique_svg_1' );
 
 /**
  * Svg2 function.

@@ -35,7 +35,7 @@ get_header(); ?>
 			<?php endwhile; ?>
 			</div>
 
-            <?php do_action( 'oblique_posts_navigation' ); ?>
+			<?php do_action( 'oblique_posts_navigation' ); ?>
 
 		<?php else : ?>
 

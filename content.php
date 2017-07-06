@@ -45,12 +45,12 @@
 				) );
 			?>
 		</div><!-- .entry-content -->
-        <?php do_action('oblique_post_entry_content_bottom'); ?>
+		<?php do_action( 'oblique_post_entry_content_bottom' ); ?>
 	</div>
-        <?php do_action('oblique_link_to_single'); ?>
+		<?php do_action( 'oblique_link_to_single' ); ?>
 
 	<div class="svg-container post-bottom-svg svg-block">
 		<?php
-        do_action('oblique_post_bottom_svg'); ?>
+		do_action( 'oblique_post_bottom_svg' ); ?>
 	</div>	
 </article><!-- #post-## -->

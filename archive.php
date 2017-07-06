@@ -14,16 +14,16 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-            <?php do_action('oblique_archive_title_top_svg'); ?>
+			<?php do_action( 'oblique_archive_title_top_svg' ); ?>
 			<header class="page-header">			
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-            <div class="svg-container svg-block page-header-svg">
-                <?php do_action( 'oblique_archive_title_bottom_svg' ); ?>
-            </div>
+			<div class="svg-container svg-block page-header-svg">
+				<?php do_action( 'oblique_archive_title_bottom_svg' ); ?>
+			</div>
 
 
 			<div id="ob-grid" class="grid-layout">
