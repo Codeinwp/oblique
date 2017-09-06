@@ -1272,7 +1272,7 @@ article.product .entry-header {
 }
 
 .woocommerce ul.products li.product-category h2.woocommerce-loop-category__title .count {
-    background: none;
+	background: none;
 }
 
 .woocommerce ul.products li.product-category h2.woocommerce-loop-category__title,

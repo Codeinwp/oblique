@@ -51,39 +51,49 @@ if ( ! function_exists( 'oblique_setup' ) ) :
 		add_image_size( 'oblique-single-thumb', 1040 );
 
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
-			'primary' => __( 'Primary Menu', 'oblique' ),
-			'social'  => __( 'Social', 'oblique' ),
-		) );
+		register_nav_menus(
+			array(
+				'primary' => __( 'Primary Menu', 'oblique' ),
+				'social'  => __( 'Social', 'oblique' ),
+			)
+		);
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
-		add_theme_support( 'html5', array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		) );
+		add_theme_support(
+			'html5', array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+			)
+		);
 
 		/*
 		 * Enable support for Post Formats.
 		 * See http://codex.wordpress.org/Post_Formats
 		 */
-		add_theme_support( 'post-formats', array(
-			'aside',
-			'image',
-			'video',
-			'quote',
-			'link',
-		) );
+		add_theme_support(
+			'post-formats', array(
+				'aside',
+				'image',
+				'video',
+				'quote',
+				'link',
+			)
+		);
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'oblique_custom_background_args', array(
-			'default-color' => '1c1c1c',
-		) ) );
+		add_theme_support(
+			'custom-background', apply_filters(
+				'oblique_custom_background_args', array(
+					'default-color' => '1c1c1c',
+				)
+			)
+		);
 
 		require_once( trailingslashit( get_template_directory() ) . 'inc/class/class-customizer-theme-info-control/class-customizer-theme-info-root.php' );
 	}
@@ -96,14 +106,16 @@ add_action( 'after_setup_theme', 'oblique_setup' );
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
 function oblique_widgets_init() {
-	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'oblique' ),
-		'id'            => 'sidebar-1',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => __( 'Sidebar', 'oblique' ),
+			'id'            => 'sidebar-1',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
 }
 add_action( 'widgets_init', 'oblique_widgets_init' );
 
@@ -159,12 +171,12 @@ function oblique_register_required_plugins() {
 
 		array(
 			'name'     => 'Pirate Forms',
-			'slug' 	   => 'pirate-forms',
+			'slug'     => 'pirate-forms',
 			'required' => false,
 		),
 		array(
 			'name'     => 'Nivo Slider Lite',
-			'slug' 	   => 'nivo-slider-lite',
+			'slug'     => 'nivo-slider-lite',
 			'required' => false,
 		),
 	);
@@ -312,7 +324,8 @@ function oblique_post_link_to_single() {
 				<?php echo apply_filters( 'oblique_post_read_more' , esc_html__( 'Continue reading &hellip;','oblique' ) ); ?>
 			</div>
 		</a>
-	<?php endif;
+	<?php
+	endif;
 }
 add_action( 'oblique_link_to_single','oblique_post_link_to_single' );
 
@@ -396,10 +409,12 @@ add_action( 'oblique_comments_title', 'oblique_comments_title_text' );
  * Comments list
  */
 function oblique_comments_list() {
-	wp_list_comments( array(
-		'style'      => 'ol',
-		'short_ping' => true,
-		'avatar_size' => 60,
-	) );
+	wp_list_comments(
+		array(
+			'style'      => 'ol',
+			'short_ping' => true,
+			'avatar_size' => 60,
+		)
+	);
 }
 add_action( 'oblique_comments_list', 'oblique_comments_list' );

@@ -54,7 +54,8 @@ function oblique_shop_title() {
 	 * @hooked woocommerce_taxonomy_archive_description - 10
 	 * @hooked woocommerce_product_archive_description - 10
 	 */
-	do_action( 'woocommerce_archive_description' ); ?>
+	do_action( 'woocommerce_archive_description' );
+	?>
 
 	<div class="svg-container svg-block page-header-svg">
 		<?php do_action( 'oblique_archive_title_bottom_svg' ); ?>
@@ -139,7 +140,7 @@ function oblique_related_products_title() {
 			<div class="svg-container svg-block related-title-top-svg">
 				<?php do_action( 'oblique_related_products_title_before' ); ?>
 			</div>
-			<h2 class="related_products_title"><?php echo esc_html__( 'Suggested Items', 'coffeeisle' ); ?></h2>
+			<h2 class="related_products_title"><?php echo esc_html__( 'Suggested Items', 'oblique' ); ?></h2>
 			<div class="svg-container svg-block related-title-bottom-svg">
 				<?php do_action( 'oblique_related_products_title_after' ); ?>
 			</div>

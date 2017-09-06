@@ -27,7 +27,10 @@ get_header(); ?>
 
 
 			<div id="ob-grid" class="grid-layout">
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php
+			while ( have_posts() ) :
+				the_post();
+?>
 
 				<?php
 
