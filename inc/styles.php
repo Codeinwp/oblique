@@ -122,6 +122,8 @@ function oblique_custom_styles( $custom ) {
 		$custom .= '.entry-thumb:after { background-color:' . esc_attr( $rgba ) . ';}' . "\n";
 		$custom .= '.woocommerce ul.products li.product .button { background-color: ' . esc_attr( $primary_color ) . ';}' . "\n";
 		$custom .= '.woocommerce ul.products li.product h2.woocommerce-loop-product__title:hover { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce ul.products li.product-category h2.woocommerce-loop-category__title:hover { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce ul.products li.product-category h2.woocommerce-loop-category__title:hover .count { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
 		$custom .= '.woocommerce div.product form.cart button.button { background-color: ' . esc_attr( $primary_color ) . ';}' . "\n";
 		$custom .= '.woocommerce #reviews #comments ol.commentlist li div.star-rating { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
 		$custom .= '.woocommerce #review_form #respond .form-submit input[type="submit"] { background-color: ' . esc_attr( esc_attr( $primary_color ) ) . ';}' . "\n";

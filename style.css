@@ -1271,12 +1271,19 @@ article.product .entry-header {
 	margin-top: 0;
 }
 
+.woocommerce ul.products li.product-category h2.woocommerce-loop-category__title .count {
+    background: none;
+}
+
+.woocommerce ul.products li.product-category h2.woocommerce-loop-category__title,
 .woocommerce ul.products li.product h2.woocommerce-loop-product__title,
 .woocommerce-page ul.products li.product h2.woocommerce-loop-product__title {
 	padding: 0.5em 1em;
 	font-size: 1.5em;
 }
 
+.woocommerce ul.products li.product-category h2.woocommerce-loop-category__title:hover .count,
+.woocommerce ul.products li.product-category h2.woocommerce-loop-category__title:hover,
 .woocommerce ul.products li.product h2.woocommerce-loop-product__title:hover,
 .woocommerce-page ul.products li.product h2.woocommerce-loop-product__title:hover {
 	color: #23b6b6;
