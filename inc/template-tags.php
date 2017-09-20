@@ -75,7 +75,8 @@ if ( ! function_exists( 'oblique_posted_on' ) ) :
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 		}
 
-		$time_string = sprintf( $time_string,
+		$time_string = sprintf(
+			$time_string,
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() ),
 			esc_attr( get_the_modified_date( 'c' ) ),
@@ -245,13 +246,15 @@ function oblique_categorized_blog() {
 	$all_the_cool_cats = get_transient( 'oblique_categories' );
 	if ( false === $all_the_cool_cats ) {
 		// Create an array of all the categories that are attached to posts.
-		$all_the_cool_cats = get_categories( array(
-			'fields'     => 'ids',
-			'hide_empty' => 1,
+		$all_the_cool_cats = get_categories(
+			array(
+				'fields'     => 'ids',
+				'hide_empty' => 1,
 
-			// We only need to know if there is more than one category.
-			'number'     => 2,
-		) );
+				// We only need to know if there is more than one category.
+				'number'     => 2,
+			)
+		);
 
 		// Count the number of categories that are attached to the posts.
 		$all_the_cool_cats = count( $all_the_cool_cats );

@@ -39,13 +39,17 @@
 	<div class="top-bar container">
 		<?php if ( has_nav_menu( 'social' ) ) : ?>
 			<nav class="social-navigation clearfix">
-				<?php wp_nav_menu( array(
-					'theme_location' => 'social',
-					'link_before' => '<span class="screen-reader-text">',
-					'link_after' => '</span>',
-					'menu_class' => 'menu clearfix',
-					'fallback_cb' => false,
-				) ); ?>
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'social',
+						'link_before' => '<span class="screen-reader-text">',
+						'link_after' => '</span>',
+						'menu_class' => 'menu clearfix',
+						'fallback_cb' => false,
+					)
+				);
+				?>
 			</nav>
 		<?php endif; ?>
 		<?php do_action( 'oblique_nav_search' ); ?>
@@ -62,15 +66,15 @@
 		<div class="container">
 			<div class="site-branding">
 				<?php $oblique_site_logo = get_theme_mod( 'site_logo' ); ?>
-				<?php if ( ! empty( $oblique_site_logo ) && get_theme_mod( 'logo_style', 'hide-title' ) == 'hide-title' ) : // Show only logo ?>
+				<?php if ( ! empty( $oblique_site_logo ) && get_theme_mod( 'logo_style', 'hide-title' ) == 'hide-title' ) : /* Show only logo */ ?>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"><img class="site-logo" src="<?php echo esc_url( $oblique_site_logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" /></a>
 				<?php elseif ( get_theme_mod( 'logo_style', 'hide-title' ) == 'show-title' ) : ?>
 					<?php if ( ! empty( $oblique_site_logo ) ) { ?>
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"><img class="site-logo show-title" src="<?php echo esc_url( $oblique_site_logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" /></a>
-					<?php }?>
+					<?php } ?>
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-				<?php else : // Show only site title and description ?>
+				<?php else : /* Show only site title and description */ ?>
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 				<?php endif; ?>
