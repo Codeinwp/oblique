@@ -118,10 +118,12 @@ function oblique_custom_styles( $custom ) {
 	if ( ! empty( $primary_color ) && ( $primary_color != '#23B6B6' ) ) {
 		$custom .= '.entry-meta a:hover, .entry-title a:hover, .widget-area a:hover, .social-navigation li a:hover, a { color:' . esc_attr( $primary_color ) . '}' . "\n";
 		$custom .= '.read-more, .nav-previous:hover, .nav-next:hover, button, .button, input[type="button"], input[type="reset"], input[type="submit"] { background-color:' . esc_attr( $primary_color ) . '}' . "\n";
-		$rgba 	= oblique_hex2rgba( $primary_color, 0.3 );
+		$rgba   = oblique_hex2rgba( $primary_color, 0.3 );
 		$custom .= '.entry-thumb:after { background-color:' . esc_attr( $rgba ) . ';}' . "\n";
 		$custom .= '.woocommerce ul.products li.product .button { background-color: ' . esc_attr( $primary_color ) . ';}' . "\n";
 		$custom .= '.woocommerce ul.products li.product h2.woocommerce-loop-product__title:hover { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce ul.products li.product-category h2.woocommerce-loop-category__title:hover { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
+		$custom .= '.woocommerce ul.products li.product-category h2.woocommerce-loop-category__title:hover .count { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
 		$custom .= '.woocommerce div.product form.cart button.button { background-color: ' . esc_attr( $primary_color ) . ';}' . "\n";
 		$custom .= '.woocommerce #reviews #comments ol.commentlist li div.star-rating { color: ' . esc_attr( $primary_color ) . ';}' . "\n";
 		$custom .= '.woocommerce #review_form #respond .form-submit input[type="submit"] { background-color: ' . esc_attr( esc_attr( $primary_color ) ) . ';}' . "\n";

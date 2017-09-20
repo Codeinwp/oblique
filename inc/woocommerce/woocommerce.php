@@ -54,7 +54,8 @@ function oblique_shop_title() {
 	 * @hooked woocommerce_taxonomy_archive_description - 10
 	 * @hooked woocommerce_product_archive_description - 10
 	 */
-	do_action( 'woocommerce_archive_description' ); ?>
+	do_action( 'woocommerce_archive_description' );
+	?>
 
 	<div class="svg-container svg-block page-header-svg">
 		<?php do_action( 'oblique_archive_title_bottom_svg' ); ?>
@@ -68,7 +69,7 @@ add_action( 'woocommerce_before_main_content', 'oblique_shop_title', 40 );
 remove_action( 'woocommerce_after_shop_loop_item_title','woocommerce_template_loop_rating', 5 );
 
 /**
- * Top svg for products on shop page
+ * Top svg for products and categories on shop page
  */
 function oblique_product_top_svg() {
 	?>
@@ -78,9 +79,10 @@ function oblique_product_top_svg() {
 	<?php
 }
 add_action( 'woocommerce_before_shop_loop_item', 'oblique_product_top_svg', 5 );
+add_action( 'woocommerce_before_subcategory', 'oblique_product_top_svg', 5 );
 
 /**
- * Bottom svg for products on shop page
+ * Bottom svg for products and categories on shop page
  */
 function oblique_product_bottom_svg() {
 	?>
@@ -90,6 +92,7 @@ function oblique_product_bottom_svg() {
 	<?php
 }
 add_action( 'woocommerce_after_shop_loop_item', 'oblique_product_bottom_svg', 10 );
+add_action( 'woocommerce_after_subcategory', 'oblique_product_bottom_svg', 10 );
 
 // Change single product price position
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );

@@ -39,10 +39,12 @@
 			<?php the_excerpt(); ?>
 
 			<?php
-				wp_link_pages( array(
-					'before' => '<div class="page-links">' . __( 'Pages:', 'oblique' ),
-					'after'  => '</div>',
-				) );
+				wp_link_pages(
+					array(
+						'before' => '<div class="page-links">' . __( 'Pages:', 'oblique' ),
+						'after'  => '</div>',
+					)
+				);
 			?>
 		</div><!-- .entry-content -->
 		<?php do_action( 'oblique_post_entry_content_bottom' ); ?>
@@ -51,6 +53,7 @@
 
 	<div class="svg-container post-bottom-svg svg-block">
 		<?php
-		do_action( 'oblique_post_bottom_svg' ); ?>
+		do_action( 'oblique_post_bottom_svg' );
+		?>
 	</div>	
 </article><!-- #post-## -->
