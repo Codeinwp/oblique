@@ -1,4 +1,9 @@
 
+### 2.0.6 - 20/09/2017
+**Changes:** 
+- Updated grunt and fixed all errors
+- Improved shop page layout for categories listed there
+
 ### 2.0.5 - 06/07/2017
 **Changes:** 
 - Added version for enqueued style to fix Caching issues
