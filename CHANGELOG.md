@@ -1,4 +1,8 @@
 
+### 2.0.7 - 10/10/2017
+**Changes:** 
+- Remove duplicated content on shop page
+
 ### 2.0.6 - 20/09/2017
 **Changes:** 
 - Updated grunt and fixed all errors
