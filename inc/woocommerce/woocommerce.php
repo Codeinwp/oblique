@@ -46,16 +46,6 @@ function oblique_shop_title() {
 	<header class="page-header">
 		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
 	</header><!-- .page-header -->
-	<?php
-
-	/**
-	 * WooCommerce_archive_description hook.
-	 *
-	 * @hooked woocommerce_taxonomy_archive_description - 10
-	 * @hooked woocommerce_product_archive_description - 10
-	 */
-	do_action( 'woocommerce_archive_description' );
-	?>
 
 	<div class="svg-container svg-block page-header-svg">
 		<?php do_action( 'oblique_archive_title_bottom_svg' ); ?>
