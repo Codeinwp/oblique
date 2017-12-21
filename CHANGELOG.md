@@ -1,4 +1,10 @@
 
+### 2.0.8 - 21/12/2017
+**Changes:** 
+- Made Social menu icons opening in a new window optional
+- Updated grunt and fixed all the errors
+- Updated upgrade pages
+
 ### 2.0.7 - 10/10/2017
 **Changes:** 
 - Remove duplicated content on shop page
