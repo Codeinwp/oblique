@@ -7,7 +7,7 @@
 
 get_header(); ?>
 	<?php
-	$single_classes = apply_filters( 'oblique_main_classes','site-main' );
+	$single_classes = apply_filters( 'oblique_main_classes', 'site-main' );
 	?>
 	<div id="primary" class="content-area">
 		<main id="main" class="<?php echo esc_attr( $single_classes ); ?>" role="main">

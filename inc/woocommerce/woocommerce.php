@@ -17,7 +17,7 @@ add_action( 'after_setup_theme', 'oblique_woocommerce_support' );
  * Shop Page
  */
 // Remove pages navigation
-remove_action( 'woocommerce_before_main_content','woocommerce_breadcrumb', 20, 0 );
+remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
 
 // Remove sorting results after loop
 remove_action( 'woocommerce_after_shop_loop', 'woocommerce_result_count', 20 );
@@ -56,7 +56,7 @@ function oblique_shop_title() {
 add_action( 'woocommerce_before_main_content', 'oblique_shop_title', 40 );
 
 // Remove product rating on shop page
-remove_action( 'woocommerce_after_shop_loop_item_title','woocommerce_template_loop_rating', 5 );
+remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
 
 /**
  * Top svg for products and categories on shop page

@@ -103,7 +103,7 @@ function oblique_customize_register( $wp_customize ) {
 					esc_html__( 'Footer Credits', 'oblique' ),
 					esc_html__( 'Support', 'oblique' ),
 				),
-				'button_url'  => esc_url( 'https://themeisle.com/themes/oblique-pro/' ),
+				'button_url'  => esc_url( 'https://themeisle.com/themes/oblique-pro/upgrade/' ),
 				'button_text' => esc_html__( 'View PRO version', 'oblique' ),
 			)
 		)
@@ -121,16 +121,16 @@ function oblique_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		new Oblique_Control_Upsell_Theme_Info(
 			$wp_customize, 'oblique_theme_info_header_section_control', array(
-				'section'     => 'oblique_header',
-				'priority'    => 500,
-				'options'     => array(
+				'section'            => 'oblique_header',
+				'priority'           => 500,
+				'options'            => array(
 					esc_html__( 'Slider', 'oblique' ),
 				),
 				'explained_features' => array(
 					esc_html__( 'Add a shortcode for a slider to replace the header image.', 'oblique' ),
 				),
-				'button_url'  => esc_url( 'https://themeisle.com/themes/oblique-pro/' ),
-				'button_text' => esc_html__( 'View PRO version', 'oblique' ),
+				'button_url'         => esc_url( 'https://themeisle.com/themes/oblique-pro/upgrade/' ),
+				'button_text'        => esc_html__( 'View PRO version', 'oblique' ),
 			)
 		)
 	);
@@ -811,7 +811,7 @@ function oblique_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'body_text_color',
 		array(
-			'default'           => apply_filters( 'oblique_body_text_color' ,'#50545C' ),
+			'default'           => apply_filters( 'oblique_body_text_color', '#50545C' ),
 			'sanitize_callback' => 'sanitize_hex_color',
 			'transport'         => 'postMessage',
 		)

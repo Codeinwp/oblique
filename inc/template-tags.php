@@ -282,4 +282,4 @@ function oblique_category_transient_flusher() {
 	delete_transient( 'oblique_categories' );
 }
 add_action( 'edit_category', 'oblique_category_transient_flusher' );
-add_action( 'save_post',     'oblique_category_transient_flusher' );
+add_action( 'save_post', 'oblique_category_transient_flusher' );

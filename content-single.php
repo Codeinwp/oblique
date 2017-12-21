@@ -5,7 +5,6 @@
  * @package Oblique
  */
 ?>
-	
 <div class="svg-container single-post-svg svg-block">
 	<?php oblique_svg_1(); ?>
 </div>

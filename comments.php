@@ -19,8 +19,6 @@ if ( post_password_required() ) {
 ?>
 
 <div id="comments" class="comments-area">
-
-	
 	<?php if ( have_comments() ) : ?>
 		<?php do_action( 'oblique_comments_title' ); ?>
 
@@ -69,7 +67,7 @@ if ( post_password_required() ) {
 
 	<?php
 		$args = array(
-			'comment_notes_after'  => '',
+			'comment_notes_after' => '',
 		);
 		comment_form( apply_filters( 'oblique_comments_args', $args ) );
 	?>
