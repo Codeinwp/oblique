@@ -321,13 +321,13 @@ function oblique_post_link_to_single() {
 	if ( ! get_theme_mod( 'read_more' ) ) :?>
 		<a href="<?php the_permalink(); ?>">
 			<div class="read-more">
-				<?php echo apply_filters( 'oblique_post_read_more' , esc_html__( 'Continue reading &hellip;','oblique' ) ); ?>
+				<?php echo apply_filters( 'oblique_post_read_more', esc_html__( 'Continue reading &hellip;', 'oblique' ) ); ?>
 			</div>
 		</a>
 	<?php
 	endif;
 }
-add_action( 'oblique_link_to_single','oblique_post_link_to_single' );
+add_action( 'oblique_link_to_single', 'oblique_post_link_to_single' );
 
 /**
  * Archive
@@ -411,8 +411,8 @@ add_action( 'oblique_comments_title', 'oblique_comments_title_text' );
 function oblique_comments_list() {
 	wp_list_comments(
 		array(
-			'style'      => 'ol',
-			'short_ping' => true,
+			'style'       => 'ol',
+			'short_ping'  => true,
 			'avatar_size' => 60,
 		)
 	);

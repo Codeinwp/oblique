@@ -43,10 +43,10 @@
 				wp_nav_menu(
 					array(
 						'theme_location' => 'social',
-						'link_before' => '<span class="screen-reader-text">',
-						'link_after' => '</span>',
-						'menu_class' => 'menu clearfix',
-						'fallback_cb' => false,
+						'link_before'    => '<span class="screen-reader-text">',
+						'link_after'     => '</span>',
+						'menu_class'     => 'menu clearfix',
+						'fallback_cb'    => false,
 					)
 				);
 				?>
