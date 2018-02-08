@@ -4,7 +4,7 @@ Theme URI: http://themeisle.com/themes/oblique
 Author: Themeisle
 Author URI: http://themeisle.com/
 Description: Oblique is a creative masonry theme that works great for fashion or general bloggers. Amongst the features you will find a a parallax header image, full color control with unlimited color variations, easy access to all Google Fonts, responsive design etc.
-Version: 2.0.5
+Version: 2.0.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: oblique
@@ -478,10 +478,10 @@ Posts nav
 }
 .read-more {
 	padding: 15px 30px 30px;
+	color: #fff;
 	background-color: #23b6b6;
 	-webkit-transition: background-color 0.3s;
 	transition: background-color 0.3s;
-	color: #fff;
 }
 .read-more:hover {
 	background-color: #17191b;
@@ -1271,20 +1271,27 @@ article.product .entry-header {
 	margin-top: 0;
 }
 
-.woocommerce ul.products li.product h2.woocommerce-loop-product__title,
-.woocommerce-page ul.products li.product h2.woocommerce-loop-product__title {
-	font-size: 1.5em;
-	padding: 0.5em 1em;
+.woocommerce ul.products li.product-category h2.woocommerce-loop-category__title .count {
+	background: none;
 }
 
+.woocommerce ul.products li.product-category h2.woocommerce-loop-category__title,
+.woocommerce ul.products li.product h2.woocommerce-loop-product__title,
+.woocommerce-page ul.products li.product h2.woocommerce-loop-product__title {
+	padding: 0.5em 1em;
+	font-size: 1.5em;
+}
+
+.woocommerce ul.products li.product-category h2.woocommerce-loop-category__title:hover .count,
+.woocommerce ul.products li.product-category h2.woocommerce-loop-category__title:hover,
 .woocommerce ul.products li.product h2.woocommerce-loop-product__title:hover,
 .woocommerce-page ul.products li.product h2.woocommerce-loop-product__title:hover {
-	color: #23B6B6;
+	color: #23b6b6;
 }
 
 .woocommerce ul.products li.product .price,
 .woocommerce-page ul.products li.product .price {
-	color: #333333;
+	color: #333;
 	font-size: 1em;
 	font-weight: 700;
 }
@@ -1302,15 +1309,14 @@ article.product .entry-header {
 .woocommerce ul.products li.product .button,
 .woocommerce-page ul.products li.product .button {
 	margin-top: 0.5em;
+	padding: 1em;
 	border: none;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
 	border-radius: 0;
+	color: #fff;
+	background-color: #23b6b6;
+
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	padding: 1em;
-	color: #fff;
-	background-color: #23B6B6;
 }
 
 .woocommerce ul.products li.product .button:hover,
@@ -1343,8 +1349,8 @@ article.product .entry-header {
 
 .single-product div.single_product_wrapper {
 	position: relative;
-	background-color: #fff;
 	padding: 43px 93px 107px 95px;
+	background-color: #fff;
 }
 
 .single-product div.single_product_bottom_svg {
@@ -1384,8 +1390,8 @@ article.product .entry-header {
 }
 
 .single-product .price .woocommerce-Price-amount {
-	color: #333333;
 	position: relative;
+	color: #333;
 	font-size: 22px;
 	font-weight: 700;
 	line-height: 41px;
@@ -1405,10 +1411,10 @@ article.product .entry-header {
 }
 
 .woocommerce div.product form.cart div.quantity:before {
-	content: 'Quantity';
 	font-size: 15px;
 	font-weight: bold;
 	line-height: 22px;
+	content: "Quantity";
 }
 
 .woocommerce div.product form.cart div.quantity input {
@@ -1423,19 +1429,18 @@ article.product .entry-header {
 	clear: both;
 	margin-top: 30px;
 	margin-bottom: 1.5em;
+	padding: 1em;
 	border: none;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
 	border-radius: 0;
+	color: #fff;
+	background-color: #23b6b6;
+
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	padding: 1em;
-	color: #fff;
-	background-color: #23B6B6;
 }
 
 .woocommerce div.product form.cart button.button:hover {
-	background-color: #333333;
+	background-color: #333;
 }
 
 .woocommerce div.product form.cart button.button:before {
@@ -1458,10 +1463,10 @@ article.product .entry-header {
 	float: left;
 	margin: 0;
 	padding: 14px 31px 10px 30px;
-	border-radius: 0;
-	background-color: inherit;
 	border: none;
 	border-right: 1px solid #8c8c8c;
+	border-radius: 0;
+	background-color: inherit;
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li a {
@@ -1470,9 +1475,9 @@ article.product .entry-header {
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active {
-	color: #23B6B6;
-	background-color: inherit;
 	border-bottom: 1px solid #fff;
+	color: #23b6b6;
+	background-color: inherit;
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li.description_tab a,
@@ -1587,9 +1592,9 @@ article.product .entry-header {
 }
 
 .woocommerce #reviews #respond #reply-title {
-	color: #333333;
 	display: block;
 	margin: 0 0 11px;
+	color: #333;
 	font-size: 30px;
 	line-height: 33px;
 }
@@ -1601,24 +1606,24 @@ article.product .entry-header {
 }
 
 .woocommerce #review_form #respond .form-submit input[type="submit"] {
-	color: #fff;
-	background-color: #23b6b6;
 	padding: 15px 33px 16px 31px;
 	border-radius: 0;
+	color: #fff;
+	background-color: #23b6b6;
 	font-size: 15px;
 	line-height: 15px;
 }
 
 .woocommerce #review_form #respond .form-submit input[type="submit"]:hover {
-	background-color: #333333;
+	background-color: #333;
 }
 
 .woocommerce #review_form .comment-form label {
-	color: #333333;
 	margin: 20px 0 14px;
+	color: #333;
 }
 
-.single-product section.related>h2 {
+.single-product section.related > h2 {
 	display: none;
 }
 
@@ -1636,11 +1641,11 @@ article.product .entry-header {
 .woocommerce-page h2.alt_shop_cat_title,
 .single-product h2.related_products_title {
 	margin: 90px 0 40px;
+	color: #23b6b6;
+	background-color: #fff;
 	font-size: 28px;
 	line-height: 41px;
 	text-align: center;
-	color: #23B6B6;
-	background-color: #fff;
 }
 
 .woocommerce-page div.alt_shop_cat_title_bottom_svg,
@@ -1656,9 +1661,9 @@ article.product .entry-header {
 
 /* Cart Page */
 .woocommerce-cart header.entry-header h1.entry-title {
+	color: #23b6b6;
 	font-size: 35px;
 	line-height: 44px;
-	color: #23B6B6;
 }
 
 .woocommerce table.cart td.actions .input-text,
@@ -1685,59 +1690,60 @@ article.product .entry-header {
 	border-radius: 0;
 	font-size: 15px;
 	line-height: 15px;
+
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 }
 
-.woocommerce-cart div.cross-sells>ul.products>li.product>div.svg-block {
+.woocommerce-cart div.cross-sells > ul.products > li.product > div.svg-block {
 	fill: #fff;
 }
 
 .woocommerce-cart input.button,
 .woocommerce-cart div.wc-proceed-to-checkout a.button {
 	color: #fff;
-	background-color: #23B6B6;
+	background-color: #23b6b6;
 }
 
 .woocommerce-cart input.button:hover,
 .woocommerce-cart div.wc-proceed-to-checkout a.button:hover {
 	color: #fff;
-	background-color: #333333;
+	background-color: #333;
 }
 
 .woocommerce-cart .return-to-shop a.button {
 	color: #fff;
-	background-color: #23B6B6;
+	background-color: #23b6b6;
 }
 
 .woocommerce-cart .return-to-shop a.button:hover {
 	color: #fff;
-	background-color: #333333;
+	background-color: #333;
 }
 
 /* WooCommerce Message */
 .woocommerce-message {
-	border-top-color: #23B6B6;
+	border-top-color: #23b6b6;
 }
 
 .woocommerce-message::before {
-	color: #23B6B6;
+	color: #23b6b6;
 }
 
 .single-product .woocommerce-message .button {
 	color: #fff;
-	background-color: #23B6B6;
+	background-color: #23b6b6;
 }
 
-.single-product .woocommerce-message>.button:hover {
+.single-product .woocommerce-message > .button:hover {
 	color: #fff;
-	background-color: #333333;
+	background-color: #333;
 }
 
 /* Checkout Page */
 .woocommerce-checkout header.entry-header h1.entry-title {
-	color: #23B6B6;
+	color: #23b6b6;
 }
 
 .woocommerce-page div.woocommerce-checkout-review-order table.woocommerce-checkout-review-order-table {
@@ -1766,35 +1772,36 @@ article.product .entry-header {
 }
 
 .woocommerce-info {
-	border-top-color: #23B6B6;
+	border-top-color: #23b6b6;
 }
 
 .woocommerce-info:before {
-	color: #23B6B6;
+	color: #23b6b6;
 }
 
 .woocommerce-checkout div.place-order input.button {
 	color: #fff;
-	background-color: #23B6B6;
+	background-color: #23b6b6;
 }
 .woocommerce-checkout div.place-order input.button:hover {
 	color: #fff;
-	background-color: #333333;
+	background-color: #333;
 }
 
 /* My Account Login Page */
 .woocommerce-account header.entry-header h1.entry-title {
-	color: #23B6B6;
+	color: #23b6b6;
 }
 
 .woocommerce-page form.woocommerce-form-login input[type="submit"] {
 	color: #fff;
-	background-color: #23B6B6;
+	background-color: #23b6b6;
 }
 .woocommerce-page form.woocommerce-form-login input[type="submit"]:hover {
 	color: #fff;
-	background-color: #333333;
+	background-color: #333;
 }
+
 
 /*--------------------------------------------------------------
 Responsive

@@ -72,9 +72,9 @@ if ( ! class_exists( 'Oblique_Control_Upsell_Theme_Info' ) ) :
 		 */
 		public function to_json() {
 			parent::to_json();
-			$this->json['button_text']  = $this->button_text;
-			$this->json['button_url']   = $this->button_url;
-			$this->json['options']      = $this->options;
+			$this->json['button_text']        = $this->button_text;
+			$this->json['button_url']         = $this->button_url;
+			$this->json['options']            = $this->options;
 			$this->json['explained_features'] = $this->explained_features;
 		}
 
@@ -108,6 +108,7 @@ if ( ! class_exists( 'Oblique_Control_Upsell_Theme_Info' ) ) :
 									</ul>
 									<# } #>
 			</div>
-		<?php }
+		<?php
+		}
 	}
 endif;

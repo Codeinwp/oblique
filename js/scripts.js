@@ -9,11 +9,6 @@ jQuery(function($) {
     $('body').fitVids();
 });
 
-//Open social links in a new tab
-jQuery(function($) {
-     $( '.social-navigation li a' ).attr( 'target','_blank' );
-});
-
 //Toggle sidebar
 jQuery(function($) {
 	$('.sidebar-toggle').click(function() {
