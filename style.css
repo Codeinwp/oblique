@@ -1239,6 +1239,7 @@ article.product .entry-header {
 	background-color: #fff;
 }
 
+/* Products per row, old version of WooCommerce than 3.3.1 */
 .woocommerce ul.products li.product:nth-of-type(4n+1),
 .woocommerce ul.products li.product:nth-of-type(4n+2),
 .woocommerce ul.products li.product:nth-of-type(4n+3),
@@ -1270,6 +1271,117 @@ article.product .entry-header {
 .woocommerce-page ul.products li.product:nth-of-type(4n+4) {
 	margin-top: 0;
 }
+
+/* WooCommerce 3.3.1 - select the number of products per row */
+
+/* 6 products per row */
+.woocommerce ul.products.columns-6 li.product:nth-of-type(6n+1),
+.woocommerce-page ul.products.columns-6 li.product:nth-of-type(6n+1) {
+	margin-top: 75px;
+}
+.woocommerce ul.products.columns-6 li.product:nth-of-type(6n+2),
+.woocommerce-page ul.products.columns-6 li.product:nth-of-type(6n+2) {
+	margin-top: 60px;
+}
+.woocommerce ul.products.columns-6 li.product:nth-of-type(6n+3),
+.woocommerce-page ul.products.columns-6 li.product:nth-of-type(6n+3) {
+	margin-top: 45px;
+}
+.woocommerce ul.products.columns-6 li.product:nth-of-type(6n+4),
+.woocommerce-page ul.products.columns-6 li.product:nth-of-type(6n+4) {
+	margin-top: 30px;
+}
+.woocommerce ul.products.columns-6 li.product:nth-of-type(6n+5),
+.woocommerce-page ul.products.columns-6 li.product:nth-of-type(6n+5) {
+	margin-top: 15px;
+}
+.woocommerce ul.products.columns-6 li.product:nth-of-type(6n+6),
+.woocommerce-page ul.products.columns-6 li.product:nth-of-type(6n+6) {
+	margin-top: 0;
+}
+.woocommerce ul.products.columns-6 li.product div.post-bottom-svg,
+.woocommerce-page ul.products.columns-6 li.product div.post-bottom-svg {
+	bottom: -10px;
+}
+/* 5 products per row */
+.woocommerce ul.products.columns-5 li.product:nth-of-type(5n+1),
+.woocommerce-page ul.products.columns-5 li.product:nth-of-type(5n+1) {
+	margin-top: 80px;
+}
+.woocommerce ul.products.columns-5 li.product:nth-of-type(5n+2),
+.woocommerce-page ul.products.columns-5 li.product:nth-of-type(5n+2) {
+	margin-top: 60px;
+}
+.woocommerce ul.products.columns-5 li.product:nth-of-type(5n+3),
+.woocommerce-page ul.products.columns-5 li.product:nth-of-type(5n+3) {
+	margin-top: 40px;
+}
+.woocommerce ul.products.columns-5 li.product:nth-of-type(5n+4),
+.woocommerce-page ul.products.columns-5 li.product:nth-of-type(5n+4) {
+	margin-top: 20px;
+}
+.woocommerce ul.products.columns-5 li.product:nth-of-type(5n+5),
+.woocommerce-page ul.products.columns-5 li.product:nth-of-type(5n+5) {
+	margin-top: 0;
+}
+.woocommerce ul.products.columns-5 li.product div.post-bottom-svg,
+.woocommerce-page ul.products.columns-5 li.product div.post-bottom-svg {
+	bottom: -13px;
+}
+/* 4 products per row */
+.woocommerce ul.products.columns-4 li.product:nth-of-type(4n+1),
+.woocommerce-page ul.products.columns-4 li.product:nth-of-type(4n+1) {
+	margin-top: 75px;
+}
+.woocommerce ul.products.columns-4 li.product:nth-of-type(4n+2),
+.woocommerce-page ul.products.columns-4 li.product:nth-of-type(4n+2) {
+	margin-top: 50px;
+}
+.woocommerce ul.products.columns-4 li.product:nth-of-type(4n+3),
+.woocommerce-page ul.products.columns-4 li.product:nth-of-type(4n+3) {
+	margin-top: 25px;
+}
+.woocommerce ul.products.columns-4 li.product:nth-of-type(4n+4),
+.woocommerce-page ul.products.columns-4 li.product:nth-of-type(4n+4) {
+	margin-top: 0;
+}
+/* 3 products per row */
+.woocommerce ul.products.columns-3 li.product:nth-of-type(3n+1),
+.woocommerce-page ul.products.columns-3 li.product:nth-of-type(3n+1) {
+	margin-top: 60px;
+}
+.woocommerce ul.products.columns-3 li.product:nth-of-type(3n+2),
+.woocommerce-page ul.products.columns-3 li.product:nth-of-type(3n+2) {
+	margin-top: 30px;
+}
+.woocommerce ul.products.columns-3 li.product:nth-of-type(3n+3),
+.woocommerce-page ul.products.columns-3 li.product:nth-of-type(3n+3) {
+	margin-top: 0;
+}
+/* 2 products per row */
+.woocommerce ul.products.columns-2 li.product:nth-of-type(2n+1),
+.woocommerce-page ul.products.columns-2 li.product:nth-of-type(2n+1) {
+	margin-top: 45px;
+}
+.woocommerce ul.products.columns-2 li.product:nth-of-type(2n+2),
+.woocommerce-page ul.products.columns-2 li.product:nth-of-type(2n+2) {
+	margin-top: 0;
+}
+/* 1 product per row */
+.woocommerce ul.products.columns-1,
+.woocommerce-page ul.products.columns-1 {
+	margin-bottom: 100px;
+}
+.woocommerce ul.products.columns-1 li.product,
+.woocommerce-page ul.products.columns-1 li.product {
+	margin-top: 50px;
+}
+.woocommerce ul.products.columns-1 li.product div.post-bottom-svg,
+.woocommerce-page ul.products.columns-1 li.product div.post-bottom-svg {
+	bottom: -65px;
+}
+/* End of WooCommerce 3.3.1 */
+
 
 .woocommerce ul.products li.product-category h2.woocommerce-loop-category__title .count {
 	background: none;
@@ -1814,6 +1926,7 @@ Responsive
 	.single-post-svg {
 		margin-bottom: -1px;
 	}
+	/* Products per row, old version of WooCommerce than 3.3.1 */
 	.woocommerce ul.products li.product:nth-of-type(4n+1),
 	.woocommerce-page ul.products li.product:nth-of-type(4n+1) {
 		margin-top: 60px;
@@ -1834,6 +1947,88 @@ Responsive
 	.woocommerce-page ul.products li.product div.post-bottom-svg {
 		bottom: -16px;
 	}
+
+	/* WooCommerce 3.3.1 - select the number of products per row */
+
+	/* 5 products per row */
+	.woocommerce ul.products.columns-5 li.product:nth-of-type(5n+1),
+	.woocommerce-page ul.products.columns-5 li.product:nth-of-type(5n+1) {
+		margin-top: 68px;
+	}
+	.woocommerce ul.products.columns-5 li.product:nth-of-type(5n+2),
+	.woocommerce-page ul.products.columns-5 li.product:nth-of-type(5n+2) {
+		margin-top: 51px;
+	}
+	.woocommerce ul.products.columns-5 li.product:nth-of-type(5n+3),
+	.woocommerce-page ul.products.columns-5 li.product:nth-of-type(5n+3) {
+		margin-top: 34px;
+	}
+	.woocommerce ul.products.columns-5 li.product:nth-of-type(5n+4),
+	.woocommerce-page ul.products.columns-5 li.product:nth-of-type(5n+4) {
+		margin-top: 17px;
+	}
+	.woocommerce ul.products.columns-5 li.product:nth-of-type(5n+5),
+	.woocommerce-page ul.products.columns-5 li.product:nth-of-type(5n+5) {
+		margin-top: 0;
+	}
+	.woocommerce ul.products.columns-5 li.product div.post-bottom-svg,
+	.woocommerce-page ul.products.columns-5 li.product div.post-bottom-svg {
+		bottom: -10px;
+	}
+	/* 4 products per row */
+	.woocommerce ul.products.columns-4 li.product:nth-of-type(4n+1),
+	.woocommerce-page ul.products.columns-4 li.product:nth-of-type(4n+1) {
+		margin-top: 60px;
+	}
+	.woocommerce ul.products.columns-4 li.product:nth-of-type(4n+2),
+	.woocommerce-page ul.products.columns-4 li.product:nth-of-type(4n+2) {
+		margin-top: 40px;
+	}
+	.woocommerce ul.products.columns-4 li.product:nth-of-type(4n+3),
+	.woocommerce-page ul.products.columns-4 li.product:nth-of-type(4n+3) {
+		margin-top: 20px;
+	}
+	.woocommerce ul.products.columns-4 li.product:nth-of-type(4n+4),
+	.woocommerce-page ul.products.columns-4 li.product:nth-of-type(4n+4) {
+		margin-top: 0;
+	}
+	/* 3 products per row */
+	.woocommerce ul.products.columns-3 li.product:nth-of-type(3n+1),
+	.woocommerce-page ul.products.columns-3 li.product:nth-of-type(3n+1) {
+		margin-top: 54px;
+	}
+	.woocommerce ul.products.columns-3 li.product:nth-of-type(3n+2),
+	.woocommerce-page ul.products.columns-3 li.product:nth-of-type(3n+2) {
+		margin-top: 27px;
+	}
+	.woocommerce ul.products.columns-3 li.product:nth-of-type(3n+3),
+	.woocommerce-page ul.products.columns-3 li.product:nth-of-type(3n+3) {
+		margin-top: 0;
+	}
+	/* 2 products per row */
+	.woocommerce ul.products.columns-2 li.product:nth-of-type(2n+1),
+	.woocommerce-page ul.products.columns-2 li.product:nth-of-type(2n+1) {
+		margin-top: 40px;
+	}
+	.woocommerce ul.products.columns-2 li.product:nth-of-type(2n+2),
+	.woocommerce-page ul.products.columns-2 li.product:nth-of-type(2n+2) {
+		margin-top: 0;
+	}
+	/* 1 product per row */
+	.woocommerce ul.products.columns-1,
+	.woocommerce-page ul.products.columns-1 {
+		margin-bottom: 70px;
+	}
+	.woocommerce ul.products.columns-1 li.product,
+	.woocommerce-page ul.products.columns-1 li.product {
+		margin-top: 50px;
+	}
+	.woocommerce ul.products.columns-1 li.product div.post-bottom-svg,
+	.woocommerce-page ul.products.columns-1 li.product div.post-bottom-svg {
+		bottom: -65px;
+	}
+	/* End of WooCommerce 3.3.1 */
+
 	.single-product div.single_product_bottom_svg {
 		bottom: -73px;
 	}
@@ -1860,6 +2055,7 @@ Responsive
 	.site-title {
 		font-size: 60px !important;
 	}
+	/* Products per row, old version of WooCommerce than 3.3.1 */
 	.woocommerce ul.products li.product:nth-of-type(4n+1),
 	.woocommerce-page ul.products li.product:nth-of-type(4n+1) {
 		margin-top: 51px;
@@ -1880,6 +2076,63 @@ Responsive
 	.woocommerce-page ul.products li.product div.post-bottom-svg {
 		bottom: -11px;
 	}
+
+	/* WooCommerce 3.3.1 - select the number of products per row */
+
+	/* 4 products per row */
+	.woocommerce ul.products.columns-4 li.product:nth-of-type(4n+1),
+	.woocommerce-page ul.products.columns-4 li.product:nth-of-type(4n+1) {
+		margin-top: 45px;
+	}
+	.woocommerce ul.products.columns-4 li.product:nth-of-type(4n+2),
+	.woocommerce-page ul.products.columns-4 li.product:nth-of-type(4n+2) {
+		margin-top: 30px;
+	}
+	.woocommerce ul.products.columns-4 li.product:nth-of-type(4n+3),
+	.woocommerce-page ul.products.columns-4 li.product:nth-of-type(4n+3) {
+		margin-top: 15px;
+	}
+	.woocommerce ul.products.columns-4 li.product:nth-of-type(4n+4),
+	.woocommerce-page ul.products.columns-4 li.product:nth-of-type(4n+4) {
+		margin-top: 0;
+	}
+	/* 3 products per row */
+	.woocommerce ul.products.columns-3 li.product:nth-of-type(3n+1),
+	.woocommerce-page ul.products.columns-3 li.product:nth-of-type(3n+1) {
+		margin-top: 40px;
+	}
+	.woocommerce ul.products.columns-3 li.product:nth-of-type(3n+2),
+	.woocommerce-page ul.products.columns-3 li.product:nth-of-type(3n+2) {
+		margin-top: 20px;
+	}
+	.woocommerce ul.products.columns-3 li.product:nth-of-type(3n+3),
+	.woocommerce-page ul.products.columns-3 li.product:nth-of-type(3n+3) {
+		margin-top: 0;
+	}
+	/* 2 products per row */
+	.woocommerce ul.products.columns-2 li.product:nth-of-type(2n+1),
+	.woocommerce-page ul.products.columns-2 li.product:nth-of-type(2n+1) {
+		margin-top: 30px;
+	}
+	.woocommerce ul.products.columns-2 li.product:nth-of-type(2n+2),
+	.woocommerce-page ul.products.columns-2 li.product:nth-of-type(2n+2) {
+		margin-top: 0;
+	}
+	/* 1 product per row */
+	.woocommerce ul.products.columns-1,
+	.woocommerce-page ul.products.columns-1 {
+		margin-bottom: 50px;
+	}
+	.woocommerce ul.products.columns-1 li.product,
+	.woocommerce-page ul.products.columns-1 li.product {
+		margin-top: 50px;
+	}
+	.woocommerce ul.products.columns-1 li.product div.post-bottom-svg,
+	.woocommerce-page ul.products.columns-1 li.product div.post-bottom-svg {
+		bottom: -50px;
+	}
+	/* End of WooCommerce 3.3.1 */
+
 	.woocommerce #reviews #comments ol.commentlist li {
 		padding: 25px 25px 25px 0;
 	}
@@ -1891,6 +2144,7 @@ Responsive
 	}
 }
 @media only screen and (max-width: 768px) {
+	/* Products per row, old version of WooCommerce than 3.3.1 */
 	.woocommerce ul.products li.product:nth-of-type(4n+1),
 	.woocommerce ul.products li.product:nth-of-type(4n+2),
 	.woocommerce ul.products li.product:nth-of-type(4n+3),
@@ -1909,6 +2163,22 @@ Responsive
 	.woocommerce-page ul.products li.product:nth-of-type(2n+2) {
 		margin-top: 0;
 	}
+
+	/* WooCommerce 3.3.1 - select the number of products per row */
+	/* 2 products per row */
+	.woocommerce ul.products[class*="columns-"] li.product,
+	.woocommerce-page ul.products[class*="columns-"] li.product {
+		width: 48%;
+	}
+	.woocommerce ul.products[class*="columns-"] li.product:nth-of-type(2n+1),
+	.woocommerce-page ul.products[class*="columns-"] li.product:nth-of-type(2n+1) {
+		margin-top: 30px;
+	}
+	.woocommerce ul.products[class*="columns-"] li.product:nth-of-type(2n+2),
+	.woocommerce-page ul.products[class*="columns-"] li.product:nth-of-type(2n+2) {
+		margin-top: 0;
+	}
+	/* End of WooCommerce 3.3.1 */
 }
 @media only screen and (max-width: 767px) {
 	.grid-layout .hentry {
@@ -1935,6 +2205,7 @@ Responsive
 		position: relative;
 		left: 25px;
 	}
+	/* Products per row, old version of WooCommerce */
 	.woocommerce ul.products li.product:nth-of-type(2n+1),
 	.woocommerce-page ul.products li.product:nth-of-type(2n+1) {
 		margin-top: 27px;
@@ -1947,6 +2218,23 @@ Responsive
 	.woocommerce-page ul.products li.product div.post-bottom-svg {
 		bottom: -11px;
 	}
+
+	/* WooCommerce 3.3.1 - select the number of products per row */
+	/* 2 products per row */
+	.woocommerce ul.products[class*="columns-"] li.product,
+	.woocommerce-page ul.products[class*="columns-"] li.product {
+		width: 48%;
+	}
+	.woocommerce ul.products[class*="columns-"] li.product:nth-of-type(2n+1),
+	.woocommerce-page ul.products[class*="columns-"] li.product:nth-of-type(2n+1) {
+		margin-top: 28px;
+	}
+	.woocommerce ul.products[class*="columns-"] li.product:nth-of-type(2n+2),
+	.woocommerce-page ul.products[class*="columns-"] li.product:nth-of-type(2n+2) {
+		margin-top: 0;
+	}
+	/* End of WooCommerce 3.3.1 */
+
 	.single-product div.single_product_wrapper {
 		padding: 43px 60px 70px 60px;
 	}
@@ -1955,6 +2243,7 @@ Responsive
 	}
 }
 @media only screen and (max-width: 600px) {
+	/* Products per row, old version of WooCommerce than 3.3.1 */
 	.woocommerce ul.products li.product:nth-of-type(2n+1),
 	.woocommerce-page ul.products li.product:nth-of-type(2n+1) {
 		margin-top: 21px;
@@ -1963,6 +2252,23 @@ Responsive
 	.woocommerce-page ul.products li.product:nth-of-type(2n+2) {
 		margin-top: 0;
 	}
+
+	/* WooCommerce 3.3.1 - select the number of products per row */
+	/* 2 products per row */
+	.woocommerce ul.products[class*="columns-"] li.product,
+	.woocommerce-page ul.products[class*="columns-"] li.product {
+		width: 48%;
+	}
+	.woocommerce ul.products[class*="columns-"] li.product:nth-of-type(2n+1),
+	.woocommerce-page ul.products[class*="columns-"] li.product:nth-of-type(2n+1) {
+		margin-top: 22px;
+	}
+	.woocommerce ul.products[class*="columns-"] li.product:nth-of-type(2n+2),
+	.woocommerce-page ul.products[class*="columns-"] li.product:nth-of-type(2n+2) {
+		margin-top: 0;
+	}
+	/* End of WooCommerce 3.3.1 */
+
 	.woocommerce div.product .woocommerce-tabs ul.tabs li {
 		display: block;
 		width: 100%;
@@ -2036,6 +2342,7 @@ Responsive
 		padding-right: 15px;
 		padding-left: 15px;
 	}
+	/* Products per row, old version of WooCommerce than 3.3.1 */
 	.woocommerce ul.products li.product:nth-of-type(2n+1),
 	.woocommerce ul.products li.product:nth-of-type(2n+2),
 	.woocommerce-page ul.products li.product:nth-of-type(2n+1),
@@ -2046,6 +2353,23 @@ Responsive
 	.woocommerce-page ul.products li.product {
 		width: 100%;
 	}
+
+	/* WooCommerce 3.3.1 - select the number of products per row */
+	/* 2 products per row */
+	.woocommerce ul.products[class*="columns-"] li.product,
+	.woocommerce-page ul.products[class*="columns-"] li.product {
+		width: 100%;
+	}
+	.woocommerce ul.products[class*="columns-"] li.product:nth-of-type(2n+1),
+	.woocommerce-page ul.products[class*="columns-"] li.product:nth-of-type(2n+1) {
+		margin-top: 10px;
+	}
+	.woocommerce ul.products[class*="columns-"] li.product:nth-of-type(2n+2),
+	.woocommerce-page ul.products[class*="columns-"] li.product:nth-of-type(2n+2) {
+		margin-top: 10px;
+	}
+	/* End of WooCommerce 3.3.1 */
+
 	.single-product div.single_product_bottom_svg {
 		bottom: -19px;
 	}
