@@ -1,4 +1,8 @@
 
+### 2.0.9 - 21/02/2018
+**Changes:** 
+- Fixed compatibility issues with WooCommerce 3.3
+
 
 ### 2.0.8 - 21/12/2017
 
