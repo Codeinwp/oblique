@@ -170,6 +170,11 @@ function oblique_register_required_plugins() {
 	$plugins = array(
 
 		array(
+			'name'     => 'Orbit Fox',
+			'slug'     => 'themeisle-companion',
+			'required' => false,
+		),
+		array(
 			'name'     => 'Pirate Forms',
 			'slug'     => 'pirate-forms',
 			'required' => false,
