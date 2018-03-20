@@ -1,75 +1,27 @@
 /**
  * Version File for Grunt
  *
- * @package capri-pro
+ * @package oblique
  */
 /* jshint node:true */
 // https://github.com/kswedberg/grunt-version
 module.exports = {
-    package: {
+    package_ti: {
         options: {
             prefix: '"version"\\:\\s+"'
         },
         src: 'package.json'
     },
-    project: {
-        src: [
-            'package.json'
-        ]
-    },
     style: {
         options: {
-            prefix: 'Version\\:\.*\\s'
+            prefix: 'Version\\:\\s+'
         },
-        src: [
-            'style.css',
-        ]
+        src: 'style.css'
     },
-    php: {
+    functions: {
         options: {
-            prefix: '@version\\s+'
+            prefix: 'OBLIQUE_VERSION\', \''
         },
-        src: [
-            '*.php',
-            '**/*.php',
-            '!.git/**',
-            '!vendor/**',
-            '!node_modules/**',
-            '!logs/**'
-        ]
-    },
-    js: {
-        options: {
-            prefix: '@version\\s+'
-        },
-        src: [
-            '*.js',
-            '**/*.js',
-            '!*.min.js',
-            '!**/*.min.js',
-            '!.git/**',
-            '!vendor/**',
-            '!js/vendor/*.js',
-            '!node_modules/**',
-            '!logs/**'
-        ]
-    },
-    css: {
-        options: {
-            prefix: '@version\\s+'
-        },
-        src: [
-            '*.css',
-            '**/*.css',
-            '**/*.css',
-            '!*.min.css',
-            '!**/*.min.css',
-            '!css/vendor/*.css',
-            '!vendor/**',
-            '!node_modules/**',
-            '!logs/**'
-        ]
-    },
-
-
+        src: 'functions.php'
+    }
 };
