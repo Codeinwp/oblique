@@ -110,7 +110,7 @@ function oblique_custom_styles( $custom ) {
 	// Logo size
 	$logo_size = get_theme_mod( 'logo_size', '200' );
 	if ( ! empty( $logo_size ) ) {
-		$custom .= '.site-logo { max-width:' . intval( $logo_size ) . 'px; }' . "\n";
+		$custom .= '.site-logo, .woocommerce .site-logo, .woocommerce-page .site-logo { max-width:' . intval( $logo_size ) . 'px; }' . "\n";
 	}
 
 	// Primary color

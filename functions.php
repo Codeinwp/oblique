@@ -5,7 +5,7 @@
  * @package Oblique
  */
 
-define( 'OBLIQUE_VERSION', '2.0.5' );
+define( 'OBLIQUE_VERSION', '2.0.10' );
 
 if ( ! function_exists( 'oblique_setup' ) ) :
 	/**
@@ -169,6 +169,11 @@ require_once get_template_directory() . '/vendor/class-tgm-plugin-activation.php
 function oblique_register_required_plugins() {
 	$plugins = array(
 
+		array(
+			'name'     => 'Orbit Fox',
+			'slug'     => 'themeisle-companion',
+			'required' => false,
+		),
 		array(
 			'name'     => 'Pirate Forms',
 			'slug'     => 'pirate-forms',
