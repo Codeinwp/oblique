@@ -1,4 +1,9 @@
 
+### 2.0.10 - 21/03/2018
+**Changes:** 
+- Fixed logo size on the Shop page
+- Recommend Orbit Fox plugin
+
 ### 2.0.9 - 21/02/2018
 **Changes:** 
 - Fixed compatibility issues with WooCommerce 3.3
