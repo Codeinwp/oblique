@@ -393,8 +393,11 @@ Posts nav
 	text-align: center;
 	padding: 60px;
 }
-.search-no-results .page-content .search-field {
-	padding: 15px;
+section.error-404.not-found .search-field {
+	padding: 14px;
+}
+section.error-404.not-found .search-submit {
+	margin-left: 26px;
 }
 
 

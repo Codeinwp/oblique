@@ -40,11 +40,11 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php do_action( 'oblique_posts_navigation' ); ?>
-
 			<div class="svg-container single-post-svg single-svg-bottom svg-block">
 				<?php do_action( 'oblique_single_page_post_svg' ); ?>
 			</div>
+
+			<?php do_action( 'oblique_posts_navigation' ); ?>
 
 		<?php else : ?>
 
