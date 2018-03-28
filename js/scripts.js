@@ -4,11 +4,6 @@ jQuery(function($) {
 	$('.site-header').parallax('50%', 0.3);
 });
 
-//Fit Vids
-jQuery(function($) {
-    $('body').fitVids();
-});
-
 //Toggle sidebar
 jQuery(function($) {
 	$('.sidebar-toggle').click(function() {
