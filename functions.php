@@ -138,13 +138,15 @@ function oblique_scripts() {
 
 	wp_enqueue_style( 'oblique-style', get_stylesheet_uri(), array(), OBLIQUE_VERSION );
 
-	wp_enqueue_style( 'oblique-font-awesome', get_template_directory_uri() . '/fonts/fontawesome-all.min.css' );
+	wp_enqueue_style( 'oblique-font-awesome', get_template_directory_uri() . '/fonts/fontawesome-all.min.css', array(), '5.0.9' );
 
 	wp_enqueue_script( 'oblique-imagesloaded', get_template_directory_uri() . '/js/vendor/imagesloaded.pkgd.min.js', array(), true );
 
 	wp_enqueue_script( 'oblique-main', get_template_directory_uri() . '/js/vendor/main.js', array( 'jquery' ), '', true );
 
 	wp_enqueue_script( 'oblique-scripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), true );
+
+	wp_localize_script( 'oblique-scripts', 'oblique_disable_fitvids_var', array( 'oblique_disable_fitvids' => get_theme_mod( 'disable_fitvids' ) ) );
 
 	wp_enqueue_script( 'oblique-masonry-init', get_template_directory_uri() . '/js/vendor/masonry-init.js', array( 'jquery', 'masonry' ), true );
 
@@ -235,21 +237,6 @@ function oblique_footer_credits() {
 	printf( __( 'Theme: %2$s by %1$s.', 'oblique' ), 'Themeisle', '<a href="http://themeisle.com/themes/oblique/" rel="nofollow">Oblique</a>' );
 }
 add_action( 'oblique_footer', 'oblique_footer_credits' );
-
-/**
- * Enable/Disable FitVids
- */
-function oblique_fitvids_toggle() {
-	if ( ! get_theme_mod( 'disable_fitvids' ) ) : ?>
-			<script>
-				jQuery(function($) {
-					$('body').fitVids();
-			});
-			</script>
-	<?php
-	endif;
-}
-add_action( 'oblique_footer', 'oblique_fitvids_toggle' );
 
 /**
  * Load html5shiv

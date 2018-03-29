@@ -156,7 +156,7 @@ function oblique_customize_register( $wp_customize ) {
 		'disable_fitvids',
 		array(
 			'type'     => 'checkbox',
-			'label'    => __( 'Disable FitVids?', 'oblique' ),
+			'label'    => __( 'Disable auto responsive video embeds?', 'oblique' ),
 			'section'  => 'oblique_general',
 			'priority' => 11,
 		)

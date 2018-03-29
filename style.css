@@ -137,8 +137,15 @@ input[type="search"],
 textarea {
 	width: 100%;
 	border: 1px solid #ebebeb;
+	padding: 13px;
 	border-radius: 3px;
 	color: #666;
+}
+
+.pirate-forms-fields-container input,
+.pirate-forms-fields-container textarea {
+	height: auto;
+	padding: 13px;
 }
 
 input[type="text"]:focus,
@@ -393,10 +400,12 @@ Posts nav
 	text-align: center;
 	padding: 60px;
 }
-section.error-404.not-found .search-field {
+section.error-404.not-found .search-field,
+.search-no-results .page-content .search-field {
 	padding: 14px;
 }
-section.error-404.not-found .search-submit {
+section.error-404.not-found .search-submit,
+.search-no-results .page-content .search-submit {
 	margin-left: 26px;
 }
 
@@ -863,7 +872,9 @@ Social Menu
 .social-navigation li a[href*="github.com"]::before {
 	content: "\f09b";
 }
-
+.social-navigation li a[href*="snapchat.com"]::before {
+	content: "\f2ac";
+}
 
 /*--------------------------------------------------------------
 SVG

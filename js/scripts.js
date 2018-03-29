@@ -1,3 +1,4 @@
+/* global oblique_disable_fitvids_var */
 
 //Parallax
 jQuery(function($) {
@@ -15,6 +16,13 @@ jQuery(function($) {
 		$('.widget-area').toggleClass('widget-area-visible');
 	});	
 });
+
+// Fitvids script
+if ( isNaN( parseInt( oblique_disable_fitvids_var.oblique_disable_fitvids ) ) ) {
+	jQuery(function($) {
+		$('body').fitVids();
+	});
+}
 
 //Menu
 jQuery(function($) {
