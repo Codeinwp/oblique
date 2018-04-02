@@ -348,9 +348,26 @@ Posts nav
 	max-width: 100%;
 }
 
-/* Search widget. */
-.widget_search .search-submit {
-	display: none;
+/* Search and product search widgets */
+.widget_search label {
+	font-weight: normal;
+}
+.widget_search .search-field,
+.widget_product_search .search-field {
+	width: auto;
+	margin-right: -5px;
+	padding: 14px;
+	max-width: 175px;
+}
+
+@media (max-width: 342px) {
+	.widget_search label,
+	.widget_product_search .search-field {
+		margin-bottom: 5px;
+	}
+	.widget_product_search button[type="submit"] {
+		margin-top: 5px;
+	}
 }
 
 /* Default widgets */
