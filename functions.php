@@ -146,7 +146,7 @@ function oblique_scripts() {
 
 	wp_enqueue_script( 'oblique-scripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), true );
 
-	wp_localize_script( 'oblique-scripts', 'oblique_disable_fitvids_var', array( 'oblique_disable_fitvids' => get_theme_mod( 'disable_fitvids', 0 ) ) );
+	wp_localize_script( 'oblique-scripts', 'oblique_disable_fitvids_var', array( 'oblique_disable_fitvids' => get_theme_mod( 'disable_fitvids', '0' ) ) );
 
 	wp_enqueue_script( 'oblique-masonry-init', get_template_directory_uri() . '/js/vendor/masonry-init.js', array( 'jquery', 'masonry' ), true );
 

@@ -18,7 +18,7 @@ jQuery(function($) {
 });
 
 // Fitvids script
-if ( isNaN( parseInt( oblique_disable_fitvids_var.oblique_disable_fitvids ) ) ) {
+if ( oblique_disable_fitvids_var.oblique_disable_fitvids !== '1' ) {
 	jQuery(function($) {
 		$('body').fitVids();
 	});

@@ -426,6 +426,19 @@ section.error-404.not-found .search-submit,
 	margin-left: 26px;
 }
 
+@media (max-width: 480px) {
+	section.error-404.not-found .search-submit,
+	.search-no-results .page-content .search-submit {
+		display: block;
+		margin: 5px auto;
+	}
+	section.error-404.not-found .search-field,
+	.search-no-results .page-content .search-field {
+		width: auto;
+	}
+}
+
+
 
 /*--------------------------------------------------------------
 # Content
