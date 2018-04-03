@@ -905,6 +905,10 @@ Social Menu
 .social-navigation li a[href*="snapchat.com"]::before {
 	content: "\f2ac";
 }
+.social-navigation li a[href*="imdb.com"]::before {
+	content: "\f2d8";
+}
+
 
 /*--------------------------------------------------------------
 SVG
