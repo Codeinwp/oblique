@@ -137,8 +137,15 @@ input[type="search"],
 textarea {
 	width: 100%;
 	border: 1px solid #ebebeb;
+	padding: 13px;
 	border-radius: 3px;
 	color: #666;
+}
+
+.pirate-forms-fields-container input,
+.pirate-forms-fields-container textarea {
+	height: auto;
+	padding: 13px;
 }
 
 input[type="text"]:focus,
@@ -148,14 +155,6 @@ input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
 	color: #111;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-	padding: 13px;
 }
 
 textarea {
@@ -349,9 +348,26 @@ Posts nav
 	max-width: 100%;
 }
 
-/* Search widget. */
-.widget_search .search-submit {
-	display: none;
+/* Search and product search widgets */
+.widget_search label {
+	font-weight: normal;
+}
+.widget_search .search-field,
+.widget_product_search .search-field {
+	width: auto;
+	margin-right: -5px;
+	padding: 14px;
+	max-width: 175px;
+}
+
+@media (max-width: 342px) {
+	.widget_search label,
+	.widget_product_search .search-field {
+		margin-bottom: 5px;
+	}
+	.widget_product_search button[type="submit"] {
+		margin-top: 5px;
+	}
 }
 
 /* Default widgets */
@@ -394,6 +410,34 @@ Posts nav
 #secondary select {
 	color: #414141;
 }
+
+
+.search-no-results .page-content {
+	background: #fff;
+	text-align: center;
+	padding: 60px;
+}
+section.error-404.not-found .search-field,
+.search-no-results .page-content .search-field {
+	padding: 14px;
+}
+section.error-404.not-found .search-submit,
+.search-no-results .page-content .search-submit {
+	margin-left: 26px;
+}
+
+@media (max-width: 480px) {
+	section.error-404.not-found .search-submit,
+	.search-no-results .page-content .search-submit {
+		display: block;
+		margin: 5px auto;
+	}
+	section.error-404.not-found .search-field,
+	.search-no-results .page-content .search-field {
+		width: auto;
+	}
+}
+
 
 
 /*--------------------------------------------------------------
@@ -858,6 +902,12 @@ Social Menu
 .social-navigation li a[href*="github.com"]::before {
 	content: "\f09b";
 }
+.social-navigation li a[href*="snapchat.com"]::before {
+	content: "\f2ac";
+}
+.social-navigation li a[href*="imdb.com"]::before {
+	content: "\f2d8";
+}
 
 
 /*--------------------------------------------------------------
@@ -875,6 +925,7 @@ svg {
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 9;
 }
 .nav-svg {
 	position: relative;
@@ -1230,6 +1281,22 @@ article.product .entry-header {
 .woocommerce-page ul.products li.product div.post-svg {
 	position: absolute;
 	top: 0;
+	left: 0px;
+}
+
+.woocommerce ul.products li.product div.post-svg svg,
+.woocommerce-page ul.products li.product div.post-svg svg {
+	left: -2px;
+	top: -1px;
+}
+
+.single_product_top_svg svg {
+	top: -1px;
+	left: -1px;
+}
+
+.single-product div.single_product_bottom_svg  {
+	padding-top: 90px;
 }
 
 .woocommerce ul.products li.product div.post-bottom-svg,
@@ -1765,8 +1832,7 @@ article.product .entry-header {
 	background-color: inherit;
 }
 
-.woocommerce div.product .woocommerce-tabs ul.tabs li.description_tab a,
-.woocommerce div.product .woocommerce-tabs ul.tabs li.reviews_tab a {
+.woocommerce div.product .woocommerce-tabs ul.tabs li[role="tab"] > a {
 	padding: 0;
 	font-size: 18px;
 	font-weight: 400;
@@ -1794,22 +1860,19 @@ article.product .entry-header {
 	border-top: 1px solid #8c8c8c;
 }
 
-.woocommerce div.product .woocommerce-tabs div.woocommerce-Tabs-panel--description,
-.woocommerce div.product .woocommerce-tabs div.woocommerce-Tabs-panel--reviews {
+.woocommerce div.product .woocommerce-tabs div.woocommerce-Tabs-panel {
 	margin: 0;
 	padding: 30px 38px 29px 27px;
 }
 
-.woocommerce div.product .woocommerce-tabs div.woocommerce-Tabs-panel--description h2,
-.woocommerce div.product .woocommerce-tabs div.woocommerce-Tabs-panel--reviews h2 {
+.woocommerce div.product .woocommerce-tabs div.woocommerce-Tabs-panel h2 {
 	margin: 0 0 30px;
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 26px;
 }
 
-.woocommerce div.product .woocommerce-tabs div.woocommerce-Tabs-panel--description p,
-.woocommerce div.product .woocommerce-tabs div.woocommerce-Tabs-panel--reviews p {
+.woocommerce div.product .woocommerce-tabs div.woocommerce-Tabs-panel p {
 	margin: 0;
 	font-size: 15px;
 	line-height: 23px;
@@ -1938,6 +2001,7 @@ article.product .entry-header {
 	position: relative;
 	bottom: 40px;
 	background-color: #fff;
+	padding-top: 90px;
 }
 
 .single-product section.related {
@@ -2126,6 +2190,11 @@ Responsive
 	.single-product section.related {
 		margin-top: 21px;
 	}
+	.woocommerce-page div.alt_shop_cat_title_bottom_svg,
+	.single-product div.related-title-bottom-svg,
+	.single-product div.single_product_bottom_svg {
+		padding-top: 74px;
+	}
 }
 @media only screen and (max-width: 1024px) {
 	.site-header {
@@ -2175,6 +2244,11 @@ Responsive
 	}
 	.single-product section.related {
 		margin-top: 15px;
+	}
+	.woocommerce-page div.alt_shop_cat_title_bottom_svg,
+	.single-product div.related-title-bottom-svg,
+	.single-product div.single_product_bottom_svg {
+		padding-top: 57px;
 	}
 }
 @media only screen and (max-width: 768px) {
@@ -2242,6 +2316,15 @@ Responsive
 		bottom: -43px;
 	}
 }
+
+@media(max-width: 745px) {
+	.woocommerce-page div.alt_shop_cat_title_bottom_svg,
+	.single-product div.related-title-bottom-svg,
+	.single-product div.single_product_bottom_svg {
+		padding-top: 8%;
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	.woocommerce ul.products li.product:nth-of-type(2n+1),
 	.woocommerce-page ul.products li.product:nth-of-type(2n+1) {

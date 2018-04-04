@@ -19,10 +19,12 @@ License: MIT
 License URI: http://opensource.org/licenses/MIT
 
 b) FontAwesome
-Copyright: Dave Gandy
+Copyright: Fonticons, Inc.
 Resource URI: http://fontawesome.io
-License: SIL Open Font License, Version 1.1
-License URI: https://scripts.sil.org/OFL?
+License: Icons - CC BY 4.0, Fonts - SIL OFL 1.1, Code - MIT License
+License URI: https://creativecommons.org/licenses/by/4.0/
+License URI: https://scripts.sil.org/OFL
+License URI: https://opensource.org/licenses/MIT
 
 c) FitVids
 Copyright: Chris Coyier, Paravel
