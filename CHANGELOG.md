@@ -1,4 +1,11 @@
 
+### 2.0.11 - 04/04/2018
+**Changes:** 
+- New option to allow disabling auto responsive video embeds
+- Improved layout for Search and Search Products widgets in the sidebar
+- Added new IDMB logo for the socials menu
+- Improved layout on Safari
+
 ### 2.0.10 - 21/03/2018
 **Changes:** 
 - Fixed logo size on the Shop page
