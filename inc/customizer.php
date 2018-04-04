@@ -149,7 +149,7 @@ function oblique_customize_register( $wp_customize ) {
 		'disable_fitvids',
 		array(
 			'sanitize_callback' => 'oblique_sanitize_checkbox',
-			'default'           => '0',
+			'default'           => false,
 		)
 	);
 	$wp_customize->add_control(

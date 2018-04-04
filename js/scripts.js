@@ -18,7 +18,7 @@ jQuery(function($) {
 });
 
 // Fitvids script
-if ( oblique_disable_fitvids_var.oblique_disable_fitvids !== '1' ) {
+if ( !oblique_disable_fitvids_var.oblique_disable_fitvids ) {
 	jQuery(function($) {
 		$('body').fitVids();
 	});
