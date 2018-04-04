@@ -9,10 +9,17 @@
 ?>
 
 <section class="no-results not-found">
+	<?php do_action( 'oblique_archive_title_top_svg' ); ?>
 	<header class="page-header">
 		<h1 class="page-title"><?php _e( 'Nothing Found', 'oblique' ); ?></h1>
 	</header><!-- .page-header -->
+	<div class="svg-container svg-block page-header-svg">
+		<?php do_action( 'oblique_archive_title_bottom_svg' ); ?>
+	</div>
 
+	<div class="svg-container single-post-svg svg-block">
+		<?php oblique_svg_1(); ?>
+	</div>
 	<div class="page-content">
 		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
@@ -31,4 +38,7 @@
 
 		<?php endif; ?>
 	</div><!-- .page-content -->
+	<div class="svg-container single-post-svg single-svg-bottom svg-block">
+		<?php do_action( 'oblique_single_page_post_svg' ); ?>
+	</div>
 </section><!-- .no-results -->

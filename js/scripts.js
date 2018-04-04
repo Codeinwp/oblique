@@ -1,12 +1,8 @@
+/* global oblique_disable_fitvids_var */
 
 //Parallax
 jQuery(function($) {
 	$('.site-header').parallax('50%', 0.3);
-});
-
-//Fit Vids
-jQuery(function($) {
-    $('body').fitVids();
 });
 
 //Toggle sidebar
@@ -20,6 +16,13 @@ jQuery(function($) {
 		$('.widget-area').toggleClass('widget-area-visible');
 	});	
 });
+
+// Fitvids script
+if ( !oblique_disable_fitvids_var.oblique_disable_fitvids ) {
+	jQuery(function($) {
+		$('body').fitVids();
+	});
+}
 
 //Menu
 jQuery(function($) {

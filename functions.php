@@ -5,7 +5,7 @@
  * @package Oblique
  */
 
-define( 'OBLIQUE_VERSION', '2.0.10' );
+define( 'OBLIQUE_VERSION', '2.0.11' );
 
 if ( ! function_exists( 'oblique_setup' ) ) :
 	/**
@@ -138,13 +138,15 @@ function oblique_scripts() {
 
 	wp_enqueue_style( 'oblique-style', get_stylesheet_uri(), array(), OBLIQUE_VERSION );
 
-	wp_enqueue_style( 'oblique-font-awesome', get_template_directory_uri() . '/fonts/font-awesome.min.css' );
+	wp_enqueue_style( 'oblique-font-awesome', get_template_directory_uri() . '/fonts/fontawesome-all.min.css', array(), '5.0.9' );
 
 	wp_enqueue_script( 'oblique-imagesloaded', get_template_directory_uri() . '/js/vendor/imagesloaded.pkgd.min.js', array(), true );
 
 	wp_enqueue_script( 'oblique-main', get_template_directory_uri() . '/js/vendor/main.js', array( 'jquery' ), '', true );
 
 	wp_enqueue_script( 'oblique-scripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), true );
+
+	wp_localize_script( 'oblique-scripts', 'oblique_disable_fitvids_var', array( 'oblique_disable_fitvids' => get_theme_mod( 'disable_fitvids', false ) ) );
 
 	wp_enqueue_script( 'oblique-masonry-init', get_template_directory_uri() . '/js/vendor/masonry-init.js', array( 'jquery', 'masonry' ), true );
 
@@ -323,7 +325,8 @@ add_action( 'oblique_posts_navigation', 'oblique_posts_navigation' );
  * read more link
  */
 function oblique_post_link_to_single() {
-	if ( ! get_theme_mod( 'read_more' ) ) :?>
+	if ( ! get_theme_mod( 'read_more' ) ) :
+	?>
 		<a href="<?php the_permalink(); ?>">
 			<div class="read-more">
 				<?php echo apply_filters( 'oblique_post_read_more', esc_html__( 'Continue reading &hellip;', 'oblique' ) ); ?>

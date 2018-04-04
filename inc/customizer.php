@@ -144,6 +144,24 @@ function oblique_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Disable FitVids
+	$wp_customize->add_setting(
+		'disable_fitvids',
+		array(
+			'sanitize_callback' => 'oblique_sanitize_checkbox',
+			'default'           => false,
+		)
+	);
+	$wp_customize->add_control(
+		'disable_fitvids',
+		array(
+			'type'     => 'checkbox',
+			'label'    => __( 'Disable auto responsive video embeds?', 'oblique' ),
+			'section'  => 'oblique_general',
+			'priority' => 11,
+		)
+	);
+
 	// Hide meta
 	$wp_customize->add_setting(
 		'search_toggle',
