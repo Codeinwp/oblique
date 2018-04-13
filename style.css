@@ -384,11 +384,12 @@ Posts nav
 .widget_pages li::before,
 .widget_recent_comments li::before,
 .widget_categories li::before {
-	font-family: Fontawesome;
+	font-family: "Font Awesome 5 Free";
 	font-size: 15px;
 }
 .widget_recent_entries li::before {
-	content: "\f040";
+	content: "\f303";
+	font-weight: 900;
 }
 .widget_archive li::before {
 	margin-right: 5px;
@@ -396,15 +397,15 @@ Posts nav
 }
 .widget_pages li::before {
 	margin-right: 5px;
-	content: "\f016";
+	content: "\f15b";
 }
 .widget_recent_comments li::before {
 	margin-right: 5px;
-	content: "\f0e5";
+	content: "\f075";
 }
 .widget_categories li::before {
 	margin-right: 5px;
-	content: "\f114";
+	content: "\f07b";
 }
 
 #secondary select {
@@ -857,7 +858,7 @@ Social Menu
 }
 .social-navigation li a::before {
 	display: block;
-	font-family: FontAwesome;
+	font-family: "Font Awesome 5 Brands";
 	font-size: 20px;
 }
 .social-navigation li a:hover {
@@ -867,7 +868,7 @@ Social Menu
 	content: "\f099";
 }
 .social-navigation li a[href*="facebook.com"]::before {
-	content: "\f09a";
+	content: "\f39e";
 }
 .social-navigation li a[href*="plus.google.com"]::before {
 	content: "\f0d5";
@@ -1679,7 +1680,7 @@ article.product .entry-header {
 .woocommerce ul.products li.product a.add_to_cart_button:before,
 .woocommerce-page ul.products li.product a.add_to_cart_button:before {
 	margin-right: 3px;
-	font-family: FontAwesome, "sans-serif";
+	font-family: "Font Awesome 5 Free";
 	content: "\f07a";
 }
 
@@ -1797,7 +1798,7 @@ article.product .entry-header {
 
 .woocommerce div.product form.cart button.button:before {
 	margin-right: 3px;
-	font-family: FontAwesome, "sans-serif";
+	font-family: "Font Awesome 5 Free";
 	content: "\f07a";
 }
 
