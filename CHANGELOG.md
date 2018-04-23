@@ -1,4 +1,8 @@
 
+### 2.0.12 - 23/04/2018
+**Changes:** 
+- Fixed compatibility problems with FontAwesome
+
 ### 2.0.11 - 04/04/2018
 **Changes:** 
 - New option to allow disabling auto responsive video embeds
