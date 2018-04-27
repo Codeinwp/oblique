@@ -248,7 +248,7 @@ function oblique_customize_register( $wp_customize ) {
 			'priority'    => 13,
 			'choices'     => array(
 				'hide-title' => __( 'Only logo', 'oblique' ),
-				'show-title' => __( 'Logo plus site title &amp; description', 'oblique' ),
+				'show-title' => __( 'Logo plus site title&amp;description', 'oblique' ),
 			),
 		)
 	);
