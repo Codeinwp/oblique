@@ -1010,7 +1010,7 @@ Structure
 	text-align: center;
 }
 .site-logo {
-	width: 100%;
+	width: auto;
 }
 .show-title {
 	margin-bottom: 15px;
