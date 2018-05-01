@@ -207,27 +207,6 @@ function oblique_customize_register( $wp_customize ) {
 			'priority' => 10,
 		)
 	);
-	// Logo Upload
-	$wp_customize->add_setting(
-		'site_logo',
-		array(
-			'default-image'     => '',
-			'sanitize_callback' => 'esc_url_raw',
-		)
-	);
-	$wp_customize->add_control(
-		new WP_Customize_Image_Control(
-			$wp_customize,
-			'site_logo',
-			array(
-				'label'    => __( 'Upload your logo', 'oblique' ),
-				'type'     => 'image',
-				'section'  => 'oblique_header',
-				'settings' => 'site_logo',
-				'priority' => 11,
-			)
-		)
-	);
 	// Logo size
 	$wp_customize->add_setting(
 		'logo_size',
@@ -241,7 +220,7 @@ function oblique_customize_register( $wp_customize ) {
 		'logo_size', array(
 			'type'        => 'number',
 			'priority'    => 12,
-			'section'     => 'oblique_header',
+			'section'     => 'title_tagline',
 			'label'       => __( 'Logo size', 'oblique' ),
 			'description' => __( 'Max-width for the logo. Default 200px', 'oblique' ),
 			'input_attrs' => array(
@@ -265,7 +244,7 @@ function oblique_customize_register( $wp_customize ) {
 			'type'        => 'radio',
 			'label'       => __( 'Logo style', 'oblique' ),
 			'description' => __( 'This option applies only if you are using a logo', 'oblique' ),
-			'section'     => 'oblique_header',
+			'section'     => 'title_tagline',
 			'priority'    => 13,
 			'choices'     => array(
 				'hide-title' => __( 'Only logo', 'oblique' ),
