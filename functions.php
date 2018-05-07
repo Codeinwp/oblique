@@ -5,7 +5,7 @@
  * @package Oblique
  */
 
-define( 'OBLIQUE_VERSION', '2.0.12' );
+define( 'OBLIQUE_VERSION', '2.0.13' );
 
 if ( ! function_exists( 'oblique_setup' ) ) :
 	/**
@@ -85,6 +85,12 @@ if ( ! function_exists( 'oblique_setup' ) ) :
 				'link',
 			)
 		);
+
+		/*
+		 * Enable support for Custom Logo.
+		 * See https://codex.wordpress.org/Theme_Logo
+		 */
+		add_theme_support( 'custom-logo' );
 
 		// Set up the WordPress core custom background feature.
 		add_theme_support(
@@ -426,3 +432,17 @@ function oblique_comments_list() {
 	);
 }
 add_action( 'oblique_comments_list', 'oblique_comments_list' );
+
+/**
+ * Migrate logo from theme to core
+ */
+function oblique_migrate_logo() {
+	if ( get_theme_mod( 'site_logo' ) ) {
+		$logo = attachment_url_to_postid( get_theme_mod( 'site_logo' ) );
+		if ( is_int( $logo ) ) {
+			set_theme_mod( 'custom_logo', $logo );
+		}
+		remove_theme_mod( 'site_logo' );
+	}
+}
+add_action( 'after_setup_theme', 'oblique_migrate_logo' );
