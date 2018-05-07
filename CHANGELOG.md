@@ -1,4 +1,9 @@
 
+### 2.0.13 - 07/05/2018
+**Changes:** 
+- Replaced the custom logo option with the WordPress core logo option
+- Fixed spacing issues between gallery images
+
 ### 2.0.12 - 23/04/2018
 **Changes:** 
 - Fixed compatibility problems with FontAwesome
