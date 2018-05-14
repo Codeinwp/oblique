@@ -1036,6 +1036,8 @@ Structure
 	background-color: #000;
 }
 .site-footer {
+	float: left;
+	width: 100%;
 	padding: 30px 0;
 	background-color: #17191b;
 	font-size: 14px;
@@ -2252,6 +2254,14 @@ Responsive
 	.single-product div.single_product_bottom_svg {
 		padding-top: 57px;
 	}
+	.site-footer,
+	.site-footer ul {
+		text-align: center;
+	}
+	.footer-navigation ul {
+		margin-top: 15px;
+		text-align: center;
+	}
 }
 @media only screen and (max-width: 768px) {
 	.woocommerce ul.products li.product:nth-of-type(4n+1),
@@ -2424,4 +2434,13 @@ Responsive
 	.single-product div.single_product_bottom_svg {
 		bottom: -19px;
 	}
+}
+.footer-navigation ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+.footer-navigation li {
+	display: inline-block;
+	padding: 5px 10px;
 }
