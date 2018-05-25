@@ -13,9 +13,11 @@
 
 	<?php do_action( 'oblique_footer_svg' ); ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info container">
+		<div class="container">
+			<div class="col-xs-12 col-md-6 site-info">
 			<?php do_action( 'oblique_footer' ); ?>
 		</div><!-- .site-info -->
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

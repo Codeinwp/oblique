@@ -5,7 +5,7 @@
  * @package Oblique
  */
 
-define( 'OBLIQUE_VERSION', '2.0.13' );
+define( 'OBLIQUE_VERSION', '2.0.14' );
 
 if ( ! function_exists( 'oblique_setup' ) ) :
 	/**
@@ -241,6 +241,7 @@ function oblique_footer_credits() {
 	echo '<span class="sep"> | </span>';
 	/* translators: 1 - Theme author 2 - Theme name */
 	printf( __( 'Theme: %2$s by %1$s.', 'oblique' ), 'Themeisle', '<a href="http://themeisle.com/themes/oblique/" rel="nofollow">Oblique</a>' );
+	echo '</div>';
 }
 add_action( 'oblique_footer', 'oblique_footer_credits' );
 
@@ -446,3 +447,37 @@ function oblique_migrate_logo() {
 	}
 }
 add_action( 'after_setup_theme', 'oblique_migrate_logo' );
+/**
+ * Footer menu
+ */
+function oblique_pro_register_footer_menu() {
+
+	register_nav_menus(
+		array(
+			'footer' => __( 'Footer Menu', 'oblique' ),
+		)
+	);
+}
+add_action( 'after_setup_theme', 'oblique_pro_register_footer_menu' );
+
+/**
+ * Footer menu
+ */
+function oblique_pro_footer_menu() {
+
+?>
+	<nav id="footernav" class="footer-navigation col-md-6 col-xs-12" role="navigation">
+		<?php
+		wp_nav_menu(
+			array(
+				'theme_location' => 'footer',
+				'depth'          => '1',
+				'menu_id'        => 'footer-menu',
+			)
+		);
+		?>
+	</nav><!-- #site-navigation -->
+<?php
+
+}
+add_action( 'oblique_footer', 'oblique_pro_footer_menu' );
