@@ -5,7 +5,7 @@
  * @package Oblique
  */
 
-define( 'OBLIQUE_VERSION', '2.0.14' );
+define( 'OBLIQUE_VERSION', '2.0.15' );
 
 if ( ! function_exists( 'oblique_setup' ) ) :
 	/**
@@ -473,6 +473,7 @@ function oblique_pro_footer_menu() {
 				'theme_location' => 'footer',
 				'depth'          => '1',
 				'menu_id'        => 'footer-menu',
+				'fallback_cb'    => false,
 			)
 		);
 		?>
