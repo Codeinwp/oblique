@@ -1,4 +1,8 @@
 
+### 2.0.15 - 25/05/2018
+**Changes:** 
+- Development
+
 ### 2.0.14 - 25/05/2018
 **Changes:** 
 - Added a Footer menu to make the theme GDPR compliant
