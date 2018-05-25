@@ -1,4 +1,8 @@
 
+### 2.0.14 - 25/05/2018
+**Changes:** 
+- Added a Footer menu to make the theme GDPR compliant
+
 ### 2.0.13 - 07/05/2018
 **Changes:** 
 - Replaced the custom logo option with the WordPress core logo option
