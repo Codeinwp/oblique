@@ -1,37 +1,57 @@
 
-### 2.0.15 - 25/05/2018
-**Changes:** 
-- Development
 
-### 2.0.14 - 25/05/2018
-**Changes:** 
-- Added a Footer menu to make the theme GDPR compliant
+### 2.0.15 - 25/05/2018
 
-### 2.0.13 - 07/05/2018
-**Changes:** 
-- Replaced the custom logo option with the WordPress core logo option
-- Fixed spacing issues between gallery images
+**Changes:** 
 
-### 2.0.12 - 23/04/2018
-**Changes:** 
-- Fixed compatibility problems with FontAwesome
+- Added a Footer menu to make the theme GDPR compliant
 
-### 2.0.11 - 04/04/2018
-**Changes:** 
-- New option to allow disabling auto responsive video embeds
-- Improved layout for Search and Search Products widgets in the sidebar
-- Added new IDMB logo for the socials menu
-- Improved layout on Safari
 
-### 2.0.10 - 21/03/2018
-**Changes:** 
-- Fixed logo size on the Shop page
-- Recommend Orbit Fox plugin
+### 2.0.13 - 07/05/2018
 
-### 2.0.9 - 21/02/2018
-**Changes:** 
-- Fixed compatibility issues with WooCommerce 3.3
-
+**Changes:** 
+
+- Replaced the custom logo option with the WordPress core logo option
+
+- Fixed spacing issues between gallery images
+
+
+### 2.0.12 - 23/04/2018
+
+**Changes:** 
+
+- Fixed compatibility problems with FontAwesome
+
+
+### 2.0.11 - 04/04/2018
+
+**Changes:** 
+
+- New option to allow disabling auto responsive video embeds
+
+- Improved layout for Search and Search Products widgets in the sidebar
+
+- Added new IDMB logo for the socials menu
+
+- Improved layout on Safari
+
+
+### 2.0.10 - 21/03/2018
+
+**Changes:** 
+
+- Fixed logo size on the Shop page
+
+- Recommend Orbit Fox plugin
+
+
+### 2.0.9 - 21/02/2018
+
+**Changes:** 
+
+- Fixed compatibility issues with WooCommerce 3.3
+
+
 
 ### 2.0.8 - 21/12/2017
 
