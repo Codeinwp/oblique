@@ -2155,6 +2155,16 @@ article.product .entry-header {
 	background-color: #333;
 }
 
+.footer-navigation ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+.footer-navigation li {
+	display: inline-block;
+	padding: 5px 10px;
+}
+
 
 /*--------------------------------------------------------------
 Responsive
@@ -2434,13 +2444,4 @@ Responsive
 	.single-product div.single_product_bottom_svg {
 		bottom: -19px;
 	}
-}
-.footer-navigation ul {
-	margin: 0;
-	padding: 0;
-	text-align: right;
-}
-.footer-navigation li {
-	display: inline-block;
-	padding: 5px 10px;
 }
