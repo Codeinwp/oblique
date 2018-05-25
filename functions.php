@@ -473,6 +473,7 @@ function oblique_pro_footer_menu() {
 				'theme_location' => 'footer',
 				'depth'          => '1',
 				'menu_id'        => 'footer-menu',
+				'fallback_cb'    => false,
 			)
 		);
 		?>
