@@ -64,13 +64,13 @@ if ( ! function_exists( 'oblique_setup' ) ) :
 		 */
 		add_theme_support(
 			'html5',
-				array(
-					'search-form',
-					'comment-form',
-					'comment-list',
-					'gallery',
-					'caption',
-				)
+			array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+			)
 		);
 
 		/*
@@ -79,13 +79,13 @@ if ( ! function_exists( 'oblique_setup' ) ) :
 		 */
 		add_theme_support(
 			'post-formats',
-				array(
-					'aside',
-					'image',
-					'video',
-					'quote',
-					'link',
-				)
+			array(
+				'aside',
+				'image',
+				'video',
+				'quote',
+				'link',
+			)
 		);
 
 		/*
@@ -503,7 +503,7 @@ function oblique_neve_notice() {
 			'<a href="%s" class="notice-dismiss" style="text-decoration:none;"></a>',
 			'?oblique_nag_ignore_neve=0'
 		);
-	$message        = sprintf(
+	$message = sprintf(
 		/* translators: Install Neve link */
 			esc_html__( 'Check out %1$s. Fully AMP optimized and responsive, Neve will load in mere seconds and adapt perfectly on any viewing device. Neve works perfectly with Gutenberg and the most popular page builders. You will love it!', 'oblique' ),
 		sprintf(
