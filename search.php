@@ -20,7 +20,6 @@ get_header(); ?>
 				<?php do_action( 'oblique_archive_title_bottom_svg' ); ?>
 			</div>	
 
-			<?php ;/* Start the Loop */ ?>
 			<div class="svg-container single-post-svg svg-block">
 				<?php oblique_svg_1(); ?>
 			</div>
