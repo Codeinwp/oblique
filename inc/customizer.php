@@ -95,21 +95,21 @@ function oblique_customize_register( $wp_customize ) {
 		new Oblique_Control_Upsell_Theme_Info(
 			$wp_customize,
 			'oblique_theme_info_main_control',
-				array(
-					'section'     => 'oblique_theme_info_main_section',
-					'priority'    => 100,
-					'options'     => array(
-						esc_html__( 'Jetpack Related Posts', 'oblique' ),
-						esc_html__( 'Slider', 'oblique' ),
-						esc_html__( 'Extra Widget Area', 'oblique' ),
-						esc_html__( 'Alternative Layout', 'oblique' ),
-						esc_html__( 'Extra Colors', 'oblique' ),
-						esc_html__( 'Footer Credits', 'oblique' ),
-						esc_html__( 'Support', 'oblique' ),
-					),
-					'button_url'  => esc_url( 'https://themeisle.com/themes/oblique-pro/upgrade/' ),
-					'button_text' => esc_html__( 'View PRO version', 'oblique' ),
-				)
+			array(
+				'section'     => 'oblique_theme_info_main_section',
+				'priority'    => 100,
+				'options'     => array(
+					esc_html__( 'Jetpack Related Posts', 'oblique' ),
+					esc_html__( 'Slider', 'oblique' ),
+					esc_html__( 'Extra Widget Area', 'oblique' ),
+					esc_html__( 'Alternative Layout', 'oblique' ),
+					esc_html__( 'Extra Colors', 'oblique' ),
+					esc_html__( 'Footer Credits', 'oblique' ),
+					esc_html__( 'Support', 'oblique' ),
+				),
+				'button_url'  => esc_url( 'https://themeisle.com/themes/oblique-pro/upgrade/' ),
+				'button_text' => esc_html__( 'View PRO version', 'oblique' ),
+			)
 		)
 	);
 
@@ -127,18 +127,18 @@ function oblique_customize_register( $wp_customize ) {
 		new Oblique_Control_Upsell_Theme_Info(
 			$wp_customize,
 			'oblique_theme_info_header_section_control',
-				array(
-					'section'            => 'oblique_header',
-					'priority'           => 500,
-					'options'            => array(
-						esc_html__( 'Slider', 'oblique' ),
-					),
-					'explained_features' => array(
-						esc_html__( 'Add a shortcode for a slider to replace the header image.', 'oblique' ),
-					),
-					'button_url'         => esc_url( 'https://themeisle.com/themes/oblique-pro/upgrade/' ),
-					'button_text'        => esc_html__( 'View PRO version', 'oblique' ),
-				)
+			array(
+				'section'            => 'oblique_header',
+				'priority'           => 500,
+				'options'            => array(
+					esc_html__( 'Slider', 'oblique' ),
+				),
+				'explained_features' => array(
+					esc_html__( 'Add a shortcode for a slider to replace the header image.', 'oblique' ),
+				),
+				'button_url'         => esc_url( 'https://themeisle.com/themes/oblique-pro/upgrade/' ),
+				'button_text'        => esc_html__( 'View PRO version', 'oblique' ),
+			)
 		)
 	);
 
@@ -444,12 +444,12 @@ function oblique_customize_register( $wp_customize ) {
 		new Oblique_Titles(
 			$wp_customize,
 			'body_fonts',
-				array(
-					'label'    => __( 'Body fonts', 'oblique' ),
-					'section'  => 'oblique_fonts',
-					'settings' => 'oblique_options[titles]',
-					'priority' => 10,
-				)
+			array(
+				'label'    => __( 'Body fonts', 'oblique' ),
+				'section'  => 'oblique_fonts',
+				'settings' => 'oblique_options[titles]',
+				'priority' => 10,
+			)
 		)
 	);
 	// Body fonts
@@ -499,12 +499,12 @@ function oblique_customize_register( $wp_customize ) {
 		new Oblique_Titles(
 			$wp_customize,
 			'headings_fonts',
-				array(
-					'label'    => __( 'Headings fonts', 'oblique' ),
-					'section'  => 'oblique_fonts',
-					'settings' => 'oblique_options[titles]',
-					'priority' => 13,
-				)
+			array(
+				'label'    => __( 'Headings fonts', 'oblique' ),
+				'section'  => 'oblique_fonts',
+				'settings' => 'oblique_options[titles]',
+				'priority' => 13,
+			)
 		)
 	);
 	// Headings fonts
@@ -554,12 +554,12 @@ function oblique_customize_register( $wp_customize ) {
 		new Oblique_Titles(
 			$wp_customize,
 			'font_sizes_title',
-				array(
-					'label'    => __( 'Font sizes', 'oblique' ),
-					'section'  => 'oblique_fonts',
-					'settings' => 'oblique_options[titles]',
-					'priority' => 16,
-				)
+			array(
+				'label'    => __( 'Font sizes', 'oblique' ),
+				'section'  => 'oblique_fonts',
+				'settings' => 'oblique_options[titles]',
+				'priority' => 16,
+			)
 		)
 	);
 	// Site title
@@ -1020,11 +1020,11 @@ function oblique_customize_register( $wp_customize ) {
 		new Oblique_Theme_Info(
 			$wp_customize,
 			'social',
-				array(
-					'section'  => 'oblique_social',
-					'settings' => 'oblique_theme_social',
-					'priority' => 10,
-				)
+			array(
+				'section'  => 'oblique_social',
+				'settings' => 'oblique_theme_social',
+				'priority' => 10,
+			)
 		)
 	);
 
