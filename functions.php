@@ -5,7 +5,7 @@
  * @package Oblique
  */
 
-define( 'OBLIQUE_VERSION', '2.0.15' );
+define( 'OBLIQUE_VERSION', '2.0.16' );
 
 if ( ! function_exists( 'oblique_setup' ) ) :
 	/**
