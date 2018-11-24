@@ -64,13 +64,13 @@ if ( ! function_exists( 'oblique_setup' ) ) :
 		 */
 		add_theme_support(
 			'html5',
-            array(
-				'search-form',
-				'comment-form',
-				'comment-list',
-				'gallery',
-				'caption',
-			)
+				array(
+					'search-form',
+					'comment-form',
+					'comment-list',
+					'gallery',
+					'caption',
+				)
 		);
 
 		/*
@@ -79,13 +79,13 @@ if ( ! function_exists( 'oblique_setup' ) ) :
 		 */
 		add_theme_support(
 			'post-formats',
-            array(
-				'aside',
-				'image',
-				'video',
-				'quote',
-				'link',
-			)
+				array(
+					'aside',
+					'image',
+					'video',
+					'quote',
+					'link',
+				)
 		);
 
 		/*
@@ -97,9 +97,9 @@ if ( ! function_exists( 'oblique_setup' ) ) :
 		// Set up the WordPress core custom background feature.
 		add_theme_support(
 			'custom-background',
-            apply_filters(
+			apply_filters(
 				'oblique_custom_background_args',
-                array(
+				array(
 					'default-color' => '1c1c1c',
 				)
 			)
@@ -492,7 +492,7 @@ add_action( 'oblique_footer', 'oblique_pro_footer_menu' );
  */
 function oblique_neve_notice() {
 	global $current_user;
-	$user_id = $current_user->ID;
+	$user_id        = $current_user->ID;
 	$ignored_notice = get_user_meta( $user_id, 'oblique_ignore_neve_notice' );
 	if ( ! empty( $ignored_notice ) ) {
 		return;

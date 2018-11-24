@@ -77,7 +77,7 @@ function oblique_customize_register( $wp_customize ) {
 
 			$wp_customize->add_section(
 				'oblique_theme_info_main_section',
-                array(
+				array(
 					'title'    => __( 'View PRO version', 'oblique' ),
 					'priority' => 0,
 				)
@@ -85,7 +85,7 @@ function oblique_customize_register( $wp_customize ) {
 
 			$wp_customize->add_setting(
 				'oblique_theme_info_main_control',
-                array(
+				array(
 					'sanitize_callback' => 'esc_html',
 				)
 			);
@@ -94,7 +94,7 @@ function oblique_customize_register( $wp_customize ) {
 			$wp_customize->add_control(
 				new Oblique_Control_Upsell_Theme_Info(
 					$wp_customize, 'oblique_theme_info_main_control',
-                    array(
+					array(
 					'section'     => 'oblique_theme_info_main_section',
 					'priority'    => 100,
 					'options'     => array(
@@ -117,7 +117,7 @@ function oblique_customize_register( $wp_customize ) {
 	 */
 			$wp_customize->add_setting(
 				'oblique_theme_info_header_section_control',
-                array(
+				array(
 				'sanitize_callback' => 'esc_html',
 				)
 			);
@@ -125,7 +125,7 @@ function oblique_customize_register( $wp_customize ) {
 			$wp_customize->add_control(
 				new Oblique_Control_Upsell_Theme_Info(
 					$wp_customize, 'oblique_theme_info_header_section_control',
-                    array(
+					array(
 					'section'            => 'oblique_header',
 					'priority'           => 500,
 					'options'            => array(
@@ -223,7 +223,7 @@ function oblique_customize_register( $wp_customize ) {
 			);
 			$wp_customize->add_control(
 				'logo_size',
-                array(
+				array(
 				'type'        => 'number',
 				'priority'    => 12,
 				'section'     => 'title_tagline',
@@ -269,7 +269,7 @@ function oblique_customize_register( $wp_customize ) {
 			);
 			$wp_customize->add_control(
 				'branding_padding',
-                array(
+				array(
 				'type'        => 'number',
 				'priority'    => 14,
 				'section'     => 'oblique_header',
@@ -293,7 +293,7 @@ function oblique_customize_register( $wp_customize ) {
 			);
 			$wp_customize->add_control(
 				'branding_padding_1024',
-                array(
+				array(
 				'type'        => 'number',
 				'priority'    => 15,
 				'section'     => 'oblique_header',
@@ -325,7 +325,7 @@ function oblique_customize_register( $wp_customize ) {
 			);
 			$wp_customize->add_control(
 				'exc_lenght',
-                array(
+				array(
 				'type'        => 'number',
 				'priority'    => 10,
 				'section'     => 'blog_options',
@@ -432,7 +432,7 @@ function oblique_customize_register( $wp_customize ) {
 			// Body fonts title
 			$wp_customize->add_setting(
 				'oblique_options[titles]',
-                array(
+				array(
 				'type'              => 'titles_control',
 				'capability'        => 'edit_theme_options',
 				'sanitize_callback' => 'esc_attr',
@@ -441,7 +441,7 @@ function oblique_customize_register( $wp_customize ) {
 			$wp_customize->add_control(
 				new Oblique_Titles(
 					$wp_customize, 'body_fonts',
-                    array(
+					array(
 					'label'    => __( 'Body fonts', 'oblique' ),
 					'section'  => 'oblique_fonts',
 					'settings' => 'oblique_options[titles]',
@@ -486,7 +486,7 @@ function oblique_customize_register( $wp_customize ) {
 			// Headings fonts title
 			$wp_customize->add_setting(
 				'oblique_options[titles]',
-                array(
+				array(
 				'type'              => 'titles_control',
 				'capability'        => 'edit_theme_options',
 				'sanitize_callback' => 'esc_attr',
@@ -495,7 +495,7 @@ function oblique_customize_register( $wp_customize ) {
 			$wp_customize->add_control(
 				new Oblique_Titles(
 					$wp_customize, 'headings_fonts',
-                    array(
+					array(
 					'label'    => __( 'Headings fonts', 'oblique' ),
 					'section'  => 'oblique_fonts',
 					'settings' => 'oblique_options[titles]',
@@ -540,7 +540,7 @@ function oblique_customize_register( $wp_customize ) {
 			// Font sizes title
 			$wp_customize->add_setting(
 				'oblique_options[titles]',
-                array(
+				array(
 				'type'              => 'titles_control',
 				'capability'        => 'edit_theme_options',
 				'sanitize_callback' => 'esc_attr',
@@ -549,7 +549,7 @@ function oblique_customize_register( $wp_customize ) {
 			$wp_customize->add_control(
 				new Oblique_Titles(
 					$wp_customize, 'font_sizes_title',
-                    array(
+					array(
 					'label'    => __( 'Font sizes', 'oblique' ),
 					'section'  => 'oblique_fonts',
 					'settings' => 'oblique_options[titles]',
@@ -568,7 +568,7 @@ function oblique_customize_register( $wp_customize ) {
 			);
 			$wp_customize->add_control(
 				'site_title_size',
-                array(
+				array(
 				'type'        => 'number',
 				'priority'    => 17,
 				'section'     => 'oblique_fonts',
@@ -591,7 +591,7 @@ function oblique_customize_register( $wp_customize ) {
 			);
 			$wp_customize->add_control(
 				'site_desc_size',
-                array(
+				array(
 				'type'        => 'number',
 				'priority'    => 17,
 				'section'     => 'oblique_fonts',
@@ -614,7 +614,7 @@ function oblique_customize_register( $wp_customize ) {
 			);
 			$wp_customize->add_control(
 				'h1_size',
-                array(
+				array(
 				'type'        => 'number',
 				'priority'    => 17,
 				'section'     => 'oblique_fonts',
@@ -637,7 +637,7 @@ function oblique_customize_register( $wp_customize ) {
 			);
 			$wp_customize->add_control(
 				'h2_size',
-                array(
+				array(
 				'type'        => 'number',
 				'priority'    => 18,
 				'section'     => 'oblique_fonts',
@@ -660,7 +660,7 @@ function oblique_customize_register( $wp_customize ) {
 			);
 			$wp_customize->add_control(
 				'h3_size',
-                array(
+				array(
 				'type'        => 'number',
 				'priority'    => 19,
 				'section'     => 'oblique_fonts',
@@ -683,7 +683,7 @@ function oblique_customize_register( $wp_customize ) {
 			);
 			$wp_customize->add_control(
 				'h4_size',
-                array(
+				array(
 				'type'        => 'number',
 				'priority'    => 20,
 				'section'     => 'oblique_fonts',
@@ -706,7 +706,7 @@ function oblique_customize_register( $wp_customize ) {
 			);
 			$wp_customize->add_control(
 				'h5_size',
-                array(
+				array(
 				'type'        => 'number',
 				'priority'    => 21,
 				'section'     => 'oblique_fonts',
@@ -729,7 +729,7 @@ function oblique_customize_register( $wp_customize ) {
 			);
 			$wp_customize->add_control(
 				'h6_size',
-                array(
+				array(
 				'type'        => 'number',
 				'priority'    => 22,
 				'section'     => 'oblique_fonts',
@@ -752,7 +752,7 @@ function oblique_customize_register( $wp_customize ) {
 			);
 			$wp_customize->add_control(
 				'body_size',
-                array(
+				array(
 				'type'        => 'number',
 				'priority'    => 23,
 				'section'     => 'oblique_fonts',
@@ -1005,7 +1005,7 @@ function oblique_customize_register( $wp_customize ) {
 			);
 			$wp_customize->add_setting(
 				'oblique_theme_social',
-                array(
+				array(
 				'type'              => 'info_control',
 				'capability'        => 'edit_theme_options',
 				'sanitize_callback' => 'esc_attr',
@@ -1014,7 +1014,7 @@ function oblique_customize_register( $wp_customize ) {
 			$wp_customize->add_control(
 				new Oblique_Theme_Info(
 					$wp_customize, 'social',
-                    array(
+					array(
 					'section'  => 'oblique_social',
 					'settings' => 'oblique_theme_social',
 					'priority' => 10,

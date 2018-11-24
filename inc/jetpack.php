@@ -12,7 +12,8 @@
  */
 function oblique_jetpack_setup() {
 	add_theme_support(
-		'infinite-scroll', array(
+		'infinite-scroll',
+		array(
 			'container' => 'ob-grid',
 			'footer'    => 'page',
 		)

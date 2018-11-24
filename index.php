@@ -18,7 +18,6 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<?php ;/* Start the Loop */ ?>
 			<div id="ob-grid" class="grid-layout">
 			<?php
 			while ( have_posts() ) :

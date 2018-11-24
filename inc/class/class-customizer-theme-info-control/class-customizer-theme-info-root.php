@@ -77,8 +77,8 @@ final class Oblique_Customizer_Upsell {
 		$manager->add_section(
 			new Oblique_Customizer_Theme_Info_Main(
 				$manager,
-                'oblique-theme-info',
-                array(
+				'oblique-theme-info',
+				array(
 					'theme_info_title' => __( 'Oblique', 'oblique' ),
 					'label_url'        => esc_url( 'http://docs.themeisle.com/article/294-oblique-documentation' ),
 					'label_text'       => __( 'Documentation', 'oblique' ),
