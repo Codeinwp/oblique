@@ -1,4 +1,8 @@
 
+ ### v2.0.18 - 2018-11-26 
+ **Changes:** 
+ * Updated the generate task
+ 
 
 ### 2.0.15 - 25/05/2018
 
