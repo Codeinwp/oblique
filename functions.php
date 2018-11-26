@@ -15,7 +15,7 @@ define( 'OBLIQUE_VERSION', '2.0.17' );
  * @return array
  */
 function oblique_filter_sdk( $products ) {
-    $products[] = get_template_directory() . '/style.css';
+	$products[] = get_template_directory() . '/style.css';
 	return $products;
 }
 add_filter( 'themeisle_sdk_products', 'oblique_filter_sdk' );
