@@ -1,0 +1,24 @@
+{
+  "name": "codeinwp/oblique",
+  "description": "Oblique by ThemeIsle.",
+  "homepage": "https://themeisle.com/themes/oblique/",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "ThemeIsle Team",
+      "email": "friends@themeisle.com.com",
+      "homepage": "https://themeisle.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "support": {
+    "issues": "https://github.com/Codeinwp/oblique/issues",
+    "source": "https://github.com/Codeinwp/oblique"
+  },
+  "type": "wordpress-theme",
+  "require": {
+    "codeinwp/themeisle-sdk": "master",
+    "codeinwp/ti-about-page": "master"
+  },
+}

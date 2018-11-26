@@ -7,6 +7,19 @@
 
 define( 'OBLIQUE_VERSION', '2.0.16' );
 
+/**
+ * Themeisle SDK filter.
+ *
+ * @param array $products products array.
+ *
+ * @return array
+ */
+function oblique_filter_sdk( $products ) {
+    $products[] = get_template_directory() . '/style.css';
+    return $products;
+}
+add_filter( 'themeisle_sdk_products', 'oblique_filter_sdk' );
+
 if ( ! function_exists( 'oblique_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
