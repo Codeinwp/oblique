@@ -20,7 +20,6 @@
   "require": {
     "codeinwp/themeisle-sdk": "master"
   },
-  ,
   "autoload": {
     "files": [
       "vendor/codeinwp/themeisle-sdk/load.php"
