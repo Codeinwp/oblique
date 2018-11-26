@@ -30,6 +30,8 @@ install:
 script:
 - if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then  grunt travis; fi;
 before_deploy:
+- openssl aes-256-cbc -K $encrypted_d069f3374b98_key -iv $encrypted_d069f3374b98_iv
+  -in themeisle.enc -out /tmp/key -d
 - chmod +x bin/prepare-deploy.sh
 - ". ./bin/prepare-deploy.sh"
 deploy:
