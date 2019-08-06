@@ -72,7 +72,7 @@
 				}
 				/* Show only logo */
 				if ( ! empty( $oblique_custom_logo ) && ! empty( $oblique_custom_logo[0] ) && get_theme_mod( 'logo_style', 'hide-title' ) == 'hide-title' ) :
-				?>
+					?>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"><img class="site-logo" src="<?php echo esc_url( $oblique_custom_logo[0] ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" /></a>
 				<?php elseif ( get_theme_mod( 'logo_style', 'hide-title' ) == 'show-title' ) : ?>
 					<?php if ( ! empty( $oblique_custom_logo ) && ! empty( $oblique_custom_logo[0] ) ) { ?>

@@ -24,21 +24,11 @@ get_header(); ?>
 				<?php oblique_svg_1(); ?>
 			</div>
 			<?php
-			while ( have_posts() ) :
+			while ( have_posts() ) {
 				the_post();
-?>
-
-				<?php
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
 				get_template_part( 'content', 'search' );
-				?>
-
-			<?php endwhile; ?>
-
+			}
+			?>
 			<div class="svg-container single-post-svg single-svg-bottom svg-block">
 				<?php do_action( 'oblique_single_page_post_svg' ); ?>
 			</div>

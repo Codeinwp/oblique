@@ -82,7 +82,7 @@ if ( ! class_exists( 'Oblique_Control_Upsell_Theme_Info' ) ) :
 		 * Control content
 		 */
 		public function content_template() {
-	?>
+			?>
 			<div class="themeisle-upsell">
 				<# if ( data.options ) { #>
 					<ul class="themeisle-upsell-features">
@@ -108,7 +108,7 @@ if ( ! class_exists( 'Oblique_Control_Upsell_Theme_Info' ) ) :
 									</ul>
 									<# } #>
 			</div>
-		<?php
+				<?php
 		}
 	}
 endif;
