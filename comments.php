@@ -42,11 +42,11 @@ if ( post_password_required() ) {
 		if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) {
 			?>
 			<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
-				<h2 class="screen-reader-text"><?php _e('Comment navigation', 'oblique'); ?></h2>
+				<h2 class="screen-reader-text"><?php _e( 'Comment navigation', 'oblique' ); ?></h2>
 				<div class="nav-links">
 
-					<div class="nav-previous"><?php previous_comments_link(__('Older Comments', 'oblique')); ?></div>
-					<div class="nav-next"><?php next_comments_link(__('Newer Comments', 'oblique')); ?></div>
+					<div class="nav-previous"><?php previous_comments_link( __( 'Older Comments', 'oblique' ) ); ?></div>
+					<div class="nav-next"><?php next_comments_link( __( 'Newer Comments', 'oblique' ) ); ?></div>
 
 				</div><!-- .nav-links -->
 			</nav><!-- #comment-nav-below -->
