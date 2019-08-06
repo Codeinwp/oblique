@@ -18,7 +18,7 @@
 				'menu_id'        => 'primary-menu',
 			)
 		);
-			?>
+		?>
 	</nav><!-- #site-navigation -->
 	<nav class="sidebar-nav"></nav>
 

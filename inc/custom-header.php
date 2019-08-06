@@ -58,7 +58,7 @@ if ( ! function_exists( 'oblique_header_style' ) ) :
 						background-size: cover;
 					}
 		</style>
-		<?php
+			    <?php
 		}
 	}
 endif; // oblique_header_style
@@ -107,6 +107,6 @@ if ( ! function_exists( 'oblique_admin_header_image' ) ) :
 		<img src="<?php header_image(); ?>" alt="">
 		<?php endif; ?>
 	</div>
-	<?php
+		    <?php
 	}
 endif; // oblique_admin_header_image
