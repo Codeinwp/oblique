@@ -1,4 +1,9 @@
 
+ ### v2.0.19 - 2019-08-06 
+ **Changes:** 
+ * Updates for Travis
+* Prepare for retirement notice
+ 
  ### v2.0.18 - 2018-11-26 
  **Changes:** 
  * Updated the generate task
