@@ -45,7 +45,7 @@
 						'after'  => '</div>',
 					)
 				);
-				    ?>
+				?>
 		</div><!-- .entry-content -->
 		<?php do_action( 'oblique_post_entry_content_bottom' ); ?>
 	</div>
