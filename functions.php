@@ -5,7 +5,7 @@
  * @package Oblique
  */
 
-define( 'OBLIQUE_VERSION', '2.0.18' );
+define( 'OBLIQUE_VERSION', '2.0.19' );
 
 /**
  * Themeisle SDK filter.
