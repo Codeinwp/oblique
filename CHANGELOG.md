@@ -1,4 +1,8 @@
 
+ ### v2.0.20 - 2020-07-09 
+ **Changes:** 
+ * Remove SDK
+ 
  ### v2.0.19 - 2019-08-06 
  **Changes:** 
  * Updates for Travis
