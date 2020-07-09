@@ -14,4 +14,5 @@ dist
 artifact
 composer.json
 composer.lock
+vendor
 themeisle.enc
